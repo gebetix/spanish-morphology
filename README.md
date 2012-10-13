@@ -1,0 +1,4 @@
+spanish-morphology
+==================
+
+using foma
