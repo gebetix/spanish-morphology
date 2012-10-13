@@ -1,0 +1,7 @@
+define Cleanup "^" -> 0;
+
+read lexc spanish.lexc
+define Lexicon;
+
+regex Lexicon .o.
+      Cleanup;
