@@ -5,16 +5,58 @@ Multichar_Symbols +1C +2C +3C +V +Sg +Pl +1P +2P +3P +Masculino +Feminino +Infin
 
 LEXICON Root
 
+Adj ;
+Noun ;
 Verb ;
 
+
+########## LOS ADJETIVOS ######################################################
+LEXICON Adj
+
+descoligado Ainf ;
+
+########## Regular adjectives' rules ############
+LEXICON Ainf
+
++A+Sg:^0 #;
++A+Pl:^s #;
+
+
+########## LOS NOMBRES ########################################################
+LEXICON Noun
+
+alelotipo Ninf ;
+banastero Ninf ;
+cipera Ninf ;
+empollón Ninf ;
+empopada Ninf ;
+óryx Ninf ;
+luz Ninf ;
+ñoñez Ninf ;
+penetrador Ninf ;
+peneuvista Ninf ;
+plácet Ninf ;
+rigurosidad Ninf ;
+quebraza Ninf ;
+
+u+N+Sg:^u #;
+u+N+Pl:^úes #;
+
+########## Singular/Plural for regular nous #####
+LEXICON Ninf
+
++N+Sg:^0 #;
++N+Pl:^s #;
+
+
+########## LOS VERBOS #########################################################
 LEXICON Verb
 
-abaj V1;
-ca V2;
-viv V3;
+abaj V1 ;
+ca V2 ;
+viv V3 ;
 
-
-########## First Conjugación Verbs #############
+########## First Conjugación Verbs ##############
 LEXICON V1
 
 ar+V+1C+Infinitivo:^ar #;
@@ -90,8 +132,7 @@ ar+V+1C+Affirmativo+1P+Pl:^emos #;
 ar+V+1C+Affirmativo+2P+Pl:^ad #;
 ar+V+1C+Affirmativo+3P+Pl:^en #;
 
-
-########## Second Conjugación Verbs #############
+########## Second Conjugación Verbs ##############
 LEXICON V2
 
 er+V+2C+Invinitivo+2C:^er #;
@@ -167,8 +208,7 @@ er+V+2C+Affirmativo+1P+Pl+2C:^amos #;
 er+V+2C+Affirmativo+2P+Pl+2C:^ed #;
 er+V+2C+Affirmativo+3P+Pl+2C:^an #;
 
-
-########## Third Conjugación Verbs #############
+########## Third Conjugación Verbs ##############
 LEXICON V3
 
 ir+V+3C+Infinitivo+3C:^ir #;
