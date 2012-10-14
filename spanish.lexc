@@ -389,3 +389,159 @@ ir+V+3C+Affirmativo+3P+Sg:^vaya #;
 ir+V+3C+Affirmativo+1P+Pl:^vayamos #;
 ir+V+3C+Affirmativo+2P+Pl:^id #;
 ir+V+3C+Affirmativo+3P+Pl:^vayan #;
+
+
+##### ser (to be) #####
+ser+V+2C+Infinitivo:^ser #;
+ser+V+2C+Participio+Sg+Masculino:^sido #;
+ser+V+2C+Participio+Pl+Masculino:^sidos #;
+ser+V+2C+Participio+Sg+Feminino:^sida #;
+ser+V+2C+Participio+Pl+Feminino:^sidas #;
+ser+V+2C+Gerundio:^siendo #;
+
+ser+V+2C+PresenteIndicativo+1P+Sg:^soy #;
+ser+V+2C+PresenteIndicativo+2P+Sg:^eres #;
+ser+V+2C+PresenteIndicativo+3P+Sg:^es #;
+ser+V+2C+PresenteIndicativo+1P+Pl:^somos #;
+ser+V+2C+PresenteIndicativo+2P+Pl:^sois #;
+ser+V+2C+PresenteIndicativo+3P+Pl:^son #;
+
+ser+V+2C+PreteritoImperfecto+1P+Sg:^era #;
+ser+V+2C+PreteritoImperfecto+2P+Sg:^eras #;
+ser+V+2C+PreteritoImperfecto+3P+Sg:^era #;
+ser+V+2C+PreteritoImperfecto+1P+Pl:^éramos #;
+ser+V+2C+PreteritoImperfecto+2P+Pl:^erais #;
+ser+V+2C+PreteritoImperfecto+3P+Pl:^eran #;
+
+ser+V+2C+PreteritoIndefinido+1P+Sg:^fui #;
+ser+V+2C+PreteritoIndefinido+2P+Sg:^fuiste #;
+ser+V+2C+PreteritoIndefinido+3P+Sg:^fue #;
+ser+V+2C+PreteritoIndefinido+1P+Pl:^fuimos #;
+ser+V+2C+PreteritoIndefinido+2P+Pl:^fuisteis #;
+ser+V+2C+PreteritoIndefinido+3P+Pl:^fueron #;
+
+ser+V+2C+Futuro+1P+Sg:^seré #;
+ser+V+2C+Futuro+2P+Sg:^serás #;
+ser+V+2C+Futuro+3P+Sg:^será #;
+ser+V+2C+Futuro+1P+Pl:^seremos #;
+ser+V+2C+Futuro+2P+Pl:^seréis #;
+ser+V+2C+Futuro+3P+Pl:^serán #;
+
+ser+V+2C+Condicional+1P+Sg:^sería #;
+ser+V+2C+Condicional+2P+Sg:^serías #;
+ser+V+2C+Condicional+3P+Sg:^sería #;
+ser+V+2C+Condicional+1P+Pl:^seríamos #;
+ser+V+2C+Condicional+2P+Pl:^seríais #;
+ser+V+2C+Condicional+3P+Pl:^serían #;
+
+ser+V+2C+SubjuntivoPresente+1P+Sg:^sea #;
+ser+V+2C+SubjuntivoPresente+2P+Sg:^seas #;
+ser+V+2C+SubjuntivoPresente+3P+Sg:^sea #;
+ser+V+2C+SubjuntivoPresente+1P+Pl:^seamos #;
+ser+V+2C+SubjuntivoPresente+2P+Pl:^seáis #;
+ser+V+2C+SubjuntivoPresente+3P+Pl:^sean #;
+
+ser+V+2C+SubjuntivoImperfecto+1P+Sg:^fuera #;
+ser+V+2C+SubjuntivoImperfecto+2P+Sg:^fueras #;
+ser+V+2C+SubjuntivoImperfecto+3P+Sg:^fuera #;
+ser+V+2C+SubjuntivoImperfecto+1P+Pl:^fuéramos #;
+ser+V+2C+SubjuntivoImperfecto+2P+Pl:^fuerais #;
+ser+V+2C+SubjuntivoImperfecto+3P+Pl:^fueran #;
+
+ser+V+2C+SubjuntivoPosesivo+1P+Sg:^fuese #;
+ser+V+2C+SubjuntivoPosesivo+2P+Sg:^fueses #;
+ser+V+2C+SubjuntivoPosesivo+3P+Sg:^fuese #;
+ser+V+2C+SubjuntivoPosesivo+1P+Pl:^fuésemos #;
+ser+V+2C+SubjuntivoPosesivo+2P+Pl:^fueseis #;
+ser+V+2C+SubjuntivoPosesivo+3P+Pl:^fuesen #;
+
+ser+V+2C+SubjuntivoFuturo+1P+Sg:^fuere #;
+ser+V+2C+SubjuntivoFuturo+2P+Sg:^fueres #;
+ser+V+2C+SubjuntivoFuturo+3P+Sg:^fuere #;
+ser+V+2C+SubjuntivoFuturo+1P+Pl:^fuéremos #;
+ser+V+2C+SubjuntivoFuturo+2P+Pl:^fuereis #;
+ser+V+2C+SubjuntivoFuturo+3P+Pl:^fueren #;
+
+ser+V+2C+Affirmativo+2P+Sg:^sé #;
+ser+V+2C+Affirmativo+3P+Sg:^sea #;
+ser+V+2C+Affirmativo+1P+Pl:^seamos #;
+ser+V+2C+Affirmativo+2P+Pl:^sed #;
+ser+V+2C+Affirmativo+3P+Pl:^sean #;
+
+
+##### ver (to look) #####
+ver+V+2C+Infinitivo:^ver #;
+ver+V+2C+Participio+Sg+Masculino:^visto #;
+ver+V+2C+Participio+Pl+Masculino:^vistos #;
+ver+V+2C+Participio+Sg+Feminino:^vista #;
+ver+V+2C+Participio+Pl+Feminino:^vistas #;
+ver+V+2C+Gerundio:^viendo #;
+
+ver+V+2C+PresenteIndicativo+1P+Sg:^veo #;
+ver+V+2C+PresenteIndicativo+2P+Sg:^ves #;
+ver+V+2C+PresenteIndicativo+3P+Sg:^ve #;
+ver+V+2C+PresenteIndicativo+1P+Pl:^vemos #;
+ver+V+2C+PresenteIndicativo+2P+Pl:^veis #;
+ver+V+2C+PresenteIndicativo+3P+Pl:^ven #;
+
+ver+V+2C+PreteritoImperfecto+1P+Sg:^veía #;
+ver+V+2C+PreteritoImperfecto+2P+Sg:^veías #;
+ver+V+2C+PreteritoImperfecto+3P+Sg:^veía #;
+ver+V+2C+PreteritoImperfecto+1P+Pl:^veíamos #;
+ver+V+2C+PreteritoImperfecto+2P+Pl:^veíais #;
+ver+V+2C+PreteritoImperfecto+3P+Pl:^veían #;
+
+ver+V+2C+PreteritoIndefinido+1P+Sg:^vi #;
+ver+V+2C+PreteritoIndefinido+2P+Sg:^viste #;
+ver+V+2C+PreteritoIndefinido+3P+Sg:^vio #;
+ver+V+2C+PreteritoIndefinido+1P+Pl:^vimos #;
+ver+V+2C+PreteritoIndefinido+2P+Pl:^visteis #;
+ver+V+2C+PreteritoIndefinido+3P+Pl:^vieron #;
+
+ver+V+2C+Futuro+1P+Sg:^veré #;
+ver+V+2C+Futuro+2P+Sg:^verás #;
+ver+V+2C+Futuro+3P+Sg:^verá #;
+ver+V+2C+Futuro+1P+Pl:^veremos #;
+ver+V+2C+Futuro+2P+Pl:^veréis #;
+ver+V+2C+Futuro+3P+Pl:^verán #;
+
+ver+V+2C+Condicional+1P+Sg:^vería #;
+ver+V+2C+Condicional+2P+Sg:^verías #;
+ver+V+2C+Condicional+3P+Sg:^vería #;
+ver+V+2C+Condicional+1P+Pl:^veríamos #;
+ver+V+2C+Condicional+2P+Pl:^veríais #;
+ver+V+2C+Condicional+3P+Pl:^verían #;
+
+ver+V+2C+SubjuntivoPresente+1P+Sg:^vea #;
+ver+V+2C+SubjuntivoPresente+2P+Sg:^veas #;
+ver+V+2C+SubjuntivoPresente+3P+Sg:^vea #;
+ver+V+2C+SubjuntivoPresente+1P+Pl:^veamos #;
+ver+V+2C+SubjuntivoPresente+2P+Pl:^veáis #;
+ver+V+2C+SubjuntivoPresente+3P+Pl:^vean #;
+
+ver+V+2C+SubjuntivoImperfecto+1P+Sg:^viera #;
+ver+V+2C+SubjuntivoImperfecto+2P+Sg:^vieras #;
+ver+V+2C+SubjuntivoImperfecto+3P+Sg:^viera #;
+ver+V+2C+SubjuntivoImperfecto+1P+Pl:^viéramos #;
+ver+V+2C+SubjuntivoImperfecto+2P+Pl:^vierais #;
+ver+V+2C+SubjuntivoImperfecto+3P+Pl:^vieran #;
+
+ver+V+2C+SubjuntivoPosesivo+1P+Sg:^viese #;
+ver+V+2C+SubjuntivoPosesivo+2P+Sg:^vieses #;
+ver+V+2C+SubjuntivoPosesivo+3P+Sg:^viese #;
+ver+V+2C+SubjuntivoPosesivo+1P+Pl:^viésemos #;
+ver+V+2C+SubjuntivoPosesivo+2P+Pl:^vieseis #;
+ver+V+2C+SubjuntivoPosesivo+3P+Pl:^viesen #;
+
+ver+V+2C+SubjuntivoFuturo+1P+Sg:^viere #;
+ver+V+2C+SubjuntivoFuturo+2P+Sg:^vieres #;
+ver+V+2C+SubjuntivoFuturo+3P+Sg:^viere #;
+ver+V+2C+SubjuntivoFuturo+1P+Pl:^viéremos #;
+ver+V+2C+SubjuntivoFuturo+2P+Pl:^viereis #;
+ver+V+2C+SubjuntivoFuturo+3P+Pl:^vieren #;
+
+ver+V+2C+Affirmativo+2P+Sg:^ve #;
+ver+V+2C+Affirmativo+3P+Sg:^vea #;
+ver+V+2C+Affirmativo+1P+Pl:^veamos #;
+ver+V+2C+Affirmativo+2P+Pl:^ved #;
+ver+V+2C+Affirmativo+3P+Pl:^vean #;
