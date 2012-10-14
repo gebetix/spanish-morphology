@@ -10,7 +10,11 @@ define AntiOtoUEReplacementPartic u e -> o || _ ?* "^" [ a d o | a d a | i d o |
 
 define AntiOtoUEReplacementZC u e -> o || _ z c ;
 
-define ItoYReplacement i -> y || u "^" ?* "&IY" ?* ;
+define ItoYReplacement i -> y || u _ "^" ?* "&IY" ?* ;
+
+define YItoYReplacement i -> 0 || u y "^" _ ?* "&IY" ?* ; 
+
+define ItoYReplacementGerund i -> y || u "^" _ [ e n d o ] ;
 
 define YInsertion [..] -> y || u _ "^" ?* "&IY" ?* ;
 
@@ -34,6 +38,8 @@ define Grammar
 			   OtoUEReplacement .o.
 			   ItoYReplacement .o.
 			   YInsertion .o.
+			   YItoYReplacement .o.
+			   ItoYReplacementGerund .o.
 			   CtoZCReplacement .o.
 			   AntiOtoUEReplacementZC .o.
 			   EInsertion .o.
