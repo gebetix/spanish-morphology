@@ -65,7 +65,11 @@ ab V1 ;
 abaj V1 ;
 agarb V1 ;
 ca V2 ;
+ten V2 ;
+hac V2 ;
+pon V2 ;
 viv V3 ;
+
 
 ########## First Conjugación Verbs ##############
 LEXICON V1
@@ -146,6 +150,7 @@ ar+V+1C+Affirmativo+1P+Pl:^emos #;
 ar+V+1C+Affirmativo+2P+Pl:^ad #;
 ar+V+1C+Affirmativo+3P+Pl:^en #;
 
+
 ########## Second Conjugación Verbs ##############
 LEXICON V2
 
@@ -225,6 +230,7 @@ er+V+2C+Affirmativo+1P+Pl:^amos #;
 er+V+2C+Affirmativo+2P+Pl:^ed #;
 er+V+2C+Affirmativo+3P+Pl:^an #;
 
+
 ########## Third Conjugación Verbs ##############
 LEXICON V3
 
@@ -303,3 +309,83 @@ ir+V+3C+Affirmativo+3P+Sg:^a #;
 ir+V+3C+Affirmativo+1P+Pl:^amos #;
 ir+V+3C+Affirmativo+2P+Pl:^id #;
 ir+V+3C+Affirmativo+3P+Pl:^an #;
+
+
+########## Irregulares ##########################
+
+##### ir (to go) #####
+ir+V+3C+Infinitivo:^ir #;
+ir+V+3C+Participio+Sg+Masculino:^ido #;
+ir+V+3C+Participio+Pl+Masculino:^idos #;
+ir+V+3C+Participio+Sg+Feminino:^ida #;
+ir+V+3C+Participio+Pl+Feminino:^idas #;
+ir+V+3C+Gerundio:^yendo #;
+
+ir+V+3C+PresenteIndicativo+1P+Sg:^voy #;
+ir+V+3C+PresenteIndicativo+2P+Sg:^vas #;
+ir+V+3C+PresenteIndicativo+3P+Sg:^va #;
+ir+V+3C+PresenteIndicativo+1P+Pl:^vamos #;
+ir+V+3C+PresenteIndicativo+2P+Pl:^váis #;
+ir+V+3C+PresenteIndicativo+3P+Pl:^van #;
+
+ir+V+3C+PreteritoImperfecto+1P+Sg:^iba #;
+ir+V+3C+PreteritoImperfecto+2P+Sg:^ibas #;
+ir+V+3C+PreteritoImperfecto+3P+Sg:^iba #;
+ir+V+3C+PreteritoImperfecto+1P+Pl:^íbamos #;
+ir+V+3C+PreteritoImperfecto+2P+Pl:^ibais #;
+ir+V+3C+PreteritoImperfecto+3P+Pl:^iban #;
+
+ir+V+3C+PreteritoIndefinido+1P+Sg:^fui #;
+ir+V+3C+PreteritoIndefinido+2P+Sg:^fuiste #;
+ir+V+3C+PreteritoIndefinido+3P+Sg:^fue #;
+ir+V+3C+PreteritoIndefinido+1P+Pl:^fuimos #;
+ir+V+3C+PreteritoIndefinido+2P+Pl:^fuisteis #;
+ir+V+3C+PreteritoIndefinido+3P+Pl:^fueron #;
+
+ir+V+3C+Futuro+1P+Sg:^iré #;
+ir+V+3C+Futuro+2P+Sg:^irás #;
+ir+V+3C+Futuro+3P+Sg:^irá #;
+ir+V+3C+Futuro+1P+Pl:^iremos #;
+ir+V+3C+Futuro+2P+Pl:^iréis #;
+ir+V+3C+Futuro+3P+Pl:^irán #;
+
+ir+V+3C+Condicional+1P+Sg:^iría #;
+ir+V+3C+Condicional+2P+Sg:^irías #;
+ir+V+3C+Condicional+3P+Sg:^iría #;
+ir+V+3C+Condicional+1P+Pl:^iríamos #;
+ir+V+3C+Condicional+2P+Pl:^iríais #;
+ir+V+3C+Condicional+3P+Pl:^irían #;
+
+ir+V+3C+SubjuntivoPresente+1P+Sg:^vaya #;
+ir+V+3C+SubjuntivoPresente+2P+Sg:^vayas #;
+ir+V+3C+SubjuntivoPresente+3P+Sg:^vaya #;
+ir+V+3C+SubjuntivoPresente+1P+Pl:^vayamos #;
+ir+V+3C+SubjuntivoPresente+2P+Pl:^vayáis #;
+ir+V+3C+SubjuntivoPresente+3P+Pl:^vayan #;
+
+ir+V+3C+SubjuntivoImperfecto+1P+Sg:^fuera #;
+ir+V+3C+SubjuntivoImperfecto+2P+Sg:^fueras #;
+ir+V+3C+SubjuntivoImperfecto+3P+Sg:^fuera #;
+ir+V+3C+SubjuntivoImperfecto+1P+Pl:^fuéramos #;
+ir+V+3C+SubjuntivoImperfecto+2P+Pl:^fuérais #;
+ir+V+3C+SubjuntivoImperfecto+3P+Pl:^fueran #;
+
+ir+V+3C+SubjuntivoPosesivo+1P+Sg:^fuese #;
+ir+V+3C+SubjuntivoPosesivo+2P+Sg:^fueses #;
+ir+V+3C+SubjuntivoPosesivo+3P+Sg:^fuese #;
+ir+V+3C+SubjuntivoPosesivo+1P+Pl:^fuésemos #;
+ir+V+3C+SubjuntivoPosesivo+2P+Pl:^fueseis #;
+ir+V+3C+SubjuntivoPosesivo+3P+Pl:^fuesen #;
+
+ir+V+3C+SubjuntivoFuturo+1P+Sg:^fuere #;
+ir+V+3C+SubjuntivoFuturo+2P+Sg:^fueres #;
+ir+V+3C+SubjuntivoFuturo+3P+Sg:^fuere #;
+ir+V+3C+SubjuntivoFuturo+1P+Pl:^fuéremos #;
+ir+V+3C+SubjuntivoFuturo+2P+Pl:^fuereis #;
+ir+V+3C+SubjuntivoFuturo+3P+Pl:^fueren #;
+
+ir+V+3C+Affirmativo+2P+Sg:^ve #;
+ir+V+3C+Affirmativo+3P+Sg:^vaya #;
+ir+V+3C+Affirmativo+1P+Pl:^vayamos #;
+ir+V+3C+Affirmativo+2P+Pl:^id #;
+ir+V+3C+Affirmativo+3P+Pl:^vayan #;
