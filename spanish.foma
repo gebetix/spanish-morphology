@@ -1,12 +1,20 @@
+##### Replacement of 'z'/'x' for 'c' in plurals #####
+define XZReplacement x -> c || _ e "^" s ,,
+					 z -> c || _ e "^" s ; 
+
+##### Insertion of 'e' in plurals of Noun/Adj-s #####
+define EInsertion [..] -> e || y | b | c | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | _ "^" s ;
+
 ##### Remove '^' morhems delimeter character #####
 define Cleanup "^" -> 0 ;
 
-#read lexc spanish.lexc
-read lexc full.lexc
+read lexc spanish.lexc
 define Lexicon;
 
 define Grammar 
                Lexicon .o.
+			   EInsertion .o.
+			   XZReplacement .o.
                Cleanup;
 			   
 regex Grammar;
