@@ -1,6 +1,6 @@
 !!!spanish.lexc!!!
 
-Multichar_Symbols +1C +2C +3C +V +Sg +Pl +1P +2P +3P +Masculino +Feminino +Infinitivo +PresenteIndicativo +PreteritoImperfecto +PreteritoIndefinido +Futuro +Condicional +SubjuntivoPresente +SubjuntivoImperfecto +SubjuntivoPosesivo +SubjuntivoFuturo +Affirmativo +Gerundio +Participio +Infinitivo
+Multichar_Symbols +1C +2C +3C +V +Sg +Pl +1P +2P +3P +Masculino +Feminino +Infinitivo +PresenteIndicativo +PreteritoImperfecto +PreteritoIndefinido +Futuro +Condicional +SubjuntivoPresente +SubjuntivoImperfecto +SubjuntivoPosesivo +SubjuntivoFuturo +Affirmativo +Gerundio +Participio +Infinitivo ll ch
 
 
 LEXICON Root
@@ -14,6 +14,14 @@ Verb ;
 LEXICON Adj
 
 descoligado Ainf ;
+español Ainf ;
+difícil Ainf ;
+grande Ainf ;
+baladí Ainf ;
+blanco Ainf ;
+feliz Ainf ;
+voraz Ainf ;
+
 
 ########## Regular adjectives' rules ############
 LEXICON Ainf
