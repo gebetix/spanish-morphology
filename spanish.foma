@@ -1,8 +1,30 @@
+##### Replacement of 'o' at pre-last syllable for 'ue' #####
+define OtoUEReplacement o -> u e || _ [ b | c | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" ;
+
+
+##### Anti-Replacement of 'o' for 'ue' for 1P/2P Pl verbs #####
+define AntiOtoUEReplacementOne u e -> o || _ [ b | c | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" [ a | "\u00E1" | e | "\u00E9" | i | "\u00ED" ] [ m o s | i s | "\u00ED" s ] ;
+
+
+##### Anti-Replacement of 'o' for 'ue' for infinitive verbs #####
+define AntiOtoUEReplacementTwo u e -> o || _ ?* "^" a r | ?* "^" e r | ?* "^" i r ;
+
+
+##### Anti-Replacement of 'o' for 'ue' for gerund verbs #####
+define AntiOtoUEReplacementThree u e -> o || _ ?* "^" [ a n d o | i e n d o | y e n d o ] ;
+
+
+##### Anti-Replacement of 'o' for 'ue' for participles #####
+define AntiOtoUEReplacementFour u e -> o || _ ?* "^" [ a d o | a d a | i d o | i d a ] s* ;
+
+
 ##### Replacement of 'i' for 'y' between 'u' and 'a'/'e'/'o' #####
 define ItoYReplacement i -> y || u "^" _ a | "\u00E1" | e | "\u00E9" | o | "\u00F3" ;
 
+
 ##### Insertion of 'y' between u and vovels #####
 define YInsertion [..] -> y || u _ "^" a | "^" "\u00E1" | "^" e | "^" "\u00E9" | "^" o | "^" "\u00F3" ;
+
 
 ##### Replacement of 'c' for 'zc' before 'a'/'o' #####
 define CtoZCReplacement c -> z c || _ "^" a | "^" "\u00E1" | "^" o | "^" "\u00F3" ;
@@ -13,16 +35,24 @@ define XZReplacement x -> c || _ e "^" s ,,
 					 z -> c || _ e "^" s ; 
 
 ##### Insertion of 'e' in plurals of Noun/Adj-s #####
-define EInsertion [..] -> e || y | b | c | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | "\u00E1" | "\u00ED" | "\u00F3" | "\u00FA" | "\u00F1" _ "^" s ;
+define EInsertion [..] -> e || y | b | c | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z | "\u00E1" | "\u00ED" | "\u00F3" | "\u00FA" | "\u00F1" _ "^" s ;
+
 
 ##### Remove '^' morhems delimeter character #####
 define Cleanup "^" -> 0 ;
 
+
 read lexc spanish.lexc
 define Lexicon;
 
+
 define Grammar 
                Lexicon .o.
+			   OtoUEReplacement .o.
+			   AntiOtoUEReplacementOne .o.
+			   AntiOtoUEReplacementTwo .o.
+			   AntiOtoUEReplacementThree .o.
+			   AntiOtoUEReplacementFour .o.
 			   ItoYReplacement .o.
 			   YInsertion .o.
 			   CtoZCReplacement .o.
