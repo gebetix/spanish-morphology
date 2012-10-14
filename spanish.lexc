@@ -66,7 +66,6 @@ abaj V1 ;
 agarb V1 ;
 encontr V1 ;
 esforz V1 ;
-ca V2 ;
 conoc V2 ;
 ofrec V2 ;
 pertenec V2 ;
@@ -1738,7 +1737,7 @@ er+V+2C+PresenteIndicativo+1P+Sg:^o&OUE #;
 er+V+2C+PresenteIndicativo+2P+Sg:^es&OUE #;
 er+V+2C+PresenteIndicativo+3P+Sg:^e&OUE #;
 er+V+2C+PresenteIndicativo+1P+Pl:^emos #;
-er+V+2C+PresenteIndicativo+2P+Pl:^éis&OUE #;
+er+V+2C+PresenteIndicativo+2P+Pl:^éis #;
 er+V+2C+PresenteIndicativo+3P+Pl:^en&OUE #;
 
 er+V+2C+PreteritoImperfecto+1P+Sg:^ía #;
@@ -1755,12 +1754,12 @@ er+V+2C+PreteritoIndefinido+1P+Pl:^imos #;
 er+V+2C+PreteritoIndefinido+2P+Pl:^isteis #;
 er+V+2C+PreteritoIndefinido+3P+Pl:^ieron #;
 
-er+V+2C+Futuro+1P+Sg:^aré #;
-er+V+2C+Futuro+2P+Sg:^arás #;
-er+V+2C+Futuro+3P+Sg:^ará #;
-er+V+2C+Futuro+1P+Pl:^aremos #;
-er+V+2C+Futuro+2P+Pl:^aréis #;
-er+V+2C+Futuro+3P+Pl:^arán #;
+er+V+2C+Futuro+1P+Sg:^eré #;
+er+V+2C+Futuro+2P+Sg:^erás #;
+er+V+2C+Futuro+3P+Sg:^erá #;
+er+V+2C+Futuro+1P+Pl:^eremos #;
+er+V+2C+Futuro+2P+Pl:^eréis #;
+er+V+2C+Futuro+3P+Pl:^erán #;
 
 er+V+2C+Condicional+1P+Sg:^ería #;
 er+V+2C+Condicional+2P+Sg:^erías #;
@@ -1828,19 +1827,19 @@ ir+V+3C+PreteritoImperfecto+1P+Pl:^íamos #;
 ir+V+3C+PreteritoImperfecto+2P+Pl:^íais #;
 ir+V+3C+PreteritoImperfecto+3P+Pl:^ían #;
 
-ir+V+3C+PreteritoIndefinido+1P+Sg:^í&IY #;
-ir+V+3C+PreteritoIndefinido+2P+Sg:^iste&IY #;
+ir+V+3C+PreteritoIndefinido+1P+Sg:^í #;
+ir+V+3C+PreteritoIndefinido+2P+Sg:^iste #;
 ir+V+3C+PreteritoIndefinido+3P+Sg:^ió&IY #;
 ir+V+3C+PreteritoIndefinido+1P+Pl:^imos #;
 ir+V+3C+PreteritoIndefinido+2P+Pl:^isteis #;
 ir+V+3C+PreteritoIndefinido+3P+Pl:^ieron&IY #;
 
-ir+V+3C+Futuro+1P+Sg:^aré #;
-ir+V+3C+Futuro+2P+Sg:^arás #;
-ir+V+3C+Futuro+3P+Sg:^ará #;
-ir+V+3C+Futuro+1P+Pl:^aremos #;
-ir+V+3C+Futuro+2P+Pl:^aréis #;
-ir+V+3C+Futuro+3P+Pl:^arán #;
+ir+V+3C+Futuro+1P+Sg:^iré #;
+ir+V+3C+Futuro+2P+Sg:^irás #;
+ir+V+3C+Futuro+3P+Sg:^irá #;
+ir+V+3C+Futuro+1P+Pl:^iremos #;
+ir+V+3C+Futuro+2P+Pl:^iréis #;
+ir+V+3C+Futuro+3P+Pl:^irán #;
 
 ir+V+3C+Condicional+1P+Sg:^iría #;
 ir+V+3C+Condicional+2P+Sg:^irías #;
