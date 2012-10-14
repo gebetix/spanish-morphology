@@ -1,21 +1,12 @@
-define Cleanup "^" -> 0;
 ##### Remove '^' morhems delimeter character #####
-define Cleanup "^" -> 0;
-
-##### Trunk final of verbs #####
-define FinalDeletion a r -> 0 || _ 0 ,,
-                     e r -> 0 || _ 0 ,,
-      				 i r -> 0 || _ 0 ;
-
-##### Insert of suffix, missremoved before #####
-define SuffixRestoration ;
+define Cleanup "^" -> 0 ;
 
 #read lexc spanish.lexc
 read lexc full.lexc
 define Lexicon;
 
-define Grammar Lexicon .o.
-               FinalDeletion .o.
+define Grammar 
+               Lexicon .o.
                Cleanup;
 			   
 regex Grammar;
