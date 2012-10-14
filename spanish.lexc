@@ -65,7 +65,17 @@ ab V1 ;
 abaj V1 ;
 agarb V1 ;
 ca V2 ;
+conoc V2 ;
+pertenec V2 ;
+apetec V2 ;
 viv V3 ;
+traduc V3 ;
+introduc V3 ;
+produc V3 ;
+constru V3 ;
+destru V3 ;
+inclu V3 ;
+constitu V3 ;
 
 ########## Irregulares ##########################
 
@@ -410,19 +420,19 @@ decir+V+3C+PreteritoIndefinido+1P+Pl:^dijimos #;
 decir+V+3C+PreteritoIndefinido+2P+Pl:^dijisteis #;
 decir+V+3C+PreteritoIndefinido+3P+Pl:^dijeron #;
 
-decir+V+3C+Futuro+1P+Sg:^oiré #;
-decir+V+3C+Futuro+2P+Sg:^oirás #;
-decir+V+3C+Futuro+3P+Sg:^oirá #;
-decir+V+3C+Futuro+1P+Pl:^oiremos #;
-decir+V+3C+Futuro+2P+Pl:^oiréis #;
-decir+V+3C+Futuro+3P+Pl:^oirán #;
+decir+V+3C+Futuro+1P+Sg:^diré #;
+decir+V+3C+Futuro+2P+Sg:^dirás #;
+decir+V+3C+Futuro+3P+Sg:^dirá #;
+decir+V+3C+Futuro+1P+Pl:^diremos #;
+decir+V+3C+Futuro+2P+Pl:^diréis #;
+decir+V+3C+Futuro+3P+Pl:^dirán #;
 
-decir+V+3C+Condicional+1P+Sg:^oiría #;
-decir+V+3C+Condicional+2P+Sg:^oirías #;
-decir+V+3C+Condicional+3P+Sg:^oiría #;
-decir+V+3C+Condicional+1P+Pl:^oiríamos #;
-decir+V+3C+Condicional+2P+Pl:^oiríais #;
-decir+V+3C+Condicional+3P+Pl:^oirían #;
+decir+V+3C+Condicional+1P+Sg:^diría #;
+decir+V+3C+Condicional+2P+Sg:^dirías #;
+decir+V+3C+Condicional+3P+Sg:^diría #;
+decir+V+3C+Condicional+1P+Pl:^diríamos #;
+decir+V+3C+Condicional+2P+Pl:^diríais #;
+decir+V+3C+Condicional+3P+Pl:^dirían #;
 
 decir+V+3C+SubjuntivoPresente+1P+Sg:^diga #;
 decir+V+3C+SubjuntivoPresente+2P+Sg:^digas #;
@@ -452,11 +462,89 @@ decir+V+3C+SubjuntivoFuturo+1P+Pl:^dijéremos #;
 decir+V+3C+SubjuntivoFuturo+2P+Pl:^dijereis #;
 decir+V+3C+SubjuntivoFuturo+3P+Pl:^dijeren #;
 
-decir+V+3C+Affdecirmativo+2P+Sg:^di #;
-decir+V+3C+Affdecirmativo+3P+Sg:^diga #;
-decir+V+3C+Affdecirmativo+1P+Pl:^digamos #;
-decir+V+3C+Affdecirmativo+2P+Pl:^decid #;
-decir+V+3C+Affdecirmativo+3P+Pl:^digan #;
+decir+V+3C+Affirmativo+2P+Sg:^di #;
+decir+V+3C+Affirmativo+3P+Sg:^diga #;
+decir+V+3C+Affirmativo+1P+Pl:^digamos #;
+decir+V+3C+Affirmativo+2P+Pl:^decid #;
+decir+V+3C+Affirmativo+3P+Pl:^digan #;
+
+
+##### redecir #####
+redecir+V+3C+Infinitivo:^redecir #;
+redecir+V+3C+Participio+Sg+Masculino:^redicho #;
+redecir+V+3C+Participio+Pl+Masculino:^redichos #;
+redecir+V+3C+Participio+Sg+Feminino:^redicha #;
+redecir+V+3C+Participio+Pl+Feminino:^redichas #;
+redecir+V+3C+Gerundio:^rediciendo #;
+
+redecir+V+3C+PresenteIndicativo+1P+Sg:^redigo #;
+redecir+V+3C+PresenteIndicativo+2P+Sg:^redices #;
+redecir+V+3C+PresenteIndicativo+3P+Sg:^redice #;
+redecir+V+3C+PresenteIndicativo+1P+Pl:^redecimos #;
+redecir+V+3C+PresenteIndicativo+2P+Pl:^redecís #;
+redecir+V+3C+PresenteIndicativo+3P+Pl:^redicen #;
+
+redecir+V+3C+PreteritoImperfecto+1P+Sg:^redecía #;
+redecir+V+3C+PreteritoImperfecto+2P+Sg:^redecías #;
+redecir+V+3C+PreteritoImperfecto+3P+Sg:^redecía #;
+redecir+V+3C+PreteritoImperfecto+1P+Pl:^redecíamos #;
+redecir+V+3C+PreteritoImperfecto+2P+Pl:^redecíais #;
+redecir+V+3C+PreteritoImperfecto+3P+Pl:^redecían #;
+
+redecir+V+3C+PreteritoIndefiniredo+1P+Sg:^redije #;
+redecir+V+3C+PreteritoIndefiniredo+2P+Sg:^redijiste #;
+redecir+V+3C+PreteritoIndefiniredo+3P+Sg:^redijo #;
+redecir+V+3C+PreteritoIndefiniredo+1P+Pl:^redijimos #;
+redecir+V+3C+PreteritoIndefiniredo+2P+Pl:^redijisteis #;
+redecir+V+3C+PreteritoIndefiniredo+3P+Pl:^redijeron #;
+
+redecir+V+3C+Futuro+1P+Sg:^rediré #;
+redecir+V+3C+Futuro+2P+Sg:^redirás #;
+redecir+V+3C+Futuro+3P+Sg:^redirá #;
+redecir+V+3C+Futuro+1P+Pl:^rediremos #;
+redecir+V+3C+Futuro+2P+Pl:^rediréis #;
+redecir+V+3C+Futuro+3P+Pl:^redirán #;
+
+redecir+V+3C+Condicional+1P+Sg:^rediría #;
+redecir+V+3C+Condicional+2P+Sg:^redirías #;
+redecir+V+3C+Condicional+3P+Sg:^rediría #;
+redecir+V+3C+Condicional+1P+Pl:^rediríamos #;
+redecir+V+3C+Condicional+2P+Pl:^rediríais #;
+redecir+V+3C+Condicional+3P+Pl:^redirían #;
+
+redecir+V+3C+SubjuntivoPresente+1P+Sg:^rediga #;
+redecir+V+3C+SubjuntivoPresente+2P+Sg:^redigas #;
+redecir+V+3C+SubjuntivoPresente+3P+Sg:^rediga #;
+redecir+V+3C+SubjuntivoPresente+1P+Pl:^redigamos #;
+redecir+V+3C+SubjuntivoPresente+2P+Pl:^redigáis #;
+redecir+V+3C+SubjuntivoPresente+3P+Pl:^redigan #;
+
+redecir+V+3C+SubjuntivoImperfecto+1P+Sg:^redijera #;
+redecir+V+3C+SubjuntivoImperfecto+2P+Sg:^redijeras #;
+redecir+V+3C+SubjuntivoImperfecto+3P+Sg:^redijera #;
+redecir+V+3C+SubjuntivoImperfecto+1P+Pl:^redijéramos #;
+redecir+V+3C+SubjuntivoImperfecto+2P+Pl:^redijerais #;
+redecir+V+3C+SubjuntivoImperfecto+3P+Pl:^redijeran #;
+
+redecir+V+3C+SubjuntivoPosesivo+1P+Sg:^redijese #;
+redecir+V+3C+SubjuntivoPosesivo+2P+Sg:^redijeses #;
+redecir+V+3C+SubjuntivoPosesivo+3P+Sg:^redijese #;
+redecir+V+3C+SubjuntivoPosesivo+1P+Pl:^redijésemos #;
+redecir+V+3C+SubjuntivoPosesivo+2P+Pl:^redijeseis #;
+redecir+V+3C+SubjuntivoPosesivo+3P+Pl:^redijesen #;
+
+redecir+V+3C+SubjuntivoFuturo+1P+Sg:^redijere #;
+redecir+V+3C+SubjuntivoFuturo+2P+Sg:^redijeres #;
+redecir+V+3C+SubjuntivoFuturo+3P+Sg:^redijere #;
+redecir+V+3C+SubjuntivoFuturo+1P+Pl:^redijéremos #;
+redecir+V+3C+SubjuntivoFuturo+2P+Pl:^redijereis #;
+redecir+V+3C+SubjuntivoFuturo+3P+Pl:^redijeren #;
+
+redecir+V+3C+Affirmativo+2P+Sg:^redi #;
+redecir+V+3C+Affirmativo+3P+Sg:^rediga #;
+redecir+V+3C+Affirmativo+1P+Pl:^redigamos #;
+redecir+V+3C+Affirmativo+2P+Pl:^redecired #;
+redecir+V+3C+Affirmativo+3P+Pl:^redigan #;
 
 
 ##### hacer (to do) #####
