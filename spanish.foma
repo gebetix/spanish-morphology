@@ -1,3 +1,9 @@
+##### Insertion of 'g' after 'n' in some verbs of 1P #####
+define GtoNInsertion [..] -> g || n _ "^" o ;
+
+##### Replacement of 'c' -> 'g' in some verbs of 1P #####
+define CReplacement c -> g || _ "^" o ;
+
 ##### Replacement of 'z'/'x' for 'c' in plurals #####
 define XZReplacement x -> c || _ e "^" s ,,
 					 z -> c || _ e "^" s ; 
@@ -14,7 +20,9 @@ define Lexicon;
 define Grammar 
                Lexicon .o.
 			   EInsertion .o.
+			   GtoNInsertion .o.
 			   XZReplacement .o.
+			   CReplacement .o.
                Cleanup;
 			   
 regex Grammar;
