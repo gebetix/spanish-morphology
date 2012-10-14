@@ -1,4 +1,14 @@
-##### Replacement of 'z'/'x' for 'c' in plurals #####
+##### Replacement of 'i' for 'y' between 'u' and 'a'/'e'/'o' #####
+define ItoYReplacement i -> y || u "^" _ a | "\u00E1" | e | "\u00E9" | o | "\u00F3" ;
+
+##### Insertion of 'y' between u and vovels #####
+define YInsertion [..] -> y || u _ "^" a | "^" "\u00E1" | "^" e | "^" "\u00E9" | "^" o | "^" "\u00F3" ;
+
+##### Replacement of 'c' for 'zc' before 'a'/'o' #####
+define CtoZCReplacement c -> z c || _ "^" a | "^" "\u00E1" | "^" o | "^" "\u00F3" ;
+
+
+##### Replacement of 'z'/'x' for 'c' in plural noun/adj #####
 define XZReplacement x -> c || _ e "^" s ,,
 					 z -> c || _ e "^" s ; 
 
@@ -13,8 +23,11 @@ define Lexicon;
 
 define Grammar 
                Lexicon .o.
-	       EInsertion .o.
-	       XZReplacement .o.
+			   ItoYReplacement .o.
+			   YInsertion .o.
+			   CtoZCReplacement .o.
+			   EInsertion .o.
+			   XZReplacement .o.
                Cleanup;
 			   
 regex Grammar;
