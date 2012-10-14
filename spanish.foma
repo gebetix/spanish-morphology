@@ -10,7 +10,8 @@ define FinalDeletion a r -> 0 || _ 0 ,,
 ##### Insert of suffix, missremoved before #####
 define SuffixRestoration ;
 
-read lexc spanish.lexc
+#read lexc spanish.lexc
+read lexc full.lexc
 define Lexicon;
 
 define Grammar Lexicon .o.
