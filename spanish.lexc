@@ -37,7 +37,7 @@ ar+V+1C+PreteritoImperfecto+3P+Pl:^aban #;
 
 ar+V+1C+PreteritoIndefinido+1P+Sg:^é #;
 ar+V+1C+PreteritoIndefinido+2P+Sg:^aste #;
-ar+V+1C+PreteritoIndefinido+2P+Sg:^ó #;
+ar+V+1C+PreteritoIndefinido+3P+Sg:^ó #;
 ar+V+1C+PreteritoIndefinido+1P+Pl:^amos #;
 ar+V+1C+PreteritoIndefinido+2P+Pl:^asteis #;
 ar+V+1C+PreteritoIndefinido+3P+Pl:^aron #;
