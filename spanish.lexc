@@ -64,10 +64,14 @@ LEXICON Verb
 ab V1 ;
 abaj V1 ;
 agarb V1 ;
+encontr V1 ;
+esforz V1 ;
 ca V2 ;
 conoc V2 ;
 pertenec V2 ;
 apetec V2 ;
+volv V2 ;
+llov V2 ;
 viv V3 ;
 traduc V3 ;
 introduc V3 ;
@@ -1722,7 +1726,7 @@ ar+V+1C+Affirmativo+3P+Pl:^en #;
 ########## Second Conjugación Verbs ##############
 LEXICON V2
 
-er+V+2C+Invinitivo:^er #;
+er+V+2C+Infinitivo:^er #;
 er+V+2C+Participio+Sg+Masculino:^ido #;
 er+V+2C+Participio+Pl+Masculino:^idos #;
 er+V+2C+Participio+Sg+Feminino:^ida #;
