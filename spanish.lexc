@@ -380,6 +380,7 @@ estar+V+1C+Affirmativo+1P+Pl:^estemos #;
 estar+V+1C+Affirmativo+2P+Pl:^estad #;
 estar+V+1C+Affirmativo+3P+Pl:^estén #;
 
+
 ##### decir (to speak) #####
 decir+V+3C+Infinitivo:^decir #;
 decir+V+3C+Participio+Sg+Masculino:^dicho #;
@@ -456,6 +457,7 @@ decir+V+3C+Affdecirmativo+3P+Sg:^diga #;
 decir+V+3C+Affdecirmativo+1P+Pl:^digamos #;
 decir+V+3C+Affdecirmativo+2P+Pl:^decid #;
 decir+V+3C+Affdecirmativo+3P+Pl:^digan #;
+
 
 ##### hacer (to do) #####
 hacer+V+2C+Infinitivo:^hacer #;
@@ -534,6 +536,7 @@ hacer+V+2C+Affirmativo+1P+Pl:^hagamos #;
 hacer+V+2C+Affirmativo+2P+Pl:^hagáis #;
 hacer+V+2C+Affirmativo+3P+Pl:^hagan #;
 
+
 ##### poner (to put) #####
 poner+V+2C+Infinitivo:^poner #;
 poner+V+2C+Participio+Sg+Masculino:^puesto #;
@@ -610,6 +613,7 @@ poner+V+2C+Affirmativo+3P+Sg:^ponga #;
 poner+V+2C+Affirmativo+1P+Pl:^pongamos #;
 poner+V+2C+Affirmativo+2P+Pl:^pongáis #;
 poner+V+2C+Affirmativo+3P+Pl:^pongan #;
+
 
 ##### saber (to know) #####
 saber+V+2C+Infinitivo:^saber #;
@@ -688,6 +692,7 @@ saber+V+2C+Affirmativo+1P+Pl:^sepamos #;
 saber+V+2C+Affirmativo+2P+Pl:^sepáis #;
 saber+V+2C+Affirmativo+3P+Pl:^sepan #;
 
+
 ##### tener (to have) #####
 tener+V+2C+Infinitivo:^tener #;
 tener+V+2C+Participio+Sg+Masculino:^tenido #;
@@ -764,6 +769,7 @@ tener+V+2C+Affirmativo+3P+Sg:^tenga #;
 tener+V+2C+Affirmativo+1P+Pl:^tengamos #;
 tener+V+2C+Affirmativo+2P+Pl:^tened #;
 tener+V+2C+Affirmativo+3P+Pl:^tengan #;
+
 
 ##### poder (to can) #####
 poder+V+2C+Infinitivo:^poder #;
@@ -842,6 +848,7 @@ poder+V+2C+Affirmativo+1P+Pl:^podamos #;
 poder+V+2C+Affirmativo+2P+Pl:^poded #;
 poder+V+2C+Affirmativo+3P+Pl:^puedan #;
 
+
 ##### andar #####
 andar+V+1C+Infinitivo:^andar #;
 andar+V+1C+Participio+Sg+Masculino:^andado #;
@@ -918,6 +925,7 @@ andar+V+1C+Affirmativo+3P+Sg:^ande #;
 andar+V+1C+Affirmativo+1P+Pl:^andemos #;
 andar+V+1C+Affirmativo+2P+Pl:^andéis #;
 andar+V+1C+Affirmativo+3P+Pl:^anden #;
+
 
 ##### dar (to give) #####
 dar+V+1C+Infinitivo:^dar #;
@@ -996,6 +1004,7 @@ dar+V+1C+Affirmativo+1P+Pl:^demos #;
 dar+V+1C+Affirmativo+2P+Pl:^dad #;
 dar+V+1C+Affirmativo+3P+Pl:^den #;
 
+
 ##### haber (to have) #####
 haber+V+2C+Infinitivo:^haber #;
 haber+V+2C+Participio+Sg+Masculino:^habido #;
@@ -1073,6 +1082,7 @@ haber+V+2C+Affirmativo+1P+Pl:^hayamos #;
 haber+V+2C+Affirmativo+2P+Pl:^habed #;
 haber+V+2C+Affirmativo+3P+Pl:^hayan #;
 
+
 ##### oir (to hear) #####
 oir+V+3C+Infinitivo:^oir #;
 oir+V+3C+Participio+Sg+Masculino:^oído #;
@@ -1144,11 +1154,12 @@ oir+V+3C+SubjuntivoFuturo+1P+Pl:^oyéremos #;
 oir+V+3C+SubjuntivoFuturo+2P+Pl:^oyereis #;
 oir+V+3C+SubjuntivoFuturo+3P+Pl:^oyeren #;
 
-oir+V+3C+Affoirmativo+2P+Sg:^oye #;
-oir+V+3C+Affoirmativo+3P+Sg:^oiga #;
-oir+V+3C+Affoirmativo+1P+Pl:^oigamos #;
-oir+V+3C+Affoirmativo+2P+Pl:^oíd #;
-oir+V+3C+Affoirmativo+3P+Pl:^oigan #;
+oir+V+3C+Affirmativo+2P+Sg:^oye #;
+oir+V+3C+Affirmativo+3P+Sg:^oiga #;
+oir+V+3C+Affirmativo+1P+Pl:^oigamos #;
+oir+V+3C+Affirmativo+2P+Pl:^oíd #;
+oir+V+3C+Affirmativo+3P+Pl:^oigan #;
+
 
 ##### querer (to like) #####
 querer+V+2C+Infinitivo:^querer #;
@@ -1227,6 +1238,7 @@ querer+V+2C+Affirmativo+1P+Pl:^queramos #;
 querer+V+2C+Affirmativo+2P+Pl:^quered #;
 querer+V+2C+Affirmativo+3P+Pl:^quieran #;
 
+
 ##### venir (to come) #####
 venir+V+3C+Infinitivo:^venir #;
 venir+V+3C+Participio+Sg+Masculino:^venido #;
@@ -1298,11 +1310,245 @@ venir+V+3C+SubjuntivoFuturo+1P+Pl:^viniéremos #;
 venir+V+3C+SubjuntivoFuturo+2P+Pl:^viniereis #;
 venir+V+3C+SubjuntivoFuturo+3P+Pl:^vinieren #;
 
-venir+V+3C+Affvenirmativo+2P+Sg:^ven #;
-venir+V+3C+Affvenirmativo+3P+Sg:^venga #;
-venir+V+3C+Affvenirmativo+1P+Pl:^vengamos #;
-venir+V+3C+Affvenirmativo+2P+Pl:^venid #;
-venir+V+3C+Affvenirmativo+3P+Pl:^vengan #;
+venir+V+3C+Affirmativo+2P+Sg:^ven #;
+venir+V+3C+Affirmativo+3P+Sg:^venga #;
+venir+V+3C+Affirmativo+1P+Pl:^vengamos #;
+venir+V+3C+Affirmativo+2P+Pl:^venid #;
+venir+V+3C+Affirmativo+3P+Pl:^vengan #;
+
+
+##### caer #####
+caer+V+2C+Infinitivo:^caer #;
+caer+V+2C+Participio+Sg+Masculino:^caído #;
+caer+V+2C+Participio+Pl+Masculino:^caídos #;
+caer+V+2C+Participio+Sg+Feminino:^caída #;
+caer+V+2C+Participio+Pl+Feminino:^caídas #;
+caer+V+2C+Gerundio:^cayendo #;
+
+caer+V+2C+PresenteIndicativo+1P+Sg:^caigo #;
+caer+V+2C+PresenteIndicativo+2P+Sg:^caes #;
+caer+V+2C+PresenteIndicativo+3P+Sg:^cae #;
+caer+V+2C+PresenteIndicativo+1P+Pl:^caemos #;
+caer+V+2C+PresenteIndicativo+2P+Pl:^caéis #;
+caer+V+2C+PresenteIndicativo+3P+Pl:^caen #;
+
+caer+V+2C+PreteritoImperfecto+1P+Sg:^caía #;
+caer+V+2C+PreteritoImperfecto+2P+Sg:^caías #;
+caer+V+2C+PreteritoImperfecto+3P+Sg:^caía #;
+caer+V+2C+PreteritoImperfecto+1P+Pl:^caíamos #;
+caer+V+2C+PreteritoImperfecto+2P+Pl:^caíais #;
+caer+V+2C+PreteritoImperfecto+3P+Pl:^caían #;
+
+caer+V+2C+PreteritoIndefinido+1P+Sg:^caí #;
+caer+V+2C+PreteritoIndefinido+2P+Sg:^caíste #;
+caer+V+2C+PreteritoIndefinido+3P+Sg:^cayó #;
+caer+V+2C+PreteritoIndefinido+1P+Pl:^caímos #;
+caer+V+2C+PreteritoIndefinido+2P+Pl:^caísteis #;
+caer+V+2C+PreteritoIndefinido+3P+Pl:^cayeron #;
+
+caer+V+2C+Futuro+1P+Sg:^caeré #;
+caer+V+2C+Futuro+2P+Sg:^caerás #;
+caer+V+2C+Futuro+3P+Sg:^caerá #;
+caer+V+2C+Futuro+1P+Pl:^caeremos #;
+caer+V+2C+Futuro+2P+Pl:^caeréis #;
+caer+V+2C+Futuro+3P+Pl:^caerán #;
+
+caer+V+2C+Condicional+1P+Sg:^caería #;
+caer+V+2C+Condicional+2P+Sg:^caerías #;
+caer+V+2C+Condicional+3P+Sg:^caería #;
+caer+V+2C+Condicional+1P+Pl:^caeríamos #;
+caer+V+2C+Condicional+2P+Pl:^caeríais #;
+caer+V+2C+Condicional+3P+Pl:^caerían #;
+
+caer+V+2C+SubjuntivoPresente+1P+Sg:^caiga #;
+caer+V+2C+SubjuntivoPresente+2P+Sg:^caigas #;
+caer+V+2C+SubjuntivoPresente+3P+Sg:^caiga #;
+caer+V+2C+SubjuntivoPresente+1P+Pl:^caigamos #;
+caer+V+2C+SubjuntivoPresente+2P+Pl:^caigáis #;
+caer+V+2C+SubjuntivoPresente+3P+Pl:^caigan #;
+
+caer+V+2C+SubjuntivoImperfecto+1P+Sg:^cayera #;
+caer+V+2C+SubjuntivoImperfecto+2P+Sg:^cayeras #;
+caer+V+2C+SubjuntivoImperfecto+3P+Sg:^cayera #;
+caer+V+2C+SubjuntivoImperfecto+1P+Pl:^cayéramos #;
+caer+V+2C+SubjuntivoImperfecto+2P+Pl:^cayerais #;
+caer+V+2C+SubjuntivoImperfecto+3P+Pl:^cayeran #;
+
+caer+V+2C+SubjuntivoPosesivo+1P+Sg:^cayese #;
+caer+V+2C+SubjuntivoPosesivo+2P+Sg:^cayeses #;
+caer+V+2C+SubjuntivoPosesivo+3P+Sg:^cayese #;
+caer+V+2C+SubjuntivoPosesivo+1P+Pl:^cayésemos #;
+caer+V+2C+SubjuntivoPosesivo+2P+Pl:^cayeseis #;
+caer+V+2C+SubjuntivoPosesivo+3P+Pl:^cayesen #;
+
+caer+V+2C+SubjuntivoFuturo+1P+Sg:^cayere #;
+caer+V+2C+SubjuntivoFuturo+2P+Sg:^cayeres #;
+caer+V+2C+SubjuntivoFuturo+3P+Sg:^cayere #;
+caer+V+2C+SubjuntivoFuturo+1P+Pl:^cayéremos #;
+caer+V+2C+SubjuntivoFuturo+2P+Pl:^cayereis #;
+caer+V+2C+SubjuntivoFuturo+3P+Pl:^cayeren #;
+
+caer+V+2C+Affirmativo+2P+Sg:^cae #;
+caer+V+2C+Affirmativo+3P+Sg:^caiga #;
+caer+V+2C+Affirmativo+1P+Pl:^caigamos #;
+caer+V+2C+Affirmativo+2P+Pl:^caed #;
+caer+V+2C+Affirmativo+3P+Pl:^caigan #;
+
+
+##### salir #####
+salir+V+3C+Infinitivo:^salir #;
+salir+V+3C+Participio+Sg+Masculino:^salido #;
+salir+V+3C+Participio+Pl+Masculino:^salidos #;
+salir+V+3C+Participio+Sg+Feminino:^salida #;
+salir+V+3C+Participio+Pl+Feminino:^salidas #;
+salir+V+3C+Gerundio:^saliendo #;
+
+salir+V+3C+PresenteIndicativo+1P+Sg:^salgo #;
+salir+V+3C+PresenteIndicativo+2P+Sg:^sales #;
+salir+V+3C+PresenteIndicativo+3P+Sg:^sale #;
+salir+V+3C+PresenteIndicativo+1P+Pl:^salimos #;
+salir+V+3C+PresenteIndicativo+2P+Pl:^salís #;
+salir+V+3C+PresenteIndicativo+3P+Pl:^salen #;
+
+salir+V+3C+PreteritoImperfecto+1P+Sg:^salía #;
+salir+V+3C+PreteritoImperfecto+2P+Sg:^salías #;
+salir+V+3C+PreteritoImperfecto+3P+Sg:^salía #;
+salir+V+3C+PreteritoImperfecto+1P+Pl:^salíamos #;
+salir+V+3C+PreteritoImperfecto+2P+Pl:^salíais #;
+salir+V+3C+PreteritoImperfecto+3P+Pl:^salían #;
+
+salir+V+3C+PreteritoIndefinido+1P+Sg:^sale #;
+salir+V+3C+PreteritoIndefinido+2P+Sg:^saliste #;
+salir+V+3C+PreteritoIndefinido+3P+Sg:^salo #;
+salir+V+3C+PreteritoIndefinido+1P+Pl:^salimos #;
+salir+V+3C+PreteritoIndefinido+2P+Pl:^salisteis #;
+salir+V+3C+PreteritoIndefinido+3P+Pl:^saleron #;
+
+salir+V+3C+Futuro+1P+Sg:^saldré #;
+salir+V+3C+Futuro+2P+Sg:^saldrás #;
+salir+V+3C+Futuro+3P+Sg:^saldrá #;
+salir+V+3C+Futuro+1P+Pl:^saldremos #;
+salir+V+3C+Futuro+2P+Pl:^saldréis #;
+salir+V+3C+Futuro+3P+Pl:^saldrán #;
+
+salir+V+3C+Consaldcional+1P+Sg:^saldría #;
+salir+V+3C+Consaldcional+2P+Sg:^saldrías #;
+salir+V+3C+Consaldcional+3P+Sg:^saldría #;
+salir+V+3C+Consaldcional+1P+Pl:^saldríamos #;
+salir+V+3C+Consaldcional+2P+Pl:^saldríais #;
+salir+V+3C+Consaldcional+3P+Pl:^saldrían #;
+
+salir+V+3C+SubjuntivoPresente+1P+Sg:^salga #;
+salir+V+3C+SubjuntivoPresente+2P+Sg:^salgas #;
+salir+V+3C+SubjuntivoPresente+3P+Sg:^salga #;
+salir+V+3C+SubjuntivoPresente+1P+Pl:^salgamos #;
+salir+V+3C+SubjuntivoPresente+2P+Pl:^salgáis #;
+salir+V+3C+SubjuntivoPresente+3P+Pl:^salgan #;
+
+salir+V+3C+SubjuntivoImperfecto+1P+Sg:^saliera #;
+salir+V+3C+SubjuntivoImperfecto+2P+Sg:^salieras #;
+salir+V+3C+SubjuntivoImperfecto+3P+Sg:^saliera #;
+salir+V+3C+SubjuntivoImperfecto+1P+Pl:^saliéramos #;
+salir+V+3C+SubjuntivoImperfecto+2P+Pl:^salierais #;
+salir+V+3C+SubjuntivoImperfecto+3P+Pl:^salieran #;
+
+salir+V+3C+SubjuntivoPosesivo+1P+Sg:^saliese #;
+salir+V+3C+SubjuntivoPosesivo+2P+Sg:^salieses #;
+salir+V+3C+SubjuntivoPosesivo+3P+Sg:^saliese #;
+salir+V+3C+SubjuntivoPosesivo+1P+Pl:^saliésemos #;
+salir+V+3C+SubjuntivoPosesivo+2P+Pl:^salieseis #;
+salir+V+3C+SubjuntivoPosesivo+3P+Pl:^saliesen #;
+
+salir+V+3C+SubjuntivoFuturo+1P+Sg:^saliere #;
+salir+V+3C+SubjuntivoFuturo+2P+Sg:^salieres #;
+salir+V+3C+SubjuntivoFuturo+3P+Sg:^saliere #;
+salir+V+3C+SubjuntivoFuturo+1P+Pl:^saliéremos #;
+salir+V+3C+SubjuntivoFuturo+2P+Pl:^saliereis #;
+salir+V+3C+SubjuntivoFuturo+3P+Pl:^salieren #;
+
+salir+V+3C+Affirmativo+2P+Sg:^sal #;
+salir+V+3C+Affirmativo+3P+Sg:^salga #;
+salir+V+3C+Affirmativo+1P+Pl:^salgamos #;
+salir+V+3C+Affirmativo+2P+Pl:^salid #;
+salir+V+3C+Affirmativo+3P+Pl:^salgan #;
+
+
+##### traer #####
+traer+V+2C+Infinitivo:^traer #;
+traer+V+2C+Participio+Sg+Masculino:^traído #;
+traer+V+2C+Participio+Pl+Masculino:^traídos #;
+traer+V+2C+Participio+Sg+Feminino:^traída #;
+traer+V+2C+Participio+Pl+Feminino:^traídas #;
+traer+V+2C+Gerundio:^trayendo #;
+
+traer+V+2C+PresenteInditrativo+1P+Sg:^traigo #;
+traer+V+2C+PresenteInditrativo+2P+Sg:^traes #;
+traer+V+2C+PresenteInditrativo+3P+Sg:^trae #;
+traer+V+2C+PresenteInditrativo+1P+Pl:^traemos #;
+traer+V+2C+PresenteInditrativo+2P+Pl:^traéis #;
+traer+V+2C+PresenteInditrativo+3P+Pl:^traen #;
+
+traer+V+2C+PreteritoImperfecto+1P+Sg:^traía #;
+traer+V+2C+PreteritoImperfecto+2P+Sg:^traías #;
+traer+V+2C+PreteritoImperfecto+3P+Sg:^traía #;
+traer+V+2C+PreteritoImperfecto+1P+Pl:^traíamos #;
+traer+V+2C+PreteritoImperfecto+2P+Pl:^traíais #;
+traer+V+2C+PreteritoImperfecto+3P+Pl:^traían #;
+
+traer+V+2C+PreteritoIndefinido+1P+Sg:^traje #;
+traer+V+2C+PreteritoIndefinido+2P+Sg:^trajiste #;
+traer+V+2C+PreteritoIndefinido+3P+Sg:^trajo #;
+traer+V+2C+PreteritoIndefinido+1P+Pl:^trajimos #;
+traer+V+2C+PreteritoIndefinido+2P+Pl:^trajisteis #;
+traer+V+2C+PreteritoIndefinido+3P+Pl:^trajeron #;
+
+traer+V+2C+Futuro+1P+Sg:^traeré #;
+traer+V+2C+Futuro+2P+Sg:^traerás #;
+traer+V+2C+Futuro+3P+Sg:^traerá #;
+traer+V+2C+Futuro+1P+Pl:^traeremos #;
+traer+V+2C+Futuro+2P+Pl:^traeréis #;
+traer+V+2C+Futuro+3P+Pl:^traerán #;
+
+traer+V+2C+Condicional+1P+Sg:^traería #;
+traer+V+2C+Condicional+2P+Sg:^traerías #;
+traer+V+2C+Condicional+3P+Sg:^traería #;
+traer+V+2C+Condicional+1P+Pl:^traeríamos #;
+traer+V+2C+Condicional+2P+Pl:^traeríais #;
+traer+V+2C+Condicional+3P+Pl:^traerían #;
+
+traer+V+2C+SubjuntivoPresente+1P+Sg:^traiga #;
+traer+V+2C+SubjuntivoPresente+2P+Sg:^traigas #;
+traer+V+2C+SubjuntivoPresente+3P+Sg:^traiga #;
+traer+V+2C+SubjuntivoPresente+1P+Pl:^traigamos #;
+traer+V+2C+SubjuntivoPresente+2P+Pl:^traigáis #;
+traer+V+2C+SubjuntivoPresente+3P+Pl:^traigan #;
+
+traer+V+2C+SubjuntivoImperfecto+1P+Sg:^trajera #;
+traer+V+2C+SubjuntivoImperfecto+2P+Sg:^trajeras #;
+traer+V+2C+SubjuntivoImperfecto+3P+Sg:^trajera #;
+traer+V+2C+SubjuntivoImperfecto+1P+Pl:^trajéramos #;
+traer+V+2C+SubjuntivoImperfecto+2P+Pl:^trajerais #;
+traer+V+2C+SubjuntivoImperfecto+3P+Pl:^trajeran #;
+
+traer+V+2C+SubjuntivoPosesivo+1P+Sg:^trajese #;
+traer+V+2C+SubjuntivoPosesivo+2P+Sg:^trajeses #;
+traer+V+2C+SubjuntivoPosesivo+3P+Sg:^trajese #;
+traer+V+2C+SubjuntivoPosesivo+1P+Pl:^trajésemos #;
+traer+V+2C+SubjuntivoPosesivo+2P+Pl:^trajeseis #;
+traer+V+2C+SubjuntivoPosesivo+3P+Pl:^trajesen #;
+
+traer+V+2C+SubjuntivoFuturo+1P+Sg:^trajere #;
+traer+V+2C+SubjuntivoFuturo+2P+Sg:^trajeres #;
+traer+V+2C+SubjuntivoFuturo+3P+Sg:^trajere #;
+traer+V+2C+SubjuntivoFuturo+1P+Pl:^trajéremos #;
+traer+V+2C+SubjuntivoFuturo+2P+Pl:^trajereis #;
+traer+V+2C+SubjuntivoFuturo+3P+Pl:^trajeren #;
+
+traer+V+2C+Affirmativo+2P+Sg:^trae #;
+traer+V+2C+Affirmativo+3P+Sg:^traiga #;
+traer+V+2C+Affirmativo+1P+Pl:^traigamos #;
+traer+V+2C+Affirmativo+2P+Pl:^traed #;
+traer+V+2C+Affirmativo+3P+Pl:^traigan #;
 
 
 ########## First Conjugación Verbs ##############
