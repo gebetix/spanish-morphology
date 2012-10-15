@@ -1,1883 +1,266 @@
-!!!spanish.lexc!!!
+!!! spanish.lexc !!!
 
-Multichar_Symbols &OUE &IY +1C +2C +3C +V +Sg +Pl +1P +2P +3P +Masculino +Feminino +Infinitivo +PresenteIndicativo +PreteritoImperfecto +PreteritoIndefinido +Futuro +Condicional +SubjuntivoPresente +SubjuntivoImperfecto +SubjuntivoPosesivo +SubjuntivoFuturo +Affirmativo +Gerundio +Participio +Infinitivo ll ch
-
+Multichar_Symbols +V +1C +2C +3C +1P +2P +3P +Sg +Pl +PresenteIndicativo +PreteritoImperfecto +PreteritoIndefinido +Futuro +Condicional +SubjuntivoPresente +SubjuntivoImperfecto +SubjuntivoPosesivo +SubjuntivoFuturo +Affirmativo +Masculino +Feminino
 
 LEXICON Root
-
-Adj ;
-Noun ;
-Verb ;
-
-
-########## LOS ADJETIVOS ######################################################
-LEXICON Adj
-
-descoligado Ainf ;
-español Ainf ;
-difícil Ainf ;
-grande Ainf ;
-baladí Ainf ;
-blanco Ainf ;
-feliz Ainf ;
-voraz Ainf ;
+A;
+N;
+V1;
+V2;
+V3;
 
 
-########## Regular adjectives' rules ############
-LEXICON Ainf
-
+###########################################################
+LEXICON A
 +A+Sg:^0 #;
 +A+Pl:^s #;
 
 
-########## LOS NOMBRES ########################################################
-LEXICON Noun
-
-alelotipo Ninf ;
-banastero Ninf ;
-cipera Ninf ;
-empollón Ninf ;
-empopada Ninf ;
-óryx Ninf ;
-libro Ninf ;
-luz Ninf ;
-ñoñez Ninf ;
-penetrador Ninf ;
-peneuvista Ninf ;
-plácet Ninf ;
-rigurosidad Ninf ;
-quebraza Ninf ;
-
-u+N+Sg:^u #;
-u+N+Pl:^úes #;
-
-########## Singular/Plural for regular nous #####
-LEXICON Ninf
-
+###########################################################
+LEXICON N
 +N+Sg:^0 #;
 +N+Pl:^s #;
 
 
-########## LOS VERBOS #########################################################
-LEXICON Verb
-
-ab V1 ;
-abaj V1 ;
-agarb V1 ;
-encontr V1 ;
-esforz V1 ;
-conoc V2 ;
-ofrec V2 ;
-pertenec V2 ;
-apetec V2 ;
-volv V2 ;
-llov V2 ;
-viv V3 ;
-traduc V3 ;
-introduc V3 ;
-produc V3 ;
-constru V3 ;
-destru V3 ;
-inclu V3 ;
-constitu V3 ;
-
-########## Irregulares ##########################
-
-##### ir (to go) #####
-ir+V+3C+Infinitivo:^ir #;
-ir+V+3C+Participio+Sg+Masculino:^ido #;
-ir+V+3C+Participio+Pl+Masculino:^idos #;
-ir+V+3C+Participio+Sg+Feminino:^ida #;
-ir+V+3C+Participio+Pl+Feminino:^idas #;
-ir+V+3C+Gerundio:^yendo #;
-
-ir+V+3C+PresenteIndicativo+1P+Sg:^voy #;
-ir+V+3C+PresenteIndicativo+2P+Sg:^vas #;
-ir+V+3C+PresenteIndicativo+3P+Sg:^va #;
-ir+V+3C+PresenteIndicativo+1P+Pl:^vamos #;
-ir+V+3C+PresenteIndicativo+2P+Pl:^váis #;
-ir+V+3C+PresenteIndicativo+3P+Pl:^van #;
-
-ir+V+3C+PreteritoImperfecto+1P+Sg:^iba #;
-ir+V+3C+PreteritoImperfecto+2P+Sg:^ibas #;
-ir+V+3C+PreteritoImperfecto+3P+Sg:^iba #;
-ir+V+3C+PreteritoImperfecto+1P+Pl:^íbamos #;
-ir+V+3C+PreteritoImperfecto+2P+Pl:^ibais #;
-ir+V+3C+PreteritoImperfecto+3P+Pl:^iban #;
-
-ir+V+3C+PreteritoIndefinido+1P+Sg:^fui #;
-ir+V+3C+PreteritoIndefinido+2P+Sg:^fuiste #;
-ir+V+3C+PreteritoIndefinido+3P+Sg:^fue #;
-ir+V+3C+PreteritoIndefinido+1P+Pl:^fuimos #;
-ir+V+3C+PreteritoIndefinido+2P+Pl:^fuisteis #;
-ir+V+3C+PreteritoIndefinido+3P+Pl:^fueron #;
-
-ir+V+3C+Futuro+1P+Sg:^iré #;
-ir+V+3C+Futuro+2P+Sg:^irás #;
-ir+V+3C+Futuro+3P+Sg:^irá #;
-ir+V+3C+Futuro+1P+Pl:^iremos #;
-ir+V+3C+Futuro+2P+Pl:^iréis #;
-ir+V+3C+Futuro+3P+Pl:^irán #;
-
-ir+V+3C+Condicional+1P+Sg:^iría #;
-ir+V+3C+Condicional+2P+Sg:^irías #;
-ir+V+3C+Condicional+3P+Sg:^iría #;
-ir+V+3C+Condicional+1P+Pl:^iríamos #;
-ir+V+3C+Condicional+2P+Pl:^iríais #;
-ir+V+3C+Condicional+3P+Pl:^irían #;
-
-ir+V+3C+SubjuntivoPresente+1P+Sg:^vaya #;
-ir+V+3C+SubjuntivoPresente+2P+Sg:^vayas #;
-ir+V+3C+SubjuntivoPresente+3P+Sg:^vaya #;
-ir+V+3C+SubjuntivoPresente+1P+Pl:^vayamos #;
-ir+V+3C+SubjuntivoPresente+2P+Pl:^vayáis #;
-ir+V+3C+SubjuntivoPresente+3P+Pl:^vayan #;
-
-ir+V+3C+SubjuntivoImperfecto+1P+Sg:^fuera #;
-ir+V+3C+SubjuntivoImperfecto+2P+Sg:^fueras #;
-ir+V+3C+SubjuntivoImperfecto+3P+Sg:^fuera #;
-ir+V+3C+SubjuntivoImperfecto+1P+Pl:^fuéramos #;
-ir+V+3C+SubjuntivoImperfecto+2P+Pl:^fuérais #;
-ir+V+3C+SubjuntivoImperfecto+3P+Pl:^fueran #;
-
-ir+V+3C+SubjuntivoPosesivo+1P+Sg:^fuese #;
-ir+V+3C+SubjuntivoPosesivo+2P+Sg:^fueses #;
-ir+V+3C+SubjuntivoPosesivo+3P+Sg:^fuese #;
-ir+V+3C+SubjuntivoPosesivo+1P+Pl:^fuésemos #;
-ir+V+3C+SubjuntivoPosesivo+2P+Pl:^fueseis #;
-ir+V+3C+SubjuntivoPosesivo+3P+Pl:^fuesen #;
-
-ir+V+3C+SubjuntivoFuturo+1P+Sg:^fuere #;
-ir+V+3C+SubjuntivoFuturo+2P+Sg:^fueres #;
-ir+V+3C+SubjuntivoFuturo+3P+Sg:^fuere #;
-ir+V+3C+SubjuntivoFuturo+1P+Pl:^fuéremos #;
-ir+V+3C+SubjuntivoFuturo+2P+Pl:^fuereis #;
-ir+V+3C+SubjuntivoFuturo+3P+Pl:^fueren #;
-
-ir+V+3C+Affirmativo+2P+Sg:^ve #;
-ir+V+3C+Affirmativo+3P+Sg:^vaya #;
-ir+V+3C+Affirmativo+1P+Pl:^vayamos #;
-ir+V+3C+Affirmativo+2P+Pl:^id #;
-ir+V+3C+Affirmativo+3P+Pl:^vayan #;
-
-
-##### ser (to be) #####
-ser+V+2C+Infinitivo:^ser #;
-ser+V+2C+Participio+Sg+Masculino:^sido #;
-ser+V+2C+Participio+Pl+Masculino:^sidos #;
-ser+V+2C+Participio+Sg+Feminino:^sida #;
-ser+V+2C+Participio+Pl+Feminino:^sidas #;
-ser+V+2C+Gerundio:^siendo #;
-
-ser+V+2C+PresenteIndicativo+1P+Sg:^soy #;
-ser+V+2C+PresenteIndicativo+2P+Sg:^eres #;
-ser+V+2C+PresenteIndicativo+3P+Sg:^es #;
-ser+V+2C+PresenteIndicativo+1P+Pl:^somos #;
-ser+V+2C+PresenteIndicativo+2P+Pl:^sois #;
-ser+V+2C+PresenteIndicativo+3P+Pl:^son #;
-
-ser+V+2C+PreteritoImperfecto+1P+Sg:^era #;
-ser+V+2C+PreteritoImperfecto+2P+Sg:^eras #;
-ser+V+2C+PreteritoImperfecto+3P+Sg:^era #;
-ser+V+2C+PreteritoImperfecto+1P+Pl:^éramos #;
-ser+V+2C+PreteritoImperfecto+2P+Pl:^erais #;
-ser+V+2C+PreteritoImperfecto+3P+Pl:^eran #;
-
-ser+V+2C+PreteritoIndefinido+1P+Sg:^fui #;
-ser+V+2C+PreteritoIndefinido+2P+Sg:^fuiste #;
-ser+V+2C+PreteritoIndefinido+3P+Sg:^fue #;
-ser+V+2C+PreteritoIndefinido+1P+Pl:^fuimos #;
-ser+V+2C+PreteritoIndefinido+2P+Pl:^fuisteis #;
-ser+V+2C+PreteritoIndefinido+3P+Pl:^fueron #;
-
-ser+V+2C+Futuro+1P+Sg:^seré #;
-ser+V+2C+Futuro+2P+Sg:^serás #;
-ser+V+2C+Futuro+3P+Sg:^será #;
-ser+V+2C+Futuro+1P+Pl:^seremos #;
-ser+V+2C+Futuro+2P+Pl:^seréis #;
-ser+V+2C+Futuro+3P+Pl:^serán #;
-
-ser+V+2C+Condicional+1P+Sg:^sería #;
-ser+V+2C+Condicional+2P+Sg:^serías #;
-ser+V+2C+Condicional+3P+Sg:^sería #;
-ser+V+2C+Condicional+1P+Pl:^seríamos #;
-ser+V+2C+Condicional+2P+Pl:^seríais #;
-ser+V+2C+Condicional+3P+Pl:^serían #;
-
-ser+V+2C+SubjuntivoPresente+1P+Sg:^sea #;
-ser+V+2C+SubjuntivoPresente+2P+Sg:^seas #;
-ser+V+2C+SubjuntivoPresente+3P+Sg:^sea #;
-ser+V+2C+SubjuntivoPresente+1P+Pl:^seamos #;
-ser+V+2C+SubjuntivoPresente+2P+Pl:^seáis #;
-ser+V+2C+SubjuntivoPresente+3P+Pl:^sean #;
-
-ser+V+2C+SubjuntivoImperfecto+1P+Sg:^fuera #;
-ser+V+2C+SubjuntivoImperfecto+2P+Sg:^fueras #;
-ser+V+2C+SubjuntivoImperfecto+3P+Sg:^fuera #;
-ser+V+2C+SubjuntivoImperfecto+1P+Pl:^fuéramos #;
-ser+V+2C+SubjuntivoImperfecto+2P+Pl:^fuerais #;
-ser+V+2C+SubjuntivoImperfecto+3P+Pl:^fueran #;
-
-ser+V+2C+SubjuntivoPosesivo+1P+Sg:^fuese #;
-ser+V+2C+SubjuntivoPosesivo+2P+Sg:^fueses #;
-ser+V+2C+SubjuntivoPosesivo+3P+Sg:^fuese #;
-ser+V+2C+SubjuntivoPosesivo+1P+Pl:^fuésemos #;
-ser+V+2C+SubjuntivoPosesivo+2P+Pl:^fueseis #;
-ser+V+2C+SubjuntivoPosesivo+3P+Pl:^fuesen #;
-
-ser+V+2C+SubjuntivoFuturo+1P+Sg:^fuere #;
-ser+V+2C+SubjuntivoFuturo+2P+Sg:^fueres #;
-ser+V+2C+SubjuntivoFuturo+3P+Sg:^fuere #;
-ser+V+2C+SubjuntivoFuturo+1P+Pl:^fuéremos #;
-ser+V+2C+SubjuntivoFuturo+2P+Pl:^fuereis #;
-ser+V+2C+SubjuntivoFuturo+3P+Pl:^fueren #;
-
-ser+V+2C+Affirmativo+2P+Sg:^sé #;
-ser+V+2C+Affirmativo+3P+Sg:^sea #;
-ser+V+2C+Affirmativo+1P+Pl:^seamos #;
-ser+V+2C+Affirmativo+2P+Pl:^sed #;
-ser+V+2C+Affirmativo+3P+Pl:^sean #;
-
-
-##### ver (to look) #####
-ver+V+2C+Infinitivo:^ver #;
-ver+V+2C+Participio+Sg+Masculino:^visto #;
-ver+V+2C+Participio+Pl+Masculino:^vistos #;
-ver+V+2C+Participio+Sg+Feminino:^vista #;
-ver+V+2C+Participio+Pl+Feminino:^vistas #;
-ver+V+2C+Gerundio:^viendo #;
-
-ver+V+2C+PresenteIndicativo+1P+Sg:^veo #;
-ver+V+2C+PresenteIndicativo+2P+Sg:^ves #;
-ver+V+2C+PresenteIndicativo+3P+Sg:^ve #;
-ver+V+2C+PresenteIndicativo+1P+Pl:^vemos #;
-ver+V+2C+PresenteIndicativo+2P+Pl:^veis #;
-ver+V+2C+PresenteIndicativo+3P+Pl:^ven #;
-
-ver+V+2C+PreteritoImperfecto+1P+Sg:^veía #;
-ver+V+2C+PreteritoImperfecto+2P+Sg:^veías #;
-ver+V+2C+PreteritoImperfecto+3P+Sg:^veía #;
-ver+V+2C+PreteritoImperfecto+1P+Pl:^veíamos #;
-ver+V+2C+PreteritoImperfecto+2P+Pl:^veíais #;
-ver+V+2C+PreteritoImperfecto+3P+Pl:^veían #;
-
-ver+V+2C+PreteritoIndefinido+1P+Sg:^vi #;
-ver+V+2C+PreteritoIndefinido+2P+Sg:^viste #;
-ver+V+2C+PreteritoIndefinido+3P+Sg:^vio #;
-ver+V+2C+PreteritoIndefinido+1P+Pl:^vimos #;
-ver+V+2C+PreteritoIndefinido+2P+Pl:^visteis #;
-ver+V+2C+PreteritoIndefinido+3P+Pl:^vieron #;
-
-ver+V+2C+Futuro+1P+Sg:^veré #;
-ver+V+2C+Futuro+2P+Sg:^verás #;
-ver+V+2C+Futuro+3P+Sg:^verá #;
-ver+V+2C+Futuro+1P+Pl:^veremos #;
-ver+V+2C+Futuro+2P+Pl:^veréis #;
-ver+V+2C+Futuro+3P+Pl:^verán #;
-
-ver+V+2C+Condicional+1P+Sg:^vería #;
-ver+V+2C+Condicional+2P+Sg:^verías #;
-ver+V+2C+Condicional+3P+Sg:^vería #;
-ver+V+2C+Condicional+1P+Pl:^veríamos #;
-ver+V+2C+Condicional+2P+Pl:^veríais #;
-ver+V+2C+Condicional+3P+Pl:^verían #;
-
-ver+V+2C+SubjuntivoPresente+1P+Sg:^vea #;
-ver+V+2C+SubjuntivoPresente+2P+Sg:^veas #;
-ver+V+2C+SubjuntivoPresente+3P+Sg:^vea #;
-ver+V+2C+SubjuntivoPresente+1P+Pl:^veamos #;
-ver+V+2C+SubjuntivoPresente+2P+Pl:^veáis #;
-ver+V+2C+SubjuntivoPresente+3P+Pl:^vean #;
-
-ver+V+2C+SubjuntivoImperfecto+1P+Sg:^viera #;
-ver+V+2C+SubjuntivoImperfecto+2P+Sg:^vieras #;
-ver+V+2C+SubjuntivoImperfecto+3P+Sg:^viera #;
-ver+V+2C+SubjuntivoImperfecto+1P+Pl:^viéramos #;
-ver+V+2C+SubjuntivoImperfecto+2P+Pl:^vierais #;
-ver+V+2C+SubjuntivoImperfecto+3P+Pl:^vieran #;
-
-ver+V+2C+SubjuntivoPosesivo+1P+Sg:^viese #;
-ver+V+2C+SubjuntivoPosesivo+2P+Sg:^vieses #;
-ver+V+2C+SubjuntivoPosesivo+3P+Sg:^viese #;
-ver+V+2C+SubjuntivoPosesivo+1P+Pl:^viésemos #;
-ver+V+2C+SubjuntivoPosesivo+2P+Pl:^vieseis #;
-ver+V+2C+SubjuntivoPosesivo+3P+Pl:^viesen #;
-
-ver+V+2C+SubjuntivoFuturo+1P+Sg:^viere #;
-ver+V+2C+SubjuntivoFuturo+2P+Sg:^vieres #;
-ver+V+2C+SubjuntivoFuturo+3P+Sg:^viere #;
-ver+V+2C+SubjuntivoFuturo+1P+Pl:^viéremos #;
-ver+V+2C+SubjuntivoFuturo+2P+Pl:^viereis #;
-ver+V+2C+SubjuntivoFuturo+3P+Pl:^vieren #;
-
-ver+V+2C+Affirmativo+2P+Sg:^ve #;
-ver+V+2C+Affirmativo+3P+Sg:^vea #;
-ver+V+2C+Affirmativo+1P+Pl:^veamos #;
-ver+V+2C+Affirmativo+2P+Pl:^ved #;
-ver+V+2C+Affirmativo+3P+Pl:^vean #;
-
-
-##### estar (to be) #####
-estar+V+1C+Infinitivo:^estar #;
-estar+V+1C+Participio+Sg+Masculino:^estado #;
-estar+V+1C+Participio+Pl+Masculino:^estados #;
-estar+V+1C+Participio+Sg+Feminino:^estada #;
-estar+V+1C+Participio+Pl+Feminino:^estadas #;
-estar+V+1C+Gerundio:^estando #;
-
-estar+V+1C+PresenteIndicativo+1P+Sg:^estoy #;
-estar+V+1C+PresenteIndicativo+2P+Sg:^estás #;
-estar+V+1C+PresenteIndicativo+3P+Sg:^está #;
-estar+V+1C+PresenteIndicativo+1P+Pl:^estamos #;
-estar+V+1C+PresenteIndicativo+2P+Pl:^estáis #;
-estar+V+1C+PresenteIndicativo+3P+Pl:^están #;
-
-estar+V+1C+PreteritoImperfecto+1P+Sg:^estaba #;
-estar+V+1C+PreteritoImperfecto+2P+Sg:^estabas #;
-estar+V+1C+PreteritoImperfecto+3P+Sg:^estaba #;
-estar+V+1C+PreteritoImperfecto+1P+Pl:^estábamos #;
-estar+V+1C+PreteritoImperfecto+2P+Pl:^estabais #;
-estar+V+1C+PreteritoImperfecto+3P+Pl:^estaban #;
-
-estar+V+1C+PreteritoIndefinido+1P+Sg:^estuve #;
-estar+V+1C+PreteritoIndefinido+2P+Sg:^estuviste #;
-estar+V+1C+PreteritoIndefinido+3P+Sg:^estuvo #;
-estar+V+1C+PreteritoIndefinido+1P+Pl:^estuvimos #;
-estar+V+1C+PreteritoIndefinido+2P+Pl:^estuvisteis #;
-estar+V+1C+PreteritoIndefinido+3P+Pl:^estuvieron #;
-
-estar+V+1C+Futuro+1P+Sg:^estaré #;
-estar+V+1C+Futuro+2P+Sg:^estarás #;
-estar+V+1C+Futuro+3P+Sg:^estará #;
-estar+V+1C+Futuro+1P+Pl:^estaremos #;
-estar+V+1C+Futuro+2P+Pl:^estaréis #;
-estar+V+1C+Futuro+3P+Pl:^estarán #;
-
-estar+V+1C+Condicional+1P+Sg:^estaría #;
-estar+V+1C+Condicional+2P+Sg:^estarías #;
-estar+V+1C+Condicional+3P+Sg:^estaría #;
-estar+V+1C+Condicional+1P+Pl:^estaríamos #;
-estar+V+1C+Condicional+2P+Pl:^estaríais #;
-estar+V+1C+Condicional+3P+Pl:^estarían #;
-
-estar+V+1C+SubjuntivoPresente+1P+Sg:^esté #;
-estar+V+1C+SubjuntivoPresente+2P+Sg:^estés #;
-estar+V+1C+SubjuntivoPresente+3P+Sg:^esté #;
-estar+V+1C+SubjuntivoPresente+1P+Pl:^estemos #;
-estar+V+1C+SubjuntivoPresente+2P+Pl:^estéis #;
-estar+V+1C+SubjuntivoPresente+3P+Pl:^estén #;
-
-estar+V+1C+SubjuntivoImperfecto+1P+Sg:^estuviera #;
-estar+V+1C+SubjuntivoImperfecto+2P+Sg:^estuvieras #;
-estar+V+1C+SubjuntivoImperfecto+3P+Sg:^estuviera #;
-estar+V+1C+SubjuntivoImperfecto+1P+Pl:^estuviéramos #;
-estar+V+1C+SubjuntivoImperfecto+2P+Pl:^estuvierais #;
-estar+V+1C+SubjuntivoImperfecto+3P+Pl:^estuvieran #;
-
-estar+V+1C+SubjuntivoPosesivo+1P+Sg:^estuviese #;
-estar+V+1C+SubjuntivoPosesivo+2P+Sg:^estuvieses #;
-estar+V+1C+SubjuntivoPosesivo+3P+Sg:^estuviese #;
-estar+V+1C+SubjuntivoPosesivo+1P+Pl:^estuviésemos #;
-estar+V+1C+SubjuntivoPosesivo+2P+Pl:^estuvieseis #;
-estar+V+1C+SubjuntivoPosesivo+3P+Pl:^estuviesen #;
-
-estar+V+1C+SubjuntivoFuturo+1P+Sg:^estuviere #;
-estar+V+1C+SubjuntivoFuturo+2P+Sg:^estuvieres #;
-estar+V+1C+SubjuntivoFuturo+3P+Sg:^estuviere #;
-estar+V+1C+SubjuntivoFuturo+1P+Pl:^estuviéremos #;
-estar+V+1C+SubjuntivoFuturo+2P+Pl:^estuviereis #;
-estar+V+1C+SubjuntivoFuturo+3P+Pl:^estuvieren #;
-
-estar+V+1C+Affirmativo+2P+Sg:^está #;
-estar+V+1C+Affirmativo+3P+Sg:^esté #;
-estar+V+1C+Affirmativo+1P+Pl:^estemos #;
-estar+V+1C+Affirmativo+2P+Pl:^estad #;
-estar+V+1C+Affirmativo+3P+Pl:^estén #;
-
-
-##### decir (to speak) #####
-decir+V+3C+Infinitivo:^decir #;
-decir+V+3C+Participio+Sg+Masculino:^dicho #;
-decir+V+3C+Participio+Pl+Masculino:^dichos #;
-decir+V+3C+Participio+Sg+Feminino:^dicha #;
-decir+V+3C+Participio+Pl+Feminino:^dichas #;
-decir+V+3C+Gerundio:^diciendo #;
-
-decir+V+3C+PresenteIndicativo+1P+Sg:^digo #;
-decir+V+3C+PresenteIndicativo+2P+Sg:^dices #;
-decir+V+3C+PresenteIndicativo+3P+Sg:^dice #;
-decir+V+3C+PresenteIndicativo+1P+Pl:^decimos #;
-decir+V+3C+PresenteIndicativo+2P+Pl:^decís #;
-decir+V+3C+PresenteIndicativo+3P+Pl:^dicen #;
-
-decir+V+3C+PreteritoImperfecto+1P+Sg:^decía #;
-decir+V+3C+PreteritoImperfecto+2P+Sg:^decías #;
-decir+V+3C+PreteritoImperfecto+3P+Sg:^decía #;
-decir+V+3C+PreteritoImperfecto+1P+Pl:^decíamos #;
-decir+V+3C+PreteritoImperfecto+2P+Pl:^decíais #;
-decir+V+3C+PreteritoImperfecto+3P+Pl:^decían #;
-
-decir+V+3C+PreteritoIndefinido+1P+Sg:^dije #;
-decir+V+3C+PreteritoIndefinido+2P+Sg:^dijiste #;
-decir+V+3C+PreteritoIndefinido+3P+Sg:^dijo #;
-decir+V+3C+PreteritoIndefinido+1P+Pl:^dijimos #;
-decir+V+3C+PreteritoIndefinido+2P+Pl:^dijisteis #;
-decir+V+3C+PreteritoIndefinido+3P+Pl:^dijeron #;
-
-decir+V+3C+Futuro+1P+Sg:^diré #;
-decir+V+3C+Futuro+2P+Sg:^dirás #;
-decir+V+3C+Futuro+3P+Sg:^dirá #;
-decir+V+3C+Futuro+1P+Pl:^diremos #;
-decir+V+3C+Futuro+2P+Pl:^diréis #;
-decir+V+3C+Futuro+3P+Pl:^dirán #;
-
-decir+V+3C+Condicional+1P+Sg:^diría #;
-decir+V+3C+Condicional+2P+Sg:^dirías #;
-decir+V+3C+Condicional+3P+Sg:^diría #;
-decir+V+3C+Condicional+1P+Pl:^diríamos #;
-decir+V+3C+Condicional+2P+Pl:^diríais #;
-decir+V+3C+Condicional+3P+Pl:^dirían #;
-
-decir+V+3C+SubjuntivoPresente+1P+Sg:^diga #;
-decir+V+3C+SubjuntivoPresente+2P+Sg:^digas #;
-decir+V+3C+SubjuntivoPresente+3P+Sg:^diga #;
-decir+V+3C+SubjuntivoPresente+1P+Pl:^digamos #;
-decir+V+3C+SubjuntivoPresente+2P+Pl:^digáis #;
-decir+V+3C+SubjuntivoPresente+3P+Pl:^digan #;
-
-decir+V+3C+SubjuntivoImperfecto+1P+Sg:^dijera #;
-decir+V+3C+SubjuntivoImperfecto+2P+Sg:^dijeras #;
-decir+V+3C+SubjuntivoImperfecto+3P+Sg:^dijera #;
-decir+V+3C+SubjuntivoImperfecto+1P+Pl:^dijéramos #;
-decir+V+3C+SubjuntivoImperfecto+2P+Pl:^dijerais #;
-decir+V+3C+SubjuntivoImperfecto+3P+Pl:^dijeran #;
-
-decir+V+3C+SubjuntivoPosesivo+1P+Sg:^dijese #;
-decir+V+3C+SubjuntivoPosesivo+2P+Sg:^dijeses #;
-decir+V+3C+SubjuntivoPosesivo+3P+Sg:^dijese #;
-decir+V+3C+SubjuntivoPosesivo+1P+Pl:^dijésemos #;
-decir+V+3C+SubjuntivoPosesivo+2P+Pl:^dijeseis #;
-decir+V+3C+SubjuntivoPosesivo+3P+Pl:^dijesen #;
-
-decir+V+3C+SubjuntivoFuturo+1P+Sg:^dijere #;
-decir+V+3C+SubjuntivoFuturo+2P+Sg:^dijeres #;
-decir+V+3C+SubjuntivoFuturo+3P+Sg:^dijere #;
-decir+V+3C+SubjuntivoFuturo+1P+Pl:^dijéremos #;
-decir+V+3C+SubjuntivoFuturo+2P+Pl:^dijereis #;
-decir+V+3C+SubjuntivoFuturo+3P+Pl:^dijeren #;
-
-decir+V+3C+Affirmativo+2P+Sg:^di #;
-decir+V+3C+Affirmativo+3P+Sg:^diga #;
-decir+V+3C+Affirmativo+1P+Pl:^digamos #;
-decir+V+3C+Affirmativo+2P+Pl:^decid #;
-decir+V+3C+Affirmativo+3P+Pl:^digan #;
-
-
-##### redecir #####
-redecir+V+3C+Infinitivo:^redecir #;
-redecir+V+3C+Participio+Sg+Masculino:^redicho #;
-redecir+V+3C+Participio+Pl+Masculino:^redichos #;
-redecir+V+3C+Participio+Sg+Feminino:^redicha #;
-redecir+V+3C+Participio+Pl+Feminino:^redichas #;
-redecir+V+3C+Gerundio:^rediciendo #;
-
-redecir+V+3C+PresenteIndicativo+1P+Sg:^redigo #;
-redecir+V+3C+PresenteIndicativo+2P+Sg:^redices #;
-redecir+V+3C+PresenteIndicativo+3P+Sg:^redice #;
-redecir+V+3C+PresenteIndicativo+1P+Pl:^redecimos #;
-redecir+V+3C+PresenteIndicativo+2P+Pl:^redecís #;
-redecir+V+3C+PresenteIndicativo+3P+Pl:^redicen #;
-
-redecir+V+3C+PreteritoImperfecto+1P+Sg:^redecía #;
-redecir+V+3C+PreteritoImperfecto+2P+Sg:^redecías #;
-redecir+V+3C+PreteritoImperfecto+3P+Sg:^redecía #;
-redecir+V+3C+PreteritoImperfecto+1P+Pl:^redecíamos #;
-redecir+V+3C+PreteritoImperfecto+2P+Pl:^redecíais #;
-redecir+V+3C+PreteritoImperfecto+3P+Pl:^redecían #;
-
-redecir+V+3C+PreteritoIndefiniredo+1P+Sg:^redije #;
-redecir+V+3C+PreteritoIndefiniredo+2P+Sg:^redijiste #;
-redecir+V+3C+PreteritoIndefiniredo+3P+Sg:^redijo #;
-redecir+V+3C+PreteritoIndefiniredo+1P+Pl:^redijimos #;
-redecir+V+3C+PreteritoIndefiniredo+2P+Pl:^redijisteis #;
-redecir+V+3C+PreteritoIndefiniredo+3P+Pl:^redijeron #;
-
-redecir+V+3C+Futuro+1P+Sg:^rediré #;
-redecir+V+3C+Futuro+2P+Sg:^redirás #;
-redecir+V+3C+Futuro+3P+Sg:^redirá #;
-redecir+V+3C+Futuro+1P+Pl:^rediremos #;
-redecir+V+3C+Futuro+2P+Pl:^rediréis #;
-redecir+V+3C+Futuro+3P+Pl:^redirán #;
-
-redecir+V+3C+Condicional+1P+Sg:^rediría #;
-redecir+V+3C+Condicional+2P+Sg:^redirías #;
-redecir+V+3C+Condicional+3P+Sg:^rediría #;
-redecir+V+3C+Condicional+1P+Pl:^rediríamos #;
-redecir+V+3C+Condicional+2P+Pl:^rediríais #;
-redecir+V+3C+Condicional+3P+Pl:^redirían #;
-
-redecir+V+3C+SubjuntivoPresente+1P+Sg:^rediga #;
-redecir+V+3C+SubjuntivoPresente+2P+Sg:^redigas #;
-redecir+V+3C+SubjuntivoPresente+3P+Sg:^rediga #;
-redecir+V+3C+SubjuntivoPresente+1P+Pl:^redigamos #;
-redecir+V+3C+SubjuntivoPresente+2P+Pl:^redigáis #;
-redecir+V+3C+SubjuntivoPresente+3P+Pl:^redigan #;
-
-redecir+V+3C+SubjuntivoImperfecto+1P+Sg:^redijera #;
-redecir+V+3C+SubjuntivoImperfecto+2P+Sg:^redijeras #;
-redecir+V+3C+SubjuntivoImperfecto+3P+Sg:^redijera #;
-redecir+V+3C+SubjuntivoImperfecto+1P+Pl:^redijéramos #;
-redecir+V+3C+SubjuntivoImperfecto+2P+Pl:^redijerais #;
-redecir+V+3C+SubjuntivoImperfecto+3P+Pl:^redijeran #;
-
-redecir+V+3C+SubjuntivoPosesivo+1P+Sg:^redijese #;
-redecir+V+3C+SubjuntivoPosesivo+2P+Sg:^redijeses #;
-redecir+V+3C+SubjuntivoPosesivo+3P+Sg:^redijese #;
-redecir+V+3C+SubjuntivoPosesivo+1P+Pl:^redijésemos #;
-redecir+V+3C+SubjuntivoPosesivo+2P+Pl:^redijeseis #;
-redecir+V+3C+SubjuntivoPosesivo+3P+Pl:^redijesen #;
-
-redecir+V+3C+SubjuntivoFuturo+1P+Sg:^redijere #;
-redecir+V+3C+SubjuntivoFuturo+2P+Sg:^redijeres #;
-redecir+V+3C+SubjuntivoFuturo+3P+Sg:^redijere #;
-redecir+V+3C+SubjuntivoFuturo+1P+Pl:^redijéremos #;
-redecir+V+3C+SubjuntivoFuturo+2P+Pl:^redijereis #;
-redecir+V+3C+SubjuntivoFuturo+3P+Pl:^redijeren #;
-
-redecir+V+3C+Affirmativo+2P+Sg:^redi #;
-redecir+V+3C+Affirmativo+3P+Sg:^rediga #;
-redecir+V+3C+Affirmativo+1P+Pl:^redigamos #;
-redecir+V+3C+Affirmativo+2P+Pl:^redecired #;
-redecir+V+3C+Affirmativo+3P+Pl:^redigan #;
-
-
-##### hacer (to do) #####
-hacer+V+2C+Infinitivo:^hacer #;
-hacer+V+2C+Participio+Sg+Masculino:^hecho #;
-hacer+V+2C+Participio+Pl+Masculino:^hechos #;
-hacer+V+2C+Participio+Sg+Feminino:^hecha #;
-hacer+V+2C+Participio+Pl+Feminino:^hechas #;
-hacer+V+2C+Gerundio:^haciendo #;
-
-hacer+V+2C+PresenteIndicativo+1P+Sg:^hago #;
-hacer+V+2C+PresenteIndicativo+2P+Sg:^haces #;
-hacer+V+2C+PresenteIndicativo+3P+Sg:^hace #;
-hacer+V+2C+PresenteIndicativo+1P+Pl:^hacemos #;
-hacer+V+2C+PresenteIndicativo+2P+Pl:^hacéis #;
-hacer+V+2C+PresenteIndicativo+3P+Pl:^hacen #;
-
-hacer+V+2C+PreteritoImperfecto+1P+Sg:^hacía #;
-hacer+V+2C+PreteritoImperfecto+2P+Sg:^hacías #;
-hacer+V+2C+PreteritoImperfecto+3P+Sg:^hacía #;
-hacer+V+2C+PreteritoImperfecto+1P+Pl:^hacíamos #;
-hacer+V+2C+PreteritoImperfecto+2P+Pl:^hacíais #;
-hacer+V+2C+PreteritoImperfecto+3P+Pl:^hacían #;
-
-hacer+V+2C+PreteritoIndefinido+1P+Sg:^hice #;
-hacer+V+2C+PreteritoIndefinido+2P+Sg:^hiciste #;
-hacer+V+2C+PreteritoIndefinido+3P+Sg:^hizo #;
-hacer+V+2C+PreteritoIndefinido+1P+Pl:^hicimos #;
-hacer+V+2C+PreteritoIndefinido+2P+Pl:^hicisteis #;
-hacer+V+2C+PreteritoIndefinido+3P+Pl:^hicieron #;
-
-hacer+V+2C+Futuro+1P+Sg:^haré #;
-hacer+V+2C+Futuro+2P+Sg:^harás #;
-hacer+V+2C+Futuro+3P+Sg:^hará #;
-hacer+V+2C+Futuro+1P+Pl:^haremos #;
-hacer+V+2C+Futuro+2P+Pl:^haréis #;
-hacer+V+2C+Futuro+3P+Pl:^harán #;
-
-hacer+V+2C+Condicional+1P+Sg:^haría #;
-hacer+V+2C+Condicional+2P+Sg:^harías #;
-hacer+V+2C+Condicional+3P+Sg:^haría #;
-hacer+V+2C+Condicional+1P+Pl:^haríamos #;
-hacer+V+2C+Condicional+2P+Pl:^haríais #;
-hacer+V+2C+Condicional+3P+Pl:^harían #;
-
-hacer+V+2C+SubjuntivoPresente+1P+Sg:^haga #;
-hacer+V+2C+SubjuntivoPresente+2P+Sg:^hagas #;
-hacer+V+2C+SubjuntivoPresente+3P+Sg:^haga #;
-hacer+V+2C+SubjuntivoPresente+1P+Pl:^hagamos #;
-hacer+V+2C+SubjuntivoPresente+2P+Pl:^hagáis #;
-hacer+V+2C+SubjuntivoPresente+3P+Pl:^hagan #;
-
-hacer+V+2C+SubjuntivoImperfecto+1P+Sg:^hiciera #;
-hacer+V+2C+SubjuntivoImperfecto+2P+Sg:^hicieras #;
-hacer+V+2C+SubjuntivoImperfecto+3P+Sg:^hiciera #;
-hacer+V+2C+SubjuntivoImperfecto+1P+Pl:^hiciéramos #;
-hacer+V+2C+SubjuntivoImperfecto+2P+Pl:^hicierais #;
-hacer+V+2C+SubjuntivoImperfecto+3P+Pl:^hicieran #;
-
-hacer+V+2C+SubjuntivoPosesivo+1P+Sg:^hiciese #;
-hacer+V+2C+SubjuntivoPosesivo+2P+Sg:^hicieses #;
-hacer+V+2C+SubjuntivoPosesivo+3P+Sg:^hiciese #;
-hacer+V+2C+SubjuntivoPosesivo+1P+Pl:^hiciésemos #;
-hacer+V+2C+SubjuntivoPosesivo+2P+Pl:^hicieseis #;
-hacer+V+2C+SubjuntivoPosesivo+3P+Pl:^hiciesen #;
-
-hacer+V+2C+SubjuntivoFuturo+1P+Sg:^hiciere #;
-hacer+V+2C+SubjuntivoFuturo+2P+Sg:^hicieres #;
-hacer+V+2C+SubjuntivoFuturo+3P+Sg:^hiciere #;
-hacer+V+2C+SubjuntivoFuturo+1P+Pl:^hiciéremos #;
-hacer+V+2C+SubjuntivoFuturo+2P+Pl:^hiciereis #;
-hacer+V+2C+SubjuntivoFuturo+3P+Pl:^hicieren #;
-
-hacer+V+2C+Affirmativo+2P+Sg:^haz #;
-hacer+V+2C+Affirmativo+3P+Sg:^haga #;
-hacer+V+2C+Affirmativo+1P+Pl:^hagamos #;
-hacer+V+2C+Affirmativo+2P+Pl:^hagáis #;
-hacer+V+2C+Affirmativo+3P+Pl:^hagan #;
-
-
-##### poner (to put) #####
-poner+V+2C+Infinitivo:^poner #;
-poner+V+2C+Participio+Sg+Masculino:^puesto #;
-poner+V+2C+Participio+Pl+Masculino:^puestos #;
-poner+V+2C+Participio+Sg+Feminino:^puesta #;
-poner+V+2C+Participio+Pl+Feminino:^puestas #;
-poner+V+2C+Gerundio:^poniendo #;
-
-poner+V+2C+PresenteIndicativo+1P+Sg:^pongo #;
-poner+V+2C+PresenteIndicativo+2P+Sg:^pones #;
-poner+V+2C+PresenteIndicativo+3P+Sg:^pone #;
-poner+V+2C+PresenteIndicativo+1P+Pl:^ponemos #;
-poner+V+2C+PresenteIndicativo+2P+Pl:^ponéis #;
-poner+V+2C+PresenteIndicativo+3P+Pl:^ponen #;
-
-poner+V+2C+PreteritoImperfecto+1P+Sg:^ponía #;
-poner+V+2C+PreteritoImperfecto+2P+Sg:^ponías #;
-poner+V+2C+PreteritoImperfecto+3P+Sg:^ponía #;
-poner+V+2C+PreteritoImperfecto+1P+Pl:^poníamos #;
-poner+V+2C+PreteritoImperfecto+2P+Pl:^poníais #;
-poner+V+2C+PreteritoImperfecto+3P+Pl:^ponían #;
-
-poner+V+2C+PreteritoIndefinido+1P+Sg:^puse #;
-poner+V+2C+PreteritoIndefinido+2P+Sg:^pusiste #;
-poner+V+2C+PreteritoIndefinido+3P+Sg:^puso #;
-poner+V+2C+PreteritoIndefinido+1P+Pl:^pusimos #;
-poner+V+2C+PreteritoIndefinido+2P+Pl:^pusisteis #;
-poner+V+2C+PreteritoIndefinido+3P+Pl:^pusieron #;
-
-poner+V+2C+Futuro+1P+Sg:^pondré #;
-poner+V+2C+Futuro+2P+Sg:^pondrás #;
-poner+V+2C+Futuro+3P+Sg:^pondrá #;
-poner+V+2C+Futuro+1P+Pl:^pondremos #;
-poner+V+2C+Futuro+2P+Pl:^pondréis #;
-poner+V+2C+Futuro+3P+Pl:^pondrán #;
-
-poner+V+2C+Condicional+1P+Sg:^pondría #;
-poner+V+2C+Condicional+2P+Sg:^pondrías #;
-poner+V+2C+Condicional+3P+Sg:^pondría #;
-poner+V+2C+Condicional+1P+Pl:^pondríamos #;
-poner+V+2C+Condicional+2P+Pl:^pondríais #;
-poner+V+2C+Condicional+3P+Pl:^pondrían #;
-
-poner+V+2C+SubjuntivoPresente+1P+Sg:^ponga #;
-poner+V+2C+SubjuntivoPresente+2P+Sg:^pongas #;
-poner+V+2C+SubjuntivoPresente+3P+Sg:^ponga #;
-poner+V+2C+SubjuntivoPresente+1P+Pl:^pongamos #;
-poner+V+2C+SubjuntivoPresente+2P+Pl:^pongáis #;
-poner+V+2C+SubjuntivoPresente+3P+Pl:^pongan #;
-
-poner+V+2C+SubjuntivoImperfecto+1P+Sg:^pusiera #;
-poner+V+2C+SubjuntivoImperfecto+2P+Sg:^pusieras #;
-poner+V+2C+SubjuntivoImperfecto+3P+Sg:^pusiera #;
-poner+V+2C+SubjuntivoImperfecto+1P+Pl:^pusiéramos #;
-poner+V+2C+SubjuntivoImperfecto+2P+Pl:^pusierais #;
-poner+V+2C+SubjuntivoImperfecto+3P+Pl:^pusieran #;
-
-poner+V+2C+SubjuntivoPosesivo+1P+Sg:^pusiese #;
-poner+V+2C+SubjuntivoPosesivo+2P+Sg:^pusieses #;
-poner+V+2C+SubjuntivoPosesivo+3P+Sg:^pusiese #;
-poner+V+2C+SubjuntivoPosesivo+1P+Pl:^pusiésemos #;
-poner+V+2C+SubjuntivoPosesivo+2P+Pl:^pusieseis #;
-poner+V+2C+SubjuntivoPosesivo+3P+Pl:^pusiesen #;
-
-poner+V+2C+SubjuntivoFuturo+1P+Sg:^pusiere #;
-poner+V+2C+SubjuntivoFuturo+2P+Sg:^pusieres #;
-poner+V+2C+SubjuntivoFuturo+3P+Sg:^pusiere #;
-poner+V+2C+SubjuntivoFuturo+1P+Pl:^pusiéremos #;
-poner+V+2C+SubjuntivoFuturo+2P+Pl:^pusiereis #;
-poner+V+2C+SubjuntivoFuturo+3P+Pl:^pusieren #;
-
-poner+V+2C+Affirmativo+2P+Sg:^pon #;
-poner+V+2C+Affirmativo+3P+Sg:^ponga #;
-poner+V+2C+Affirmativo+1P+Pl:^pongamos #;
-poner+V+2C+Affirmativo+2P+Pl:^pongáis #;
-poner+V+2C+Affirmativo+3P+Pl:^pongan #;
-
-
-##### saber (to know) #####
-saber+V+2C+Infinitivo:^saber #;
-saber+V+2C+Participio+Sg+Masculino:^sabido #;
-saber+V+2C+Participio+Pl+Masculino:^sabidos #;
-saber+V+2C+Participio+Sg+Feminino:^sabida #;
-saber+V+2C+Participio+Pl+Feminino:^sabidas #;
-saber+V+2C+Gerundio:^sabiendo #;
-
-saber+V+2C+PresenteIndicativo+1P+Sg:^sé #;
-saber+V+2C+PresenteIndicativo+2P+Sg:^sabes #;
-saber+V+2C+PresenteIndicativo+3P+Sg:^sabe #;
-saber+V+2C+PresenteIndicativo+1P+Pl:^sabemos #;
-saber+V+2C+PresenteIndicativo+2P+Pl:^sabéis #;
-saber+V+2C+PresenteIndicativo+3P+Pl:^saben #;
-
-saber+V+2C+PreteritoImperfecto+1P+Sg:^sabía #;
-saber+V+2C+PreteritoImperfecto+2P+Sg:^sabías #;
-saber+V+2C+PreteritoImperfecto+3P+Sg:^sabía #;
-saber+V+2C+PreteritoImperfecto+1P+Pl:^sabíamos #;
-saber+V+2C+PreteritoImperfecto+2P+Pl:^sabíais #;
-saber+V+2C+PreteritoImperfecto+3P+Pl:^sabían #;
-
-saber+V+2C+PreteritoIndefinido+1P+Sg:^supe #;
-saber+V+2C+PreteritoIndefinido+2P+Sg:^supiste #;
-saber+V+2C+PreteritoIndefinido+3P+Sg:^supo #;
-saber+V+2C+PreteritoIndefinido+1P+Pl:^supimos #;
-saber+V+2C+PreteritoIndefinido+2P+Pl:^supisteis #;
-saber+V+2C+PreteritoIndefinido+3P+Pl:^supieron #;
-
-saber+V+2C+Futuro+1P+Sg:^sabré #;
-saber+V+2C+Futuro+2P+Sg:^sabrás #;
-saber+V+2C+Futuro+3P+Sg:^sabrá #;
-saber+V+2C+Futuro+1P+Pl:^sabremos #;
-saber+V+2C+Futuro+2P+Pl:^sabréis #;
-saber+V+2C+Futuro+3P+Pl:^sabrán #;
-
-saber+V+2C+Condicional+1P+Sg:^sabría #;
-saber+V+2C+Condicional+2P+Sg:^sabrías #;
-saber+V+2C+Condicional+3P+Sg:^sabría #;
-saber+V+2C+Condicional+1P+Pl:^sabríamos #;
-saber+V+2C+Condicional+2P+Pl:^sabríais #;
-saber+V+2C+Condicional+3P+Pl:^sabrían #;
-
-saber+V+2C+SubjuntivoPresente+1P+Sg:^sepa #;
-saber+V+2C+SubjuntivoPresente+2P+Sg:^sepas #;
-saber+V+2C+SubjuntivoPresente+3P+Sg:^sepa #;
-saber+V+2C+SubjuntivoPresente+1P+Pl:^sepamos #;
-saber+V+2C+SubjuntivoPresente+2P+Pl:^sepáis #;
-saber+V+2C+SubjuntivoPresente+3P+Pl:^sepan #;
-
-saber+V+2C+SubjuntivoImperfecto+1P+Sg:^supiera #;
-saber+V+2C+SubjuntivoImperfecto+2P+Sg:^supieras #;
-saber+V+2C+SubjuntivoImperfecto+3P+Sg:^supiera #;
-saber+V+2C+SubjuntivoImperfecto+1P+Pl:^supiéramos #;
-saber+V+2C+SubjuntivoImperfecto+2P+Pl:^supierais #;
-saber+V+2C+SubjuntivoImperfecto+3P+Pl:^supieran #;
-
-saber+V+2C+SubjuntivoPosesivo+1P+Sg:^supiese #;
-saber+V+2C+SubjuntivoPosesivo+2P+Sg:^supieses #;
-saber+V+2C+SubjuntivoPosesivo+3P+Sg:^supiese #;
-saber+V+2C+SubjuntivoPosesivo+1P+Pl:^supiésemos #;
-saber+V+2C+SubjuntivoPosesivo+2P+Pl:^supieseis #;
-saber+V+2C+SubjuntivoPosesivo+3P+Pl:^supiesen #;
-
-saber+V+2C+SubjuntivoFuturo+1P+Sg:^supiere #;
-saber+V+2C+SubjuntivoFuturo+2P+Sg:^supieres #;
-saber+V+2C+SubjuntivoFuturo+3P+Sg:^supiere #;
-saber+V+2C+SubjuntivoFuturo+1P+Pl:^supiéremos #;
-saber+V+2C+SubjuntivoFuturo+2P+Pl:^supiereis #;
-saber+V+2C+SubjuntivoFuturo+3P+Pl:^supieren #;
-
-saber+V+2C+Affirmativo+2P+Sg:^sabe #;
-saber+V+2C+Affirmativo+3P+Sg:^sepa #;
-saber+V+2C+Affirmativo+1P+Pl:^sepamos #;
-saber+V+2C+Affirmativo+2P+Pl:^sepáis #;
-saber+V+2C+Affirmativo+3P+Pl:^sepan #;
-
-
-##### tener (to have) #####
-tener+V+2C+Infinitivo:^tener #;
-tener+V+2C+Participio+Sg+Masculino:^tenido #;
-tener+V+2C+Participio+Pl+Masculino:^tenidos #;
-tener+V+2C+Participio+Sg+Feminino:^tenida #;
-tener+V+2C+Participio+Pl+Feminino:^tenidas #;
-tener+V+2C+Gerundio:^teniendo #;
-
-tener+V+2C+PresenteIndicativo+1P+Sg:^tengo #;
-tener+V+2C+PresenteIndicativo+2P+Sg:^tienes #;
-tener+V+2C+PresenteIndicativo+3P+Sg:^tiene #;
-tener+V+2C+PresenteIndicativo+1P+Pl:^tenemos #;
-tener+V+2C+PresenteIndicativo+2P+Pl:^tenéis #;
-tener+V+2C+PresenteIndicativo+3P+Pl:^tienen #;
-
-tener+V+2C+PreteritoImperfecto+1P+Sg:^tenía #;
-tener+V+2C+PreteritoImperfecto+2P+Sg:^tenías #;
-tener+V+2C+PreteritoImperfecto+3P+Sg:^tenía #;
-tener+V+2C+PreteritoImperfecto+1P+Pl:^teníamos #;
-tener+V+2C+PreteritoImperfecto+2P+Pl:^teníais #;
-tener+V+2C+PreteritoImperfecto+3P+Pl:^tenían #;
-
-tener+V+2C+PreteritoIndefinido+1P+Sg:^tuve #;
-tener+V+2C+PreteritoIndefinido+2P+Sg:^tuviste #;
-tener+V+2C+PreteritoIndefinido+3P+Sg:^tuvo #;
-tener+V+2C+PreteritoIndefinido+1P+Pl:^tuvimos #;
-tener+V+2C+PreteritoIndefinido+2P+Pl:^tuvisteis #;
-tener+V+2C+PreteritoIndefinido+3P+Pl:^tuvieron #;
-
-tener+V+2C+Futuro+1P+Sg:^tendré #;
-tener+V+2C+Futuro+2P+Sg:^tendrás #;
-tener+V+2C+Futuro+3P+Sg:^tendrá #;
-tener+V+2C+Futuro+1P+Pl:^tendremos #;
-tener+V+2C+Futuro+2P+Pl:^tendréis #;
-tener+V+2C+Futuro+3P+Pl:^tendrán #;
-
-tener+V+2C+Condicional+1P+Sg:^tendría #;
-tener+V+2C+Condicional+2P+Sg:^tendrías #;
-tener+V+2C+Condicional+3P+Sg:^tendría #;
-tener+V+2C+Condicional+1P+Pl:^tendríamos #;
-tener+V+2C+Condicional+2P+Pl:^tendríais #;
-tener+V+2C+Condicional+3P+Pl:^tendrían #;
-
-tener+V+2C+SubjuntivoPresente+1P+Sg:^tenga #;
-tener+V+2C+SubjuntivoPresente+2P+Sg:^tengas #;
-tener+V+2C+SubjuntivoPresente+3P+Sg:^tenga #;
-tener+V+2C+SubjuntivoPresente+1P+Pl:^tengamos #;
-tener+V+2C+SubjuntivoPresente+2P+Pl:^tengáis #;
-tener+V+2C+SubjuntivoPresente+3P+Pl:^tengan #;
-
-tener+V+2C+SubjuntivoImperfecto+1P+Sg:^tuviera #;
-tener+V+2C+SubjuntivoImperfecto+2P+Sg:^tuvieras #;
-tener+V+2C+SubjuntivoImperfecto+3P+Sg:^tuviera #;
-tener+V+2C+SubjuntivoImperfecto+1P+Pl:^tuviéramos #;
-tener+V+2C+SubjuntivoImperfecto+2P+Pl:^tuvierais #;
-tener+V+2C+SubjuntivoImperfecto+3P+Pl:^tuvieran #;
-
-tener+V+2C+SubjuntivoPosesivo+1P+Sg:^tuviese #;
-tener+V+2C+SubjuntivoPosesivo+2P+Sg:^tuvieses #;
-tener+V+2C+SubjuntivoPosesivo+3P+Sg:^tuviese #;
-tener+V+2C+SubjuntivoPosesivo+1P+Pl:^tuviésemos #;
-tener+V+2C+SubjuntivoPosesivo+2P+Pl:^tuvieseis #;
-tener+V+2C+SubjuntivoPosesivo+3P+Pl:^tuviesen #;
-
-tener+V+2C+SubjuntivoFuturo+1P+Sg:^tuviere #;
-tener+V+2C+SubjuntivoFuturo+2P+Sg:^tuvieres #;
-tener+V+2C+SubjuntivoFuturo+3P+Sg:^tuviere #;
-tener+V+2C+SubjuntivoFuturo+1P+Pl:^tuviéremos #;
-tener+V+2C+SubjuntivoFuturo+2P+Pl:^tuviereis #;
-tener+V+2C+SubjuntivoFuturo+3P+Pl:^tuvieren #;
-
-tener+V+2C+Affirmativo+2P+Sg:^ten #;
-tener+V+2C+Affirmativo+3P+Sg:^tenga #;
-tener+V+2C+Affirmativo+1P+Pl:^tengamos #;
-tener+V+2C+Affirmativo+2P+Pl:^tened #;
-tener+V+2C+Affirmativo+3P+Pl:^tengan #;
-
-
-##### poder (to can) #####
-poder+V+2C+Infinitivo:^poder #;
-poder+V+2C+Participio+Sg+Masculino:^podido #;
-poder+V+2C+Participio+Pl+Masculino:^podidos #;
-poder+V+2C+Participio+Sg+Feminino:^podida #;
-poder+V+2C+Participio+Pl+Feminino:^podidas #;
-poder+V+2C+Gerundio:^pudiendo #;
-
-poder+V+2C+PresenteIndicativo+1P+Sg:^puedo #;
-poder+V+2C+PresenteIndicativo+2P+Sg:^puedes #;
-poder+V+2C+PresenteIndicativo+3P+Sg:^puede #;
-poder+V+2C+PresenteIndicativo+1P+Pl:^podemos #;
-poder+V+2C+PresenteIndicativo+2P+Pl:^podéis #;
-poder+V+2C+PresenteIndicativo+3P+Pl:^pueden #;
-
-poder+V+2C+PreteritoImperfecto+1P+Sg:^podía #;
-poder+V+2C+PreteritoImperfecto+2P+Sg:^podías #;
-poder+V+2C+PreteritoImperfecto+3P+Sg:^podía #;
-poder+V+2C+PreteritoImperfecto+1P+Pl:^podíamos #;
-poder+V+2C+PreteritoImperfecto+2P+Pl:^podíais #;
-poder+V+2C+PreteritoImperfecto+3P+Pl:^podían #;
-
-poder+V+2C+PreteritoIndefinido+1P+Sg:^pude #;
-poder+V+2C+PreteritoIndefinido+2P+Sg:^pudiste #;
-poder+V+2C+PreteritoIndefinido+3P+Sg:^pudo #;
-poder+V+2C+PreteritoIndefinido+1P+Pl:^pudimos #;
-poder+V+2C+PreteritoIndefinido+2P+Pl:^pudisteis #;
-poder+V+2C+PreteritoIndefinido+3P+Pl:^pudieron #;
-
-poder+V+2C+Futuro+1P+Sg:^podré #;
-poder+V+2C+Futuro+2P+Sg:^podrás #;
-poder+V+2C+Futuro+3P+Sg:^podrá #;
-poder+V+2C+Futuro+1P+Pl:^podremos #;
-poder+V+2C+Futuro+2P+Pl:^podréis #;
-poder+V+2C+Futuro+3P+Pl:^podrán #;
-
-poder+V+2C+Condicional+1P+Sg:^podría #;
-poder+V+2C+Condicional+2P+Sg:^podrías #;
-poder+V+2C+Condicional+3P+Sg:^podría #;
-poder+V+2C+Condicional+1P+Pl:^podríamos #;
-poder+V+2C+Condicional+2P+Pl:^podríais #;
-poder+V+2C+Condicional+3P+Pl:^podrían #;
-
-poder+V+2C+SubjuntivoPresente+1P+Sg:^pueda #;
-poder+V+2C+SubjuntivoPresente+2P+Sg:^puedas #;
-poder+V+2C+SubjuntivoPresente+3P+Sg:^pueda #;
-poder+V+2C+SubjuntivoPresente+1P+Pl:^puedamos #;
-poder+V+2C+SubjuntivoPresente+2P+Pl:^puedáis #;
-poder+V+2C+SubjuntivoPresente+3P+Pl:^puedan #;
-
-poder+V+2C+SubjuntivoImperfecto+1P+Sg:^pudiera #;
-poder+V+2C+SubjuntivoImperfecto+2P+Sg:^pudieras #;
-poder+V+2C+SubjuntivoImperfecto+3P+Sg:^pudiera #;
-poder+V+2C+SubjuntivoImperfecto+1P+Pl:^pudiéramos #;
-poder+V+2C+SubjuntivoImperfecto+2P+Pl:^pudierais #;
-poder+V+2C+SubjuntivoImperfecto+3P+Pl:^pudieran #;
-
-poder+V+2C+SubjuntivoPosesivo+1P+Sg:^pudiese #;
-poder+V+2C+SubjuntivoPosesivo+2P+Sg:^pudieses #;
-poder+V+2C+SubjuntivoPosesivo+3P+Sg:^pudiese #;
-poder+V+2C+SubjuntivoPosesivo+1P+Pl:^pudiésemos #;
-poder+V+2C+SubjuntivoPosesivo+2P+Pl:^pudieseis #;
-poder+V+2C+SubjuntivoPosesivo+3P+Pl:^pudiesen #;
-
-poder+V+2C+SubjuntivoFuturo+1P+Sg:^pudiere #;
-poder+V+2C+SubjuntivoFuturo+2P+Sg:^pudieres #;
-poder+V+2C+SubjuntivoFuturo+3P+Sg:^pudiere #;
-poder+V+2C+SubjuntivoFuturo+1P+Pl:^pudiéremos #;
-poder+V+2C+SubjuntivoFuturo+2P+Pl:^pudiereis #;
-poder+V+2C+SubjuntivoFuturo+3P+Pl:^pudieren #;
-
-poder+V+2C+Affirmativo+2P+Sg:^puede #;
-poder+V+2C+Affirmativo+3P+Sg:^pueda #;
-poder+V+2C+Affirmativo+1P+Pl:^podamos #;
-poder+V+2C+Affirmativo+2P+Pl:^poded #;
-poder+V+2C+Affirmativo+3P+Pl:^puedan #;
-
-
-##### andar #####
-andar+V+1C+Infinitivo:^andar #;
-andar+V+1C+Participio+Sg+Masculino:^andado #;
-andar+V+1C+Participio+Pl+Masculino:^andados #;
-andar+V+1C+Participio+Sg+Feminino:^andada #;
-andar+V+1C+Participio+Pl+Feminino:^andadas #;
-andar+V+1C+Gerundio:^andando #;
-
-andar+V+1C+PresenteIndicativo+1P+Sg:^ando #;
-andar+V+1C+PresenteIndicativo+2P+Sg:^andas #;
-andar+V+1C+PresenteIndicativo+3P+Sg:^anda #;
-andar+V+1C+PresenteIndicativo+1P+Pl:^andamos #;
-andar+V+1C+PresenteIndicativo+2P+Pl:^andáis #;
-andar+V+1C+PresenteIndicativo+3P+Pl:^andan #;
-
-andar+V+1C+PreteritoImperfecto+1P+Sg:^andaba #;
-andar+V+1C+PreteritoImperfecto+2P+Sg:^andabas #;
-andar+V+1C+PreteritoImperfecto+3P+Sg:^andaba #;
-andar+V+1C+PreteritoImperfecto+1P+Pl:^andábamos #;
-andar+V+1C+PreteritoImperfecto+2P+Pl:^andabais #;
-andar+V+1C+PreteritoImperfecto+3P+Pl:^andaban #;
-
-andar+V+1C+PreteritoIndefinido+1P+Sg:^anduve #;
-andar+V+1C+PreteritoIndefinido+2P+Sg:^anduviste #;
-andar+V+1C+PreteritoIndefinido+3P+Sg:^anduvo #;
-andar+V+1C+PreteritoIndefinido+1P+Pl:^anduvimos #;
-andar+V+1C+PreteritoIndefinido+2P+Pl:^anduvisteis #;
-andar+V+1C+PreteritoIndefinido+3P+Pl:^anduvieron #;
-
-andar+V+1C+Futuro+1P+Sg:^andaré #;
-andar+V+1C+Futuro+2P+Sg:^andarás #;
-andar+V+1C+Futuro+3P+Sg:^andará #;
-andar+V+1C+Futuro+1P+Pl:^andaremos #;
-andar+V+1C+Futuro+2P+Pl:^andaréis #;
-andar+V+1C+Futuro+3P+Pl:^andarán #;
-
-andar+V+1C+Condicional+1P+Sg:^andaría #;
-andar+V+1C+Condicional+2P+Sg:^andarías #;
-andar+V+1C+Condicional+3P+Sg:^andaría #;
-andar+V+1C+Condicional+1P+Pl:^andaríamos #;
-andar+V+1C+Condicional+2P+Pl:^andaríais #;
-andar+V+1C+Condicional+3P+Pl:^andarían #;
-
-andar+V+1C+SubjuntivoPresente+1P+Sg:^ande #;
-andar+V+1C+SubjuntivoPresente+2P+Sg:^andes #;
-andar+V+1C+SubjuntivoPresente+3P+Sg:^ande #;
-andar+V+1C+SubjuntivoPresente+1P+Pl:^andemos #;
-andar+V+1C+SubjuntivoPresente+2P+Pl:^andéis #;
-andar+V+1C+SubjuntivoPresente+3P+Pl:^anden #;
-
-andar+V+1C+SubjuntivoImperfecto+1P+Sg:^anduviera #;
-andar+V+1C+SubjuntivoImperfecto+2P+Sg:^anduvieras #;
-andar+V+1C+SubjuntivoImperfecto+3P+Sg:^anduviera #;
-andar+V+1C+SubjuntivoImperfecto+1P+Pl:^anduviéramos #;
-andar+V+1C+SubjuntivoImperfecto+2P+Pl:^anduvierais #;
-andar+V+1C+SubjuntivoImperfecto+3P+Pl:^anduvieran #;
-
-andar+V+1C+SubjuntivoPosesivo+1P+Sg:^anduviese #;
-andar+V+1C+SubjuntivoPosesivo+2P+Sg:^anduvieses #;
-andar+V+1C+SubjuntivoPosesivo+3P+Sg:^anduviese #;
-andar+V+1C+SubjuntivoPosesivo+1P+Pl:^anduviésemos #;
-andar+V+1C+SubjuntivoPosesivo+2P+Pl:^anduvieseis #;
-andar+V+1C+SubjuntivoPosesivo+3P+Pl:^anduviesen #;
-
-andar+V+1C+SubjuntivoFuturo+1P+Sg:^anduviere #;
-andar+V+1C+SubjuntivoFuturo+2P+Sg:^anduvieres #;
-andar+V+1C+SubjuntivoFuturo+3P+Sg:^anduviere #;
-andar+V+1C+SubjuntivoFuturo+1P+Pl:^anduviéremos #;
-andar+V+1C+SubjuntivoFuturo+2P+Pl:^anduviereis #;
-andar+V+1C+SubjuntivoFuturo+3P+Pl:^anduvieren #;
-
-andar+V+1C+Affirmativo+2P+Sg:^anda #;
-andar+V+1C+Affirmativo+3P+Sg:^ande #;
-andar+V+1C+Affirmativo+1P+Pl:^andemos #;
-andar+V+1C+Affirmativo+2P+Pl:^andéis #;
-andar+V+1C+Affirmativo+3P+Pl:^anden #;
-
-
-##### dar (to give) #####
-dar+V+1C+Infinitivo:^dar #;
-dar+V+1C+Participio+Sg+Masculino:^dado #;
-dar+V+1C+Participio+Pl+Masculino:^dados #;
-dar+V+1C+Participio+Sg+Feminino:^dada #;
-dar+V+1C+Participio+Pl+Feminino:^dadas #;
-dar+V+1C+Gerundio:^dando #;
-
-dar+V+1C+PresenteIndicativo+1P+Sg:^doy #;
-dar+V+1C+PresenteIndicativo+2P+Sg:^das #;
-dar+V+1C+PresenteIndicativo+3P+Sg:^da #;
-dar+V+1C+PresenteIndicativo+1P+Pl:^damos #;
-dar+V+1C+PresenteIndicativo+2P+Pl:^dais #;
-dar+V+1C+PresenteIndicativo+3P+Pl:^dan #;
-
-dar+V+1C+PreteritoImperfecto+1P+Sg:^daba #;
-dar+V+1C+PreteritoImperfecto+2P+Sg:^dabas #;
-dar+V+1C+PreteritoImperfecto+3P+Sg:^daba #;
-dar+V+1C+PreteritoImperfecto+1P+Pl:^dábamos #;
-dar+V+1C+PreteritoImperfecto+2P+Pl:^dabais #;
-dar+V+1C+PreteritoImperfecto+3P+Pl:^daban #;
-
-dar+V+1C+PreteritoIndefinido+1P+Sg:^di #;
-dar+V+1C+PreteritoIndefinido+2P+Sg:^diste #;
-dar+V+1C+PreteritoIndefinido+3P+Sg:^dio #;
-dar+V+1C+PreteritoIndefinido+1P+Pl:^dimos #;
-dar+V+1C+PreteritoIndefinido+2P+Pl:^disteis #;
-dar+V+1C+PreteritoIndefinido+3P+Pl:^dieron #;
-
-dar+V+1C+Futuro+1P+Sg:^daré #;
-dar+V+1C+Futuro+2P+Sg:^darás #;
-dar+V+1C+Futuro+3P+Sg:^dará #;
-dar+V+1C+Futuro+1P+Pl:^daremos #;
-dar+V+1C+Futuro+2P+Pl:^daréis #;
-dar+V+1C+Futuro+3P+Pl:^darán #;
-
-dar+V+1C+Condicional+1P+Sg:^daría #;
-dar+V+1C+Condicional+2P+Sg:^darías #;
-dar+V+1C+Condicional+3P+Sg:^daría #;
-dar+V+1C+Condicional+1P+Pl:^daríamos #;
-dar+V+1C+Condicional+2P+Pl:^daríais #;
-dar+V+1C+Condicional+3P+Pl:^darían #;
-
-dar+V+1C+SubjuntivoPresente+1P+Sg:^dé #;
-dar+V+1C+SubjuntivoPresente+2P+Sg:^des #;
-dar+V+1C+SubjuntivoPresente+3P+Sg:^de #;
-dar+V+1C+SubjuntivoPresente+1P+Pl:^demos #;
-dar+V+1C+SubjuntivoPresente+2P+Pl:^deis #;
-dar+V+1C+SubjuntivoPresente+3P+Pl:^den #;
-
-dar+V+1C+SubjuntivoImperfecto+1P+Sg:^diera #;
-dar+V+1C+SubjuntivoImperfecto+2P+Sg:^dieras #;
-dar+V+1C+SubjuntivoImperfecto+3P+Sg:^diera #;
-dar+V+1C+SubjuntivoImperfecto+1P+Pl:^diéramos #;
-dar+V+1C+SubjuntivoImperfecto+2P+Pl:^dierais #;
-dar+V+1C+SubjuntivoImperfecto+3P+Pl:^dieran #;
-
-dar+V+1C+SubjuntivoPosesivo+1P+Sg:^diese #;
-dar+V+1C+SubjuntivoPosesivo+2P+Sg:^dieses #;
-dar+V+1C+SubjuntivoPosesivo+3P+Sg:^diese #;
-dar+V+1C+SubjuntivoPosesivo+1P+Pl:^diésemos #;
-dar+V+1C+SubjuntivoPosesivo+2P+Pl:^dieseis #;
-dar+V+1C+SubjuntivoPosesivo+3P+Pl:^diesen #;
-
-dar+V+1C+SubjuntivoFuturo+1P+Sg:^diere #;
-dar+V+1C+SubjuntivoFuturo+2P+Sg:^dieres #;
-dar+V+1C+SubjuntivoFuturo+3P+Sg:^diere #;
-dar+V+1C+SubjuntivoFuturo+1P+Pl:^diéremos #;
-dar+V+1C+SubjuntivoFuturo+2P+Pl:^diereis #;
-dar+V+1C+SubjuntivoFuturo+3P+Pl:^dieren #;
-
-dar+V+1C+Affirmativo+2P+Sg:^da #;
-dar+V+1C+Affirmativo+3P+Sg:^dé #;
-dar+V+1C+Affirmativo+1P+Pl:^demos #;
-dar+V+1C+Affirmativo+2P+Pl:^dad #;
-dar+V+1C+Affirmativo+3P+Pl:^den #;
-
-
-##### haber (to have) #####
-haber+V+2C+Infinitivo:^haber #;
-haber+V+2C+Participio+Sg+Masculino:^habido #;
-haber+V+2C+Participio+Pl+Masculino:^habidos #;
-haber+V+2C+Participio+Sg+Feminino:^habida #;
-haber+V+2C+Participio+Pl+Feminino:^habidas #;
-haber+V+2C+Gerundio:^hubiendo #;
-
-haber+V+2C+PresenteIndicativo+1P+Sg:^he #;
-haber+V+2C+PresenteIndicativo+2P+Sg:^has #;
-haber+V+2C+PresenteIndicativo+3P+Sg:^hae #;
-haber+V+2C+PresenteIndicativo+1P+Pl:^hemos #;
-haber+V+2C+PresenteIndicativo+2P+Pl:^habéis #;
-haber+V+2C+PresenteIndicativo+3P+Pl:^han #;
-
-haber+V+2C+PreteritoImperfecto+1P+Sg:^había #;
-haber+V+2C+PreteritoImperfecto+2P+Sg:^habías #;
-haber+V+2C+PreteritoImperfecto+3P+Sg:^había #;
-haber+V+2C+PreteritoImperfecto+1P+Pl:^habíamos #;
-haber+V+2C+PreteritoImperfecto+2P+Pl:^habíais #;
-haber+V+2C+PreteritoImperfecto+3P+Pl:^habían #;
-
-haber+V+2C+PreteritoIndefinido+1P+Sg:^hube #;
-haber+V+2C+PreteritoIndefinido+2P+Sg:^hubiste #;
-haber+V+2C+PreteritoIndefinido+3P+Sg:^hubo #;
-haber+V+2C+PreteritoIndefinido+1P+Pl:^hubimos #;
-haber+V+2C+PreteritoIndefinido+2P+Pl:^hubisteis #;
-haber+V+2C+PreteritoIndefinido+3P+Pl:^hubieron #;
-
-haber+V+2C+Futuro+1P+Sg:^habré #;
-haber+V+2C+Futuro+2P+Sg:^habrás #;
-haber+V+2C+Futuro+3P+Sg:^habrá #;
-haber+V+2C+Futuro+1P+Pl:^habremos #;
-haber+V+2C+Futuro+2P+Pl:^habréis #;
-haber+V+2C+Futuro+3P+Pl:^habrán #;
-
-haber+V+2C+Condicional+1P+Sg:^habría #;
-haber+V+2C+Condicional+2P+Sg:^habrías #;
-haber+V+2C+Condicional+3P+Sg:^habría #;
-haber+V+2C+Condicional+1P+Pl:^habríamos #;
-haber+V+2C+Condicional+2P+Pl:^habríais #;
-haber+V+2C+Condicional+3P+Pl:^habrían #;
-
-haber+V+2C+SubjuntivoPresente+1P+Sg:^haya #;
-haber+V+2C+SubjuntivoPresente+2P+Sg:^hayas #;
-haber+V+2C+SubjuntivoPresente+3P+Sg:^haya #;
-haber+V+2C+SubjuntivoPresente+1P+Pl:^hayamos #;
-haber+V+2C+SubjuntivoPresente+2P+Pl:^hayáis #;
-haber+V+2C+SubjuntivoPresente+3P+Pl:^hayan #;
-
-haber+V+2C+SubjuntivoImperfecto+1P+Sg:^hubiera #;
-haber+V+2C+SubjuntivoImperfecto+2P+Sg:^hubieras #;
-haber+V+2C+SubjuntivoImperfecto+3P+Sg:^hubiera #;
-haber+V+2C+SubjuntivoImperfecto+1P+Pl:^hubiéramos #;
-haber+V+2C+SubjuntivoImperfecto+2P+Pl:^hubierais #;
-haber+V+2C+SubjuntivoImperfecto+3P+Pl:^hubieran #;
-
-haber+V+2C+SubjuntivoPosesivo+1P+Sg:^hubiese #;
-haber+V+2C+SubjuntivoPosesivo+2P+Sg:^hubieses #;
-haber+V+2C+SubjuntivoPosesivo+3P+Sg:^hubiese #;
-haber+V+2C+SubjuntivoPosesivo+1P+Pl:^hubiésemos #;
-haber+V+2C+SubjuntivoPosesivo+2P+Pl:^hubieseis #;
-haber+V+2C+SubjuntivoPosesivo+3P+Pl:^hubiesen #;
-
-haber+V+2C+SubjuntivoFuturo+1P+Sg:^hubiere #;
-haber+V+2C+SubjuntivoFuturo+2P+Sg:^hubieres #;
-haber+V+2C+SubjuntivoFuturo+3P+Sg:^hubiere #;
-haber+V+2C+SubjuntivoFuturo+1P+Pl:^hubiéremos #;
-haber+V+2C+SubjuntivoFuturo+2P+Pl:^hubiereis #;
-haber+V+2C+SubjuntivoFuturo+3P+Pl:^hubieren #;
-
-haber+V+2C+Affirmativo+2P+Sg:^habe #;
-haber+V+2C+Affirmativo+3P+Sg:^haya #;
-haber+V+2C+Affirmativo+1P+Pl:^hayamos #;
-haber+V+2C+Affirmativo+2P+Pl:^habed #;
-haber+V+2C+Affirmativo+3P+Pl:^hayan #;
-
-
-##### oir (to hear) #####
-oir+V+3C+Infinitivo:^oir #;
-oir+V+3C+Participio+Sg+Masculino:^oído #;
-oir+V+3C+Participio+Pl+Masculino:^oídos #;
-oir+V+3C+Participio+Sg+Feminino:^oída #;
-oir+V+3C+Participio+Pl+Feminino:^oídas #;
-oir+V+3C+Gerundio:^diciendo #;
-
-oir+V+3C+PresenteIndicativo+1P+Sg:^oigo #;
-oir+V+3C+PresenteIndicativo+2P+Sg:^oyes #;
-oir+V+3C+PresenteIndicativo+3P+Sg:^oye #;
-oir+V+3C+PresenteIndicativo+1P+Pl:^oímos #;
-oir+V+3C+PresenteIndicativo+2P+Pl:^oís #;
-oir+V+3C+PresenteIndicativo+3P+Pl:^oyen #;
-
-oir+V+3C+PreteritoImperfecto+1P+Sg:^oía #;
-oir+V+3C+PreteritoImperfecto+2P+Sg:^oías #;
-oir+V+3C+PreteritoImperfecto+3P+Sg:^oía #;
-oir+V+3C+PreteritoImperfecto+1P+Pl:^oíamos #;
-oir+V+3C+PreteritoImperfecto+2P+Pl:^oíais #;
-oir+V+3C+PreteritoImperfecto+3P+Pl:^oían #;
-
-oir+V+3C+PreteritoIndefinido+1P+Sg:^oí #;
-oir+V+3C+PreteritoIndefinido+2P+Sg:^oíste #;
-oir+V+3C+PreteritoIndefinido+3P+Sg:^oyó #;
-oir+V+3C+PreteritoIndefinido+1P+Pl:^oimos #;
-oir+V+3C+PreteritoIndefinido+2P+Pl:^oisteis #;
-oir+V+3C+PreteritoIndefinido+3P+Pl:^oyeron #;
-
-oir+V+3C+Futuro+1P+Sg:^oiré #;
-oir+V+3C+Futuro+2P+Sg:^oirás #;
-oir+V+3C+Futuro+3P+Sg:^oirá #;
-oir+V+3C+Futuro+1P+Pl:^oiremos #;
-oir+V+3C+Futuro+2P+Pl:^oiréis #;
-oir+V+3C+Futuro+3P+Pl:^oirán #;
-
-oir+V+3C+Condicional+1P+Sg:^oiría #;
-oir+V+3C+Condicional+2P+Sg:^oirías #;
-oir+V+3C+Condicional+3P+Sg:^oiría #;
-oir+V+3C+Condicional+1P+Pl:^oiríamos #;
-oir+V+3C+Condicional+2P+Pl:^oiríais #;
-oir+V+3C+Condicional+3P+Pl:^oirían #;
-
-oir+V+3C+SubjuntivoPresente+1P+Sg:^oiga #;
-oir+V+3C+SubjuntivoPresente+2P+Sg:^oigas #;
-oir+V+3C+SubjuntivoPresente+3P+Sg:^oiga #;
-oir+V+3C+SubjuntivoPresente+1P+Pl:^oigamos #;
-oir+V+3C+SubjuntivoPresente+2P+Pl:^oigáis #;
-oir+V+3C+SubjuntivoPresente+3P+Pl:^oigan #;
-
-oir+V+3C+SubjuntivoImperfecto+1P+Sg:^oyera #;
-oir+V+3C+SubjuntivoImperfecto+2P+Sg:^oyeras #;
-oir+V+3C+SubjuntivoImperfecto+3P+Sg:^oyera #;
-oir+V+3C+SubjuntivoImperfecto+1P+Pl:^oyéramos #;
-oir+V+3C+SubjuntivoImperfecto+2P+Pl:^oyerais #;
-oir+V+3C+SubjuntivoImperfecto+3P+Pl:^oyeran #;
-
-oir+V+3C+SubjuntivoPosesivo+1P+Sg:^oyese #;
-oir+V+3C+SubjuntivoPosesivo+2P+Sg:^oyeses #;
-oir+V+3C+SubjuntivoPosesivo+3P+Sg:^oyese #;
-oir+V+3C+SubjuntivoPosesivo+1P+Pl:^oyésemos #;
-oir+V+3C+SubjuntivoPosesivo+2P+Pl:^oyeseis #;
-oir+V+3C+SubjuntivoPosesivo+3P+Pl:^oyesen #;
-
-oir+V+3C+SubjuntivoFuturo+1P+Sg:^oyere #;
-oir+V+3C+SubjuntivoFuturo+2P+Sg:^oyeres #;
-oir+V+3C+SubjuntivoFuturo+3P+Sg:^oyere #;
-oir+V+3C+SubjuntivoFuturo+1P+Pl:^oyéremos #;
-oir+V+3C+SubjuntivoFuturo+2P+Pl:^oyereis #;
-oir+V+3C+SubjuntivoFuturo+3P+Pl:^oyeren #;
-
-oir+V+3C+Affirmativo+2P+Sg:^oye #;
-oir+V+3C+Affirmativo+3P+Sg:^oiga #;
-oir+V+3C+Affirmativo+1P+Pl:^oigamos #;
-oir+V+3C+Affirmativo+2P+Pl:^oíd #;
-oir+V+3C+Affirmativo+3P+Pl:^oigan #;
-
-
-##### querer (to like) #####
-querer+V+2C+Infinitivo:^querer #;
-querer+V+2C+Participio+Sg+Masculino:^querido #;
-querer+V+2C+Participio+Pl+Masculino:^queridos #;
-querer+V+2C+Participio+Sg+Feminino:^querida #;
-querer+V+2C+Participio+Pl+Feminino:^queridas #;
-querer+V+2C+Gerundio:^queriendo #;
-
-querer+V+2C+PresenteIndicativo+1P+Sg:^quiero #;
-querer+V+2C+PresenteIndicativo+2P+Sg:^quieres #;
-querer+V+2C+PresenteIndicativo+3P+Sg:^quiere #;
-querer+V+2C+PresenteIndicativo+1P+Pl:^queremos #;
-querer+V+2C+PresenteIndicativo+2P+Pl:^queréis #;
-querer+V+2C+PresenteIndicativo+3P+Pl:^quieren #;
-
-querer+V+2C+PreteritoImperfecto+1P+Sg:^quería #;
-querer+V+2C+PreteritoImperfecto+2P+Sg:^querías #;
-querer+V+2C+PreteritoImperfecto+3P+Sg:^quería #;
-querer+V+2C+PreteritoImperfecto+1P+Pl:^queríamos #;
-querer+V+2C+PreteritoImperfecto+2P+Pl:^queríais #;
-querer+V+2C+PreteritoImperfecto+3P+Pl:^querían #;
-
-querer+V+2C+PreteritoIndefinido+1P+Sg:^quise #;
-querer+V+2C+PreteritoIndefinido+2P+Sg:^quisiste #;
-querer+V+2C+PreteritoIndefinido+3P+Sg:^quiso #;
-querer+V+2C+PreteritoIndefinido+1P+Pl:^quisimos #;
-querer+V+2C+PreteritoIndefinido+2P+Pl:^quisisteis #;
-querer+V+2C+PreteritoIndefinido+3P+Pl:^quisieron #;
-
-querer+V+2C+Futuro+1P+Sg:^querré #;
-querer+V+2C+Futuro+2P+Sg:^querrás #;
-querer+V+2C+Futuro+3P+Sg:^querrá #;
-querer+V+2C+Futuro+1P+Pl:^querremos #;
-querer+V+2C+Futuro+2P+Pl:^querréis #;
-querer+V+2C+Futuro+3P+Pl:^querrán #;
-
-querer+V+2C+Condicional+1P+Sg:^querría #;
-querer+V+2C+Condicional+2P+Sg:^querrías #;
-querer+V+2C+Condicional+3P+Sg:^querría #;
-querer+V+2C+Condicional+1P+Pl:^querríamos #;
-querer+V+2C+Condicional+2P+Pl:^querríais #;
-querer+V+2C+Condicional+3P+Pl:^querrían #;
-
-querer+V+2C+SubjuntivoPresente+1P+Sg:^quiera #;
-querer+V+2C+SubjuntivoPresente+2P+Sg:^quieras #;
-querer+V+2C+SubjuntivoPresente+3P+Sg:^quiera #;
-querer+V+2C+SubjuntivoPresente+1P+Pl:^quieramos #;
-querer+V+2C+SubjuntivoPresente+2P+Pl:^quieráis #;
-querer+V+2C+SubjuntivoPresente+3P+Pl:^quieran #;
-
-querer+V+2C+SubjuntivoImperfecto+1P+Sg:^quisiera #;
-querer+V+2C+SubjuntivoImperfecto+2P+Sg:^quisieras #;
-querer+V+2C+SubjuntivoImperfecto+3P+Sg:^quisiera #;
-querer+V+2C+SubjuntivoImperfecto+1P+Pl:^quisiéramos #;
-querer+V+2C+SubjuntivoImperfecto+2P+Pl:^quisierais #;
-querer+V+2C+SubjuntivoImperfecto+3P+Pl:^quisieran #;
-
-querer+V+2C+SubjuntivoPosesivo+1P+Sg:^quisiese #;
-querer+V+2C+SubjuntivoPosesivo+2P+Sg:^quisieses #;
-querer+V+2C+SubjuntivoPosesivo+3P+Sg:^quisiese #;
-querer+V+2C+SubjuntivoPosesivo+1P+Pl:^quisiésemos #;
-querer+V+2C+SubjuntivoPosesivo+2P+Pl:^quisieseis #;
-querer+V+2C+SubjuntivoPosesivo+3P+Pl:^quisiesen #;
-
-querer+V+2C+SubjuntivoFuturo+1P+Sg:^quisiere #;
-querer+V+2C+SubjuntivoFuturo+2P+Sg:^quisieres #;
-querer+V+2C+SubjuntivoFuturo+3P+Sg:^quisiere #;
-querer+V+2C+SubjuntivoFuturo+1P+Pl:^quisiéremos #;
-querer+V+2C+SubjuntivoFuturo+2P+Pl:^quisiereis #;
-querer+V+2C+SubjuntivoFuturo+3P+Pl:^quisieren #;
-
-querer+V+2C+Affirmativo+2P+Sg:^quiere #;
-querer+V+2C+Affirmativo+3P+Sg:^quiera #;
-querer+V+2C+Affirmativo+1P+Pl:^queramos #;
-querer+V+2C+Affirmativo+2P+Pl:^quered #;
-querer+V+2C+Affirmativo+3P+Pl:^quieran #;
-
-
-##### venir (to come) #####
-venir+V+3C+Infinitivo:^venir #;
-venir+V+3C+Participio+Sg+Masculino:^venido #;
-venir+V+3C+Participio+Pl+Masculino:^venidos #;
-venir+V+3C+Participio+Sg+Feminino:^venida #;
-venir+V+3C+Participio+Pl+Feminino:^venidas #;
-venir+V+3C+Gerundio:^viniendo #;
-
-venir+V+3C+PresenteIndicativo+1P+Sg:^vengo #;
-venir+V+3C+PresenteIndicativo+2P+Sg:^vienes #;
-venir+V+3C+PresenteIndicativo+3P+Sg:^viene #;
-venir+V+3C+PresenteIndicativo+1P+Pl:^venimos #;
-venir+V+3C+PresenteIndicativo+2P+Pl:^venís #;
-venir+V+3C+PresenteIndicativo+3P+Pl:^vienen #;
-
-venir+V+3C+PreteritoImperfecto+1P+Sg:^venía #;
-venir+V+3C+PreteritoImperfecto+2P+Sg:^venías #;
-venir+V+3C+PreteritoImperfecto+3P+Sg:^venía #;
-venir+V+3C+PreteritoImperfecto+1P+Pl:^veníamos #;
-venir+V+3C+PreteritoImperfecto+2P+Pl:^veníais #;
-venir+V+3C+PreteritoImperfecto+3P+Pl:^venían #;
-
-venir+V+3C+PreteritoIndefinido+1P+Sg:^vine #;
-venir+V+3C+PreteritoIndefinido+2P+Sg:^viniste #;
-venir+V+3C+PreteritoIndefinido+3P+Sg:^vino #;
-venir+V+3C+PreteritoIndefinido+1P+Pl:^vinimos #;
-venir+V+3C+PreteritoIndefinido+2P+Pl:^vinisteis #;
-venir+V+3C+PreteritoIndefinido+3P+Pl:^vineron #;
-
-venir+V+3C+Futuro+1P+Sg:^vendré #;
-venir+V+3C+Futuro+2P+Sg:^vendrás #;
-venir+V+3C+Futuro+3P+Sg:^vendrá #;
-venir+V+3C+Futuro+1P+Pl:^vendremos #;
-venir+V+3C+Futuro+2P+Pl:^vendréis #;
-venir+V+3C+Futuro+3P+Pl:^vendrán #;
-
-venir+V+3C+Convendcional+1P+Sg:^vendría #;
-venir+V+3C+Convendcional+2P+Sg:^vendrías #;
-venir+V+3C+Convendcional+3P+Sg:^vendría #;
-venir+V+3C+Convendcional+1P+Pl:^vendríamos #;
-venir+V+3C+Convendcional+2P+Pl:^vendríais #;
-venir+V+3C+Convendcional+3P+Pl:^vendrían #;
-
-venir+V+3C+SubjuntivoPresente+1P+Sg:^venga #;
-venir+V+3C+SubjuntivoPresente+2P+Sg:^vengas #;
-venir+V+3C+SubjuntivoPresente+3P+Sg:^venga #;
-venir+V+3C+SubjuntivoPresente+1P+Pl:^vengamos #;
-venir+V+3C+SubjuntivoPresente+2P+Pl:^vengáis #;
-venir+V+3C+SubjuntivoPresente+3P+Pl:^vengan #;
-
-venir+V+3C+SubjuntivoImperfecto+1P+Sg:^viniera #;
-venir+V+3C+SubjuntivoImperfecto+2P+Sg:^vinieras #;
-venir+V+3C+SubjuntivoImperfecto+3P+Sg:^viniera #;
-venir+V+3C+SubjuntivoImperfecto+1P+Pl:^viniéramos #;
-venir+V+3C+SubjuntivoImperfecto+2P+Pl:^vinierais #;
-venir+V+3C+SubjuntivoImperfecto+3P+Pl:^vinieran #;
-
-venir+V+3C+SubjuntivoPosesivo+1P+Sg:^viniese #;
-venir+V+3C+SubjuntivoPosesivo+2P+Sg:^vinieses #;
-venir+V+3C+SubjuntivoPosesivo+3P+Sg:^viniese #;
-venir+V+3C+SubjuntivoPosesivo+1P+Pl:^viniésemos #;
-venir+V+3C+SubjuntivoPosesivo+2P+Pl:^vinieseis #;
-venir+V+3C+SubjuntivoPosesivo+3P+Pl:^viniesen #;
-
-venir+V+3C+SubjuntivoFuturo+1P+Sg:^viniere #;
-venir+V+3C+SubjuntivoFuturo+2P+Sg:^vinieres #;
-venir+V+3C+SubjuntivoFuturo+3P+Sg:^viniere #;
-venir+V+3C+SubjuntivoFuturo+1P+Pl:^viniéremos #;
-venir+V+3C+SubjuntivoFuturo+2P+Pl:^viniereis #;
-venir+V+3C+SubjuntivoFuturo+3P+Pl:^vinieren #;
-
-venir+V+3C+Affirmativo+2P+Sg:^ven #;
-venir+V+3C+Affirmativo+3P+Sg:^venga #;
-venir+V+3C+Affirmativo+1P+Pl:^vengamos #;
-venir+V+3C+Affirmativo+2P+Pl:^venid #;
-venir+V+3C+Affirmativo+3P+Pl:^vengan #;
-
-
-##### caer #####
-caer+V+2C+Infinitivo:^caer #;
-caer+V+2C+Participio+Sg+Masculino:^caído #;
-caer+V+2C+Participio+Pl+Masculino:^caídos #;
-caer+V+2C+Participio+Sg+Feminino:^caída #;
-caer+V+2C+Participio+Pl+Feminino:^caídas #;
-caer+V+2C+Gerundio:^cayendo #;
-
-caer+V+2C+PresenteIndicativo+1P+Sg:^caigo #;
-caer+V+2C+PresenteIndicativo+2P+Sg:^caes #;
-caer+V+2C+PresenteIndicativo+3P+Sg:^cae #;
-caer+V+2C+PresenteIndicativo+1P+Pl:^caemos #;
-caer+V+2C+PresenteIndicativo+2P+Pl:^caéis #;
-caer+V+2C+PresenteIndicativo+3P+Pl:^caen #;
-
-caer+V+2C+PreteritoImperfecto+1P+Sg:^caía #;
-caer+V+2C+PreteritoImperfecto+2P+Sg:^caías #;
-caer+V+2C+PreteritoImperfecto+3P+Sg:^caía #;
-caer+V+2C+PreteritoImperfecto+1P+Pl:^caíamos #;
-caer+V+2C+PreteritoImperfecto+2P+Pl:^caíais #;
-caer+V+2C+PreteritoImperfecto+3P+Pl:^caían #;
-
-caer+V+2C+PreteritoIndefinido+1P+Sg:^caí #;
-caer+V+2C+PreteritoIndefinido+2P+Sg:^caíste #;
-caer+V+2C+PreteritoIndefinido+3P+Sg:^cayó #;
-caer+V+2C+PreteritoIndefinido+1P+Pl:^caímos #;
-caer+V+2C+PreteritoIndefinido+2P+Pl:^caísteis #;
-caer+V+2C+PreteritoIndefinido+3P+Pl:^cayeron #;
-
-caer+V+2C+Futuro+1P+Sg:^caeré #;
-caer+V+2C+Futuro+2P+Sg:^caerás #;
-caer+V+2C+Futuro+3P+Sg:^caerá #;
-caer+V+2C+Futuro+1P+Pl:^caeremos #;
-caer+V+2C+Futuro+2P+Pl:^caeréis #;
-caer+V+2C+Futuro+3P+Pl:^caerán #;
-
-caer+V+2C+Condicional+1P+Sg:^caería #;
-caer+V+2C+Condicional+2P+Sg:^caerías #;
-caer+V+2C+Condicional+3P+Sg:^caería #;
-caer+V+2C+Condicional+1P+Pl:^caeríamos #;
-caer+V+2C+Condicional+2P+Pl:^caeríais #;
-caer+V+2C+Condicional+3P+Pl:^caerían #;
-
-caer+V+2C+SubjuntivoPresente+1P+Sg:^caiga #;
-caer+V+2C+SubjuntivoPresente+2P+Sg:^caigas #;
-caer+V+2C+SubjuntivoPresente+3P+Sg:^caiga #;
-caer+V+2C+SubjuntivoPresente+1P+Pl:^caigamos #;
-caer+V+2C+SubjuntivoPresente+2P+Pl:^caigáis #;
-caer+V+2C+SubjuntivoPresente+3P+Pl:^caigan #;
-
-caer+V+2C+SubjuntivoImperfecto+1P+Sg:^cayera #;
-caer+V+2C+SubjuntivoImperfecto+2P+Sg:^cayeras #;
-caer+V+2C+SubjuntivoImperfecto+3P+Sg:^cayera #;
-caer+V+2C+SubjuntivoImperfecto+1P+Pl:^cayéramos #;
-caer+V+2C+SubjuntivoImperfecto+2P+Pl:^cayerais #;
-caer+V+2C+SubjuntivoImperfecto+3P+Pl:^cayeran #;
-
-caer+V+2C+SubjuntivoPosesivo+1P+Sg:^cayese #;
-caer+V+2C+SubjuntivoPosesivo+2P+Sg:^cayeses #;
-caer+V+2C+SubjuntivoPosesivo+3P+Sg:^cayese #;
-caer+V+2C+SubjuntivoPosesivo+1P+Pl:^cayésemos #;
-caer+V+2C+SubjuntivoPosesivo+2P+Pl:^cayeseis #;
-caer+V+2C+SubjuntivoPosesivo+3P+Pl:^cayesen #;
-
-caer+V+2C+SubjuntivoFuturo+1P+Sg:^cayere #;
-caer+V+2C+SubjuntivoFuturo+2P+Sg:^cayeres #;
-caer+V+2C+SubjuntivoFuturo+3P+Sg:^cayere #;
-caer+V+2C+SubjuntivoFuturo+1P+Pl:^cayéremos #;
-caer+V+2C+SubjuntivoFuturo+2P+Pl:^cayereis #;
-caer+V+2C+SubjuntivoFuturo+3P+Pl:^cayeren #;
-
-caer+V+2C+Affirmativo+2P+Sg:^cae #;
-caer+V+2C+Affirmativo+3P+Sg:^caiga #;
-caer+V+2C+Affirmativo+1P+Pl:^caigamos #;
-caer+V+2C+Affirmativo+2P+Pl:^caed #;
-caer+V+2C+Affirmativo+3P+Pl:^caigan #;
-
-
-##### salir #####
-salir+V+3C+Infinitivo:^salir #;
-salir+V+3C+Participio+Sg+Masculino:^salido #;
-salir+V+3C+Participio+Pl+Masculino:^salidos #;
-salir+V+3C+Participio+Sg+Feminino:^salida #;
-salir+V+3C+Participio+Pl+Feminino:^salidas #;
-salir+V+3C+Gerundio:^saliendo #;
-
-salir+V+3C+PresenteIndicativo+1P+Sg:^salgo #;
-salir+V+3C+PresenteIndicativo+2P+Sg:^sales #;
-salir+V+3C+PresenteIndicativo+3P+Sg:^sale #;
-salir+V+3C+PresenteIndicativo+1P+Pl:^salimos #;
-salir+V+3C+PresenteIndicativo+2P+Pl:^salís #;
-salir+V+3C+PresenteIndicativo+3P+Pl:^salen #;
-
-salir+V+3C+PreteritoImperfecto+1P+Sg:^salía #;
-salir+V+3C+PreteritoImperfecto+2P+Sg:^salías #;
-salir+V+3C+PreteritoImperfecto+3P+Sg:^salía #;
-salir+V+3C+PreteritoImperfecto+1P+Pl:^salíamos #;
-salir+V+3C+PreteritoImperfecto+2P+Pl:^salíais #;
-salir+V+3C+PreteritoImperfecto+3P+Pl:^salían #;
-
-salir+V+3C+PreteritoIndefinido+1P+Sg:^sale #;
-salir+V+3C+PreteritoIndefinido+2P+Sg:^saliste #;
-salir+V+3C+PreteritoIndefinido+3P+Sg:^salo #;
-salir+V+3C+PreteritoIndefinido+1P+Pl:^salimos #;
-salir+V+3C+PreteritoIndefinido+2P+Pl:^salisteis #;
-salir+V+3C+PreteritoIndefinido+3P+Pl:^saleron #;
-
-salir+V+3C+Futuro+1P+Sg:^saldré #;
-salir+V+3C+Futuro+2P+Sg:^saldrás #;
-salir+V+3C+Futuro+3P+Sg:^saldrá #;
-salir+V+3C+Futuro+1P+Pl:^saldremos #;
-salir+V+3C+Futuro+2P+Pl:^saldréis #;
-salir+V+3C+Futuro+3P+Pl:^saldrán #;
-
-salir+V+3C+Consaldcional+1P+Sg:^saldría #;
-salir+V+3C+Consaldcional+2P+Sg:^saldrías #;
-salir+V+3C+Consaldcional+3P+Sg:^saldría #;
-salir+V+3C+Consaldcional+1P+Pl:^saldríamos #;
-salir+V+3C+Consaldcional+2P+Pl:^saldríais #;
-salir+V+3C+Consaldcional+3P+Pl:^saldrían #;
-
-salir+V+3C+SubjuntivoPresente+1P+Sg:^salga #;
-salir+V+3C+SubjuntivoPresente+2P+Sg:^salgas #;
-salir+V+3C+SubjuntivoPresente+3P+Sg:^salga #;
-salir+V+3C+SubjuntivoPresente+1P+Pl:^salgamos #;
-salir+V+3C+SubjuntivoPresente+2P+Pl:^salgáis #;
-salir+V+3C+SubjuntivoPresente+3P+Pl:^salgan #;
-
-salir+V+3C+SubjuntivoImperfecto+1P+Sg:^saliera #;
-salir+V+3C+SubjuntivoImperfecto+2P+Sg:^salieras #;
-salir+V+3C+SubjuntivoImperfecto+3P+Sg:^saliera #;
-salir+V+3C+SubjuntivoImperfecto+1P+Pl:^saliéramos #;
-salir+V+3C+SubjuntivoImperfecto+2P+Pl:^salierais #;
-salir+V+3C+SubjuntivoImperfecto+3P+Pl:^salieran #;
-
-salir+V+3C+SubjuntivoPosesivo+1P+Sg:^saliese #;
-salir+V+3C+SubjuntivoPosesivo+2P+Sg:^salieses #;
-salir+V+3C+SubjuntivoPosesivo+3P+Sg:^saliese #;
-salir+V+3C+SubjuntivoPosesivo+1P+Pl:^saliésemos #;
-salir+V+3C+SubjuntivoPosesivo+2P+Pl:^salieseis #;
-salir+V+3C+SubjuntivoPosesivo+3P+Pl:^saliesen #;
-
-salir+V+3C+SubjuntivoFuturo+1P+Sg:^saliere #;
-salir+V+3C+SubjuntivoFuturo+2P+Sg:^salieres #;
-salir+V+3C+SubjuntivoFuturo+3P+Sg:^saliere #;
-salir+V+3C+SubjuntivoFuturo+1P+Pl:^saliéremos #;
-salir+V+3C+SubjuntivoFuturo+2P+Pl:^saliereis #;
-salir+V+3C+SubjuntivoFuturo+3P+Pl:^salieren #;
-
-salir+V+3C+Affirmativo+2P+Sg:^sal #;
-salir+V+3C+Affirmativo+3P+Sg:^salga #;
-salir+V+3C+Affirmativo+1P+Pl:^salgamos #;
-salir+V+3C+Affirmativo+2P+Pl:^salid #;
-salir+V+3C+Affirmativo+3P+Pl:^salgan #;
-
-
-##### traer #####
-traer+V+2C+Infinitivo:^traer #;
-traer+V+2C+Participio+Sg+Masculino:^traído #;
-traer+V+2C+Participio+Pl+Masculino:^traídos #;
-traer+V+2C+Participio+Sg+Feminino:^traída #;
-traer+V+2C+Participio+Pl+Feminino:^traídas #;
-traer+V+2C+Gerundio:^trayendo #;
-
-traer+V+2C+PresenteInditrativo+1P+Sg:^traigo #;
-traer+V+2C+PresenteInditrativo+2P+Sg:^traes #;
-traer+V+2C+PresenteInditrativo+3P+Sg:^trae #;
-traer+V+2C+PresenteInditrativo+1P+Pl:^traemos #;
-traer+V+2C+PresenteInditrativo+2P+Pl:^traéis #;
-traer+V+2C+PresenteInditrativo+3P+Pl:^traen #;
-
-traer+V+2C+PreteritoImperfecto+1P+Sg:^traía #;
-traer+V+2C+PreteritoImperfecto+2P+Sg:^traías #;
-traer+V+2C+PreteritoImperfecto+3P+Sg:^traía #;
-traer+V+2C+PreteritoImperfecto+1P+Pl:^traíamos #;
-traer+V+2C+PreteritoImperfecto+2P+Pl:^traíais #;
-traer+V+2C+PreteritoImperfecto+3P+Pl:^traían #;
-
-traer+V+2C+PreteritoIndefinido+1P+Sg:^traje #;
-traer+V+2C+PreteritoIndefinido+2P+Sg:^trajiste #;
-traer+V+2C+PreteritoIndefinido+3P+Sg:^trajo #;
-traer+V+2C+PreteritoIndefinido+1P+Pl:^trajimos #;
-traer+V+2C+PreteritoIndefinido+2P+Pl:^trajisteis #;
-traer+V+2C+PreteritoIndefinido+3P+Pl:^trajeron #;
-
-traer+V+2C+Futuro+1P+Sg:^traeré #;
-traer+V+2C+Futuro+2P+Sg:^traerás #;
-traer+V+2C+Futuro+3P+Sg:^traerá #;
-traer+V+2C+Futuro+1P+Pl:^traeremos #;
-traer+V+2C+Futuro+2P+Pl:^traeréis #;
-traer+V+2C+Futuro+3P+Pl:^traerán #;
-
-traer+V+2C+Condicional+1P+Sg:^traería #;
-traer+V+2C+Condicional+2P+Sg:^traerías #;
-traer+V+2C+Condicional+3P+Sg:^traería #;
-traer+V+2C+Condicional+1P+Pl:^traeríamos #;
-traer+V+2C+Condicional+2P+Pl:^traeríais #;
-traer+V+2C+Condicional+3P+Pl:^traerían #;
-
-traer+V+2C+SubjuntivoPresente+1P+Sg:^traiga #;
-traer+V+2C+SubjuntivoPresente+2P+Sg:^traigas #;
-traer+V+2C+SubjuntivoPresente+3P+Sg:^traiga #;
-traer+V+2C+SubjuntivoPresente+1P+Pl:^traigamos #;
-traer+V+2C+SubjuntivoPresente+2P+Pl:^traigáis #;
-traer+V+2C+SubjuntivoPresente+3P+Pl:^traigan #;
-
-traer+V+2C+SubjuntivoImperfecto+1P+Sg:^trajera #;
-traer+V+2C+SubjuntivoImperfecto+2P+Sg:^trajeras #;
-traer+V+2C+SubjuntivoImperfecto+3P+Sg:^trajera #;
-traer+V+2C+SubjuntivoImperfecto+1P+Pl:^trajéramos #;
-traer+V+2C+SubjuntivoImperfecto+2P+Pl:^trajerais #;
-traer+V+2C+SubjuntivoImperfecto+3P+Pl:^trajeran #;
-
-traer+V+2C+SubjuntivoPosesivo+1P+Sg:^trajese #;
-traer+V+2C+SubjuntivoPosesivo+2P+Sg:^trajeses #;
-traer+V+2C+SubjuntivoPosesivo+3P+Sg:^trajese #;
-traer+V+2C+SubjuntivoPosesivo+1P+Pl:^trajésemos #;
-traer+V+2C+SubjuntivoPosesivo+2P+Pl:^trajeseis #;
-traer+V+2C+SubjuntivoPosesivo+3P+Pl:^trajesen #;
-
-traer+V+2C+SubjuntivoFuturo+1P+Sg:^trajere #;
-traer+V+2C+SubjuntivoFuturo+2P+Sg:^trajeres #;
-traer+V+2C+SubjuntivoFuturo+3P+Sg:^trajere #;
-traer+V+2C+SubjuntivoFuturo+1P+Pl:^trajéremos #;
-traer+V+2C+SubjuntivoFuturo+2P+Pl:^trajereis #;
-traer+V+2C+SubjuntivoFuturo+3P+Pl:^trajeren #;
-
-traer+V+2C+Affirmativo+2P+Sg:^trae #;
-traer+V+2C+Affirmativo+3P+Sg:^traiga #;
-traer+V+2C+Affirmativo+1P+Pl:^traigamos #;
-traer+V+2C+Affirmativo+2P+Pl:^traed #;
-traer+V+2C+Affirmativo+3P+Pl:^traigan #;
-
-
-########## First Conjugación Verbs ##############
+###########################################################
 LEXICON V1
++V+1C+Infinitivo:^ar #;
 
-ar+V+1C+Infinitivo:^ar #;
-ar+V+1C+Participio+Sg+Masculino:^ado #;
-ar+V+1C+Participio+Pl+Masculino:^ados #;
-ar+V+1C+Participio+Sg+Feminino:^ada #;
-ar+V+1C+Participio+Pl+Feminino:^adas #;
-ar+V+1C+Gerundio:^ando #;
++V+1C+Participio+Sg+Masculino:^ado #;
++V+1C+Participio+Pl+Masculino:^ados #;
++V+1C+Participio+Sg+Feminino:^ada #;
++V+1C+Participio+Pl+Feminino:^adas #;
 
-ar+V+1C+PresenteIndicativo+1P+Sg:^o&OUE #;
-ar+V+1C+PresenteIndicativo+2P+Sg:^as&OUE #;
-ar+V+1C+PresenteIndicativo+3P+Sg:^a&OUE #;
-ar+V+1C+PresenteIndicativo+1P+Pl:^amos #;
-ar+V+1C+PresenteIndicativo+2P+Pl:^áis #;
-ar+V+1C+PresenteIndicativo+3P+Pl:^an&OUE #;
++V+1C+Gerundio:^ando #;
 
-ar+V+1C+PreteritoImperfecto+1P+Sg:^aba #;
-ar+V+1C+PreteritoImperfecto+2P+Sg:^abas #;
-ar+V+1C+PreteritoImperfecto+3P+Sg:^aba #;
-ar+V+1C+PreteritoImperfecto+1P+Pl:^ábamos #;
-ar+V+1C+PreteritoImperfecto+2P+Pl:^abais #;
-ar+V+1C+PreteritoImperfecto+3P+Pl:^aban #;
++V+1C+PresenteIndicativo+1P+Sg:^o #;
++V+1C+PresenteIndicativo+2P+Sg:^as #;
++V+1C+PresenteIndicativo+3P+Sg:^a #;
++V+1C+PresenteIndicativo+1P+Pl:^amos #;
++V+1C+PresenteIndicativo+2P+Pl:^áis #;
++V+1C+PresenteIndicativo+3P+Pl:^an #;
 
-ar+V+1C+PreteritoIndefinido+1P+Sg:^é #;
-ar+V+1C+PreteritoIndefinido+2P+Sg:^aste #;
-ar+V+1C+PreteritoIndefinido+3P+Sg:^ó #;
-ar+V+1C+PreteritoIndefinido+1P+Pl:^amos #;
-ar+V+1C+PreteritoIndefinido+2P+Pl:^asteis #;
-ar+V+1C+PreteritoIndefinido+3P+Pl:^aron #;
++V+1C+PreteritoImperfecto+1P+Sg:^aba #;
++V+1C+PreteritoImperfecto+2P+Sg:^abas #;
++V+1C+PreteritoImperfecto+3P+Sg:^aba #;
++V+1C+PreteritoImperfecto+1P+Pl:^ábamos #;
++V+1C+PreteritoImperfecto+2P+Pl:^abais #;
++V+1C+PreteritoImperfecto+3P+Pl:^aban #;
 
-ar+V+1C+Futuro+1P+Sg:^aré #;
-ar+V+1C+Futuro+2P+Sg:^arás #;
-ar+V+1C+Futuro+3P+Sg:^ará #;
-ar+V+1C+Futuro+1P+Pl:^aremos #;
-ar+V+1C+Futuro+2P+Pl:^aréis #;
-ar+V+1C+Futuro+3P+Pl:^arán #;
++V+1C+PreteritoIndefinido+1P+Sg:^é #;
++V+1C+PreteritoIndefinido+2P+Sg:^aste #;
++V+1C+PreteritoIndefinido+3P+Sg:^ó #;
++V+1C+PreteritoIndefinido+1P+Pl:^amos #;
++V+1C+PreteritoIndefinido+2P+Pl:^asteis #;
++V+1C+PreteritoIndefinido+3P+Pl:^aron #;
 
-ar+V+1C+Condicional+1P+Sg:^aría #;
-ar+V+1C+Condicional+2P+Sg:^arías #;
-ar+V+1C+Condicional+3P+Sg:^aría #;
-ar+V+1C+Condicional+1P+Pl:^aríamos #;
-ar+V+1C+Condicional+2P+Pl:^aríais #;
-ar+V+1C+Condicional+3P+Pl:^arían #;
++V+1C+Futuro+1P+Sg:^aré #;
++V+1C+Futuro+2P+Sg:^arás #;
++V+1C+Futuro+3P+Sg:^ará #;
++V+1C+Futuro+1P+Pl:^aremos #;
++V+1C+Futuro+2P+Pl:^aréis #;
++V+1C+Futuro+3P+Pl:^arán #;
 
-ar+V+1C+SubjuntivoPresente+1P+Sg:^e&OUE #;
-ar+V+1C+SubjuntivoPresente+2P+Sg:^es&OUE #;
-ar+V+1C+SubjuntivoPresente+3P+Sg:^e&OUE #;
-ar+V+1C+SubjuntivoPresente+1P+Pl:^emos #;
-ar+V+1C+SubjuntivoPresente+2P+Pl:^éis #;
-ar+V+1C+SubjuntivoPresente+3P+Pl:^en&OUE #;
++V+1C+Condicional+1P+Sg:^aría #;
++V+1C+Condicional+2P+Sg:^arías #;
++V+1C+Condicional+3P+Sg:^aría #;
++V+1C+Condicional+1P+Pl:^aríamos #;
++V+1C+Condicional+2P+Pl:^aríais #;
++V+1C+Condicional+3P+Pl:^arían #;
 
-ar+V+1C+SubjuntivoImperfecto+1P+Sg:^ara #;
-ar+V+1C+SubjuntivoImperfecto+2P+Sg:^aras #;
-ar+V+1C+SubjuntivoImperfecto+3P+Sg:^ara #;
-ar+V+1C+SubjuntivoImperfecto+1P+Pl:^áramos #;
-ar+V+1C+SubjuntivoImperfecto+2P+Pl:^arais #;
-ar+V+1C+SubjuntivoImperfecto+3P+Pl:^aran #;
++V+1C+SubjuntivoPresente+1P+Sg:^e #;
++V+1C+SubjuntivoPresente+2P+Sg:^es #;
++V+1C+SubjuntivoPresente+3P+Sg:^e #;
++V+1C+SubjuntivoPresente+1P+Pl:^emos #;
++V+1C+SubjuntivoPresente+2P+Pl:^éis #;
++V+1C+SubjuntivoPresente+3P+Pl:^en #;
 
-ar+V+1C+SubjuntivoPosesivo+1P+Sg:^ase #;
-ar+V+1C+SubjuntivoPosesivo+2P+Sg:^ases #;
-ar+V+1C+SubjuntivoPosesivo+3P+Sg:^ase #;
-ar+V+1C+SubjuntivoPosesivo+1P+Pl:^ásemos #;
-ar+V+1C+SubjuntivoPosesivo+2P+Pl:^aseis #;
-ar+V+1C+SubjuntivoPosesivo+3P+Pl:^asen #;
++V+1C+SubjuntivoImperfecto+1P+Sg:^ara #;
++V+1C+SubjuntivoImperfecto+2P+Sg:^aras #;
++V+1C+SubjuntivoImperfecto+3P+Sg:^ara #;
++V+1C+SubjuntivoImperfecto+1P+Pl:^áramos #;
++V+1C+SubjuntivoImperfecto+2P+Pl:^arais #;
++V+1C+SubjuntivoImperfecto+3P+Pl:^aran #;
 
-ar+V+1C+SubjuntivoFuturo+1P+Sg:^are #;
-ar+V+1C+SubjuntivoFuturo+2P+Sg:^ares #;
-ar+V+1C+SubjuntivoFuturo+3P+Sg:^are #;
-ar+V+1C+SubjuntivoFuturo+1P+Pl:^áremos #;
-ar+V+1C+SubjuntivoFuturo+2P+Pl:^areis #;
-ar+V+1C+SubjuntivoFuturo+3P+Pl:^aren #;
++V+1C+SubjuntivoPosesivo+1P+Sg:^ase #;
++V+1C+SubjuntivoPosesivo+2P+Sg:^ases #;
++V+1C+SubjuntivoPosesivo+3P+Sg:^ase #;
++V+1C+SubjuntivoPosesivo+1P+Pl:^ásemos #;
++V+1C+SubjuntivoPosesivo+2P+Pl:^aseis #;
++V+1C+SubjuntivoPosesivo+3P+Pl:^asen #;
 
-ar+V+1C+Affirmativo+2P+Sg:^a&OUE #;
-ar+V+1C+Affirmativo+3P+Sg:^e&OUE #;
-ar+V+1C+Affirmativo+1P+Pl:^emos #;
-ar+V+1C+Affirmativo+2P+Pl:^ad #;
-ar+V+1C+Affirmativo+3P+Pl:^en&OUE #;
++V+1C+SubjuntivoFuturo+1P+Sg:^are #;
++V+1C+SubjuntivoFuturo+2P+Sg:^ares #;
++V+1C+SubjuntivoFuturo+3P+Sg:^are #;
++V+1C+SubjuntivoFuturo+1P+Pl:^áremos #;
++V+1C+SubjuntivoFuturo+2P+Pl:^areis #;
++V+1C+SubjuntivoFuturo+3P+Pl:^aren #;
+
++V+1C+Affirmativo+2P+Sg:^a #;
++V+1C+Affirmativo+3P+Sg:^e #;
++V+1C+Affirmativo+1P+Pl:^emos #;
++V+1C+Affirmativo+2P+Pl:^ad #;
++V+1C+Affirmativo+3P+Pl:^en #;
 
 
-########## Second Conjugación Verbs ##############
+###########################################################
 LEXICON V2
++V+2C+Infinitivo:^er #;
 
-er+V+2C+Infinitivo:^er #;
-er+V+2C+Participio+Sg+Masculino:^ido #;
-er+V+2C+Participio+Pl+Masculino:^idos #;
-er+V+2C+Participio+Sg+Feminino:^ida #;
-er+V+2C+Participio+Pl+Feminino:^idas #;
-er+V+2C+Gerundio:^iendo #;
++V+2C+Participio+Sg+Masculino:^ido #;
++V+2C+Participio+Pl+Masculino:^idos #;
++V+2C+Participio+Sg+Feminino:^ida #;
++V+2C+Participio+Pl+Feminino:^idas #;
 
-er+V+2C+PresenteIndicativo+1P+Sg:^o&OUE #;
-er+V+2C+PresenteIndicativo+2P+Sg:^es&OUE #;
-er+V+2C+PresenteIndicativo+3P+Sg:^e&OUE #;
-er+V+2C+PresenteIndicativo+1P+Pl:^emos #;
-er+V+2C+PresenteIndicativo+2P+Pl:^éis #;
-er+V+2C+PresenteIndicativo+3P+Pl:^en&OUE #;
++V+2C+Gerundio:^iendo #;
 
-er+V+2C+PreteritoImperfecto+1P+Sg:^ía #;
-er+V+2C+PreteritoImperfecto+2P+Sg:^ías #;
-er+V+2C+PreteritoImperfecto+3P+Sg:^ía #;
-er+V+2C+PreteritoImperfecto+1P+Pl:^íamos #;
-er+V+2C+PreteritoImperfecto+2P+Pl:^íais #;
-er+V+2C+PreteritoImperfecto+3P+Pl:^ían #;
++V+2C+PresenteIndicativo+1P+Sg:^o #;
++V+2C+PresenteIndicativo+2P+Sg:^es #;
++V+2C+PresenteIndicativo+3P+Sg:^e #;
++V+2C+PresenteIndicativo+1P+Pl:^emos #;
++V+2C+PresenteIndicativo+2P+Pl:^éis #;
++V+2C+PresenteIndicativo+3P+Pl:^en #;
 
-er+V+2C+PreteritoIndefinido+1P+Sg:^í #;
-er+V+2C+PreteritoIndefinido+2P+Sg:^iste #;
-er+V+2C+PreteritoIndefinido+3P+Sg:^ió #;
-er+V+2C+PreteritoIndefinido+1P+Pl:^imos #;
-er+V+2C+PreteritoIndefinido+2P+Pl:^isteis #;
-er+V+2C+PreteritoIndefinido+3P+Pl:^ieron #;
++V+2C+PreteritoImperfecto+1P+Sg:^ía #;
++V+2C+PreteritoImperfecto+2P+Sg:^ías #;
++V+2C+PreteritoImperfecto+3P+Sg:^ía #;
++V+2C+PreteritoImperfecto+1P+Pl:^íamos #;
++V+2C+PreteritoImperfecto+2P+Pl:^íais #;
++V+2C+PreteritoImperfecto+3P+Pl:^ían #;
 
-er+V+2C+Futuro+1P+Sg:^eré #;
-er+V+2C+Futuro+2P+Sg:^erás #;
-er+V+2C+Futuro+3P+Sg:^erá #;
-er+V+2C+Futuro+1P+Pl:^eremos #;
-er+V+2C+Futuro+2P+Pl:^eréis #;
-er+V+2C+Futuro+3P+Pl:^erán #;
++V+2C+PreteritoIndefinido+1P+Sg:^í #;
++V+2C+PreteritoIndefinido+2P+Sg:^iste #;
++V+2C+PreteritoIndefinido+3P+Sg:^ió #;
++V+2C+PreteritoIndefinido+1P+Pl:^imos #;
++V+2C+PreteritoIndefinido+2P+Pl:^isteis #;
++V+2C+PreteritoIndefinido+3P+Pl:^ieron #;
 
-er+V+2C+Condicional+1P+Sg:^ería #;
-er+V+2C+Condicional+2P+Sg:^erías #;
-er+V+2C+Condicional+3P+Sg:^aría #;
-er+V+2C+Condicional+1P+Pl:^eríamos #;
-er+V+2C+Condicional+2P+Pl:^eríais #;
-er+V+2C+Condicional+3P+Pl:^erían #;
++V+2C+Futuro+1P+Sg:^eré #;
++V+2C+Futuro+2P+Sg:^erás #;
++V+2C+Futuro+3P+Sg:^erá #;
++V+2C+Futuro+1P+Pl:^eremos #;
++V+2C+Futuro+2P+Pl:^eréis #;
++V+2C+Futuro+3P+Pl:^erán #;
 
-er+V+2C+SubjuntivoPresente+1P+Sg:^a&OUE #;
-er+V+2C+SubjuntivoPresente+2P+Sg:^as&OUE #;
-er+V+2C+SubjuntivoPresente+3P+Sg:^a&OUE #;
-er+V+2C+SubjuntivoPresente+1P+Pl:^amos #;
-er+V+2C+SubjuntivoPresente+2P+Pl:^áis #;
-er+V+2C+SubjuntivoPresente+3P+Pl:^an&OUE #;
++V+2C+Condicional+1P+Sg:^ería #;
++V+2C+Condicional+2P+Sg:^erías #;
++V+2C+Condicional+3P+Sg:^aría #;
++V+2C+Condicional+1P+Pl:^eríamos #;
++V+2C+Condicional+2P+Pl:^eríais #;
++V+2C+Condicional+3P+Pl:^erían #;
 
-er+V+2C+SubjuntivoImperfecto+1P+Sg:^iera #;
-er+V+2C+SubjuntivoImperfecto+2P+Sg:^ieras #;
-er+V+2C+SubjuntivoImperfecto+3P+Sg:^iera #;
-er+V+2C+SubjuntivoImperfecto+1P+Pl:^iéramos #;
-er+V+2C+SubjuntivoImperfecto+2P+Pl:^ierais #;
-er+V+2C+SubjuntivoImperfecto+3P+Pl:^ieran #;
++V+2C+SubjuntivoPresente+1P+Sg:^a #;
++V+2C+SubjuntivoPresente+2P+Sg:^as #;
++V+2C+SubjuntivoPresente+3P+Sg:^a #;
++V+2C+SubjuntivoPresente+1P+Pl:^amos #;
++V+2C+SubjuntivoPresente+2P+Pl:^áis #;
++V+2C+SubjuntivoPresente+3P+Pl:^an #;
 
-er+V+2C+SubjuntivoPosesivo+1P+Sg:^iese #;
-er+V+2C+SubjuntivoPosesivo+2P+Sg:^ieses #;
-er+V+2C+SubjuntivoPosesivo+3P+Sg:^iese #;
-er+V+2C+SubjuntivoPosesivo+1P+Pl:^iésemos #;
-er+V+2C+SubjuntivoPosesivo+2P+Pl:^ieseis #;
-er+V+2C+SubjuntivoPosesivo+3P+Pl:^iesen #;
++V+2C+SubjuntivoImperfecto+1P+Sg:^iera #;
++V+2C+SubjuntivoImperfecto+2P+Sg:^ieras #;
++V+2C+SubjuntivoImperfecto+3P+Sg:^iera #;
++V+2C+SubjuntivoImperfecto+1P+Pl:^iéramos #;
++V+2C+SubjuntivoImperfecto+2P+Pl:^ierais #;
++V+2C+SubjuntivoImperfecto+3P+Pl:^ieran #;
 
-er+V+2C+SubjuntivoFuturo+1P+Sg:^iere #;
-er+V+2C+SubjuntivoFuturo+2P+Sg:^ieres #;
-er+V+2C+SubjuntivoFuturo+3P+Sg:^iere #;
-er+V+2C+SubjuntivoFuturo+1P+Pl:^iéremos #;
-er+V+2C+SubjuntivoFuturo+2P+Pl:^iereis #;
-er+V+2C+SubjuntivoFuturo+3P+Pl:^ieren #;
++V+2C+SubjuntivoPosesivo+1P+Sg:^iese #;
++V+2C+SubjuntivoPosesivo+2P+Sg:^ieses #;
++V+2C+SubjuntivoPosesivo+3P+Sg:^iese #;
++V+2C+SubjuntivoPosesivo+1P+Pl:^iésemos #;
++V+2C+SubjuntivoPosesivo+2P+Pl:^ieseis #;
++V+2C+SubjuntivoPosesivo+3P+Pl:^iesen #;
 
-er+V+2C+Affirmativo+2P+Sg:^e&OUE #;
-er+V+2C+Affirmativo+3P+Sg:^a&OUE #;
-er+V+2C+Affirmativo+1P+Pl:^amos #;
-er+V+2C+Affirmativo+2P+Pl:^ed #;
-er+V+2C+Affirmativo+3P+Pl:^an&OUE #;
++V+2C+SubjuntivoFuturo+1P+Sg:^iere #;
++V+2C+SubjuntivoFuturo+2P+Sg:^ieres #;
++V+2C+SubjuntivoFuturo+3P+Sg:^iere #;
++V+2C+SubjuntivoFuturo+1P+Pl:^iéremos #;
++V+2C+SubjuntivoFuturo+2P+Pl:^iereis #;
++V+2C+SubjuntivoFuturo+3P+Pl:^ieren #;
+
++V+2C+Affirmativo+2P+Sg:^e #;
++V+2C+Affirmativo+3P+Sg:^a #;
++V+2C+Affirmativo+1P+Pl:^amos #;
++V+2C+Affirmativo+2P+Pl:^ed #;
++V+2C+Affirmativo+3P+Pl:^an #;
 
 
-########## Third Conjugación Verbs ##############
+###########################################################
 LEXICON V3
++V+3C+Infinitivo:^ir #;
 
-ir+V+3C+Infinitivo:^ir #;
-ir+V+3C+Participio+Sg+Masculino:^ido #;
-ir+V+3C+Participio+Pl+Masculino:^idos #;
-ir+V+3C+Participio+Sg+Feminino:^ida #;
-ir+V+3C+Participio+Pl+Feminino:^idas #;
-ir+V+3C+Gerundio:^iendo #;
++V+3C+Participio+Sg+Masculino:^ido #;
++V+3C+Participio+Pl+Masculino:^idos #;
++V+3C+Participio+Sg+Feminino:^ida #;
++V+3C+Participio+Pl+Feminino:^idas #;
 
-ir+V+3C+PresenteIndicativo+1P+Sg:^o&OUE&IY #;
-ir+V+3C+PresenteIndicativo+2P+Sg:^es&OUE&IY #;
-ir+V+3C+PresenteIndicativo+3P+Sg:^e&OUE&IY #;
-ir+V+3C+PresenteIndicativo+1P+Pl:^imos #;
-ir+V+3C+PresenteIndicativo+2P+Pl:^ís #;
-ir+V+3C+PresenteIndicativo+3P+Pl:^en&OUE&IY #;
++V+3C+Gerundio:^iendo #;
 
-ir+V+3C+PreteritoImperfecto+1P+Sg:^ía #;
-ir+V+3C+PreteritoImperfecto+2P+Sg:^ías #;
-ir+V+3C+PreteritoImperfecto+3P+Sg:^ía #;
-ir+V+3C+PreteritoImperfecto+1P+Pl:^íamos #;
-ir+V+3C+PreteritoImperfecto+2P+Pl:^íais #;
-ir+V+3C+PreteritoImperfecto+3P+Pl:^ían #;
++V+3C+PresenteIndicativo+1P+Sg:^o #;
++V+3C+PresenteIndicativo+2P+Sg:^es #;
++V+3C+PresenteIndicativo+3P+Sg:^e #;
++V+3C+PresenteIndicativo+1P+Pl:^imos #;
++V+3C+PresenteIndicativo+2P+Pl:^ís #;
++V+3C+PresenteIndicativo+3P+Pl:^en #;
 
-ir+V+3C+PreteritoIndefinido+1P+Sg:^í #;
-ir+V+3C+PreteritoIndefinido+2P+Sg:^iste #;
-ir+V+3C+PreteritoIndefinido+3P+Sg:^ió&IY #;
-ir+V+3C+PreteritoIndefinido+1P+Pl:^imos #;
-ir+V+3C+PreteritoIndefinido+2P+Pl:^isteis #;
-ir+V+3C+PreteritoIndefinido+3P+Pl:^ieron&IY #;
++V+3C+PreteritoImperfecto+1P+Sg:^ía #;
++V+3C+PreteritoImperfecto+2P+Sg:^ías #;
++V+3C+PreteritoImperfecto+3P+Sg:^ía #;
++V+3C+PreteritoImperfecto+1P+Pl:^íamos #;
++V+3C+PreteritoImperfecto+2P+Pl:^íais #;
++V+3C+PreteritoImperfecto+3P+Pl:^ían #;
 
-ir+V+3C+Futuro+1P+Sg:^iré #;
-ir+V+3C+Futuro+2P+Sg:^irás #;
-ir+V+3C+Futuro+3P+Sg:^irá #;
-ir+V+3C+Futuro+1P+Pl:^iremos #;
-ir+V+3C+Futuro+2P+Pl:^iréis #;
-ir+V+3C+Futuro+3P+Pl:^irán #;
++V+3C+PreteritoIndefinido+1P+Sg:^í #;
++V+3C+PreteritoIndefinido+2P+Sg:^iste #;
++V+3C+PreteritoIndefinido+3P+Sg:^ió #;
++V+3C+PreteritoIndefinido+1P+Pl:^imos #;
++V+3C+PreteritoIndefinido+2P+Pl:^isteis #;
++V+3C+PreteritoIndefinido+3P+Pl:^ieron #;
 
-ir+V+3C+Condicional+1P+Sg:^iría #;
-ir+V+3C+Condicional+2P+Sg:^irías #;
-ir+V+3C+Condicional+3P+Sg:^iría #;
-ir+V+3C+Condicional+1P+Pl:^iríamos #;
-ir+V+3C+Condicional+2P+Pl:^iríais #;
-ir+V+3C+Condicional+3P+Pl:^irían #;
++V+3C+Futuro+1P+Sg:^iré #;
++V+3C+Futuro+2P+Sg:^irás #;
++V+3C+Futuro+3P+Sg:^irá #;
++V+3C+Futuro+1P+Pl:^iremos #;
++V+3C+Futuro+2P+Pl:^iréis #;
++V+3C+Futuro+3P+Pl:^irán #;
 
-ir+V+3C+SubjuntivoPresente+1P+Sg:^a&OUE&IY #;
-ir+V+3C+SubjuntivoPresente+2P+Sg:^as&OUE&IY #;
-ir+V+3C+SubjuntivoPresente+3P+Sg:^a&OUE&IY #;
-ir+V+3C+SubjuntivoPresente+1P+Pl:^amos&IY #;
-ir+V+3C+SubjuntivoPresente+2P+Pl:^áis&IY #;
-ir+V+3C+SubjuntivoPresente+3P+Pl:^an&OUE&IY #;
++V+3C+Condicional+1P+Sg:^iría #;
++V+3C+Condicional+2P+Sg:^irías #;
++V+3C+Condicional+3P+Sg:^iría #;
++V+3C+Condicional+1P+Pl:^iríamos #;
++V+3C+Condicional+2P+Pl:^iríais #;
++V+3C+Condicional+3P+Pl:^irían #;
 
-ir+V+3C+SubjuntivoImperfecto+1P+Sg:^iera&IY #;
-ir+V+3C+SubjuntivoImperfecto+2P+Sg:^ieras&IY #;
-ir+V+3C+SubjuntivoImperfecto+3P+Sg:^iera&IY #;
-ir+V+3C+SubjuntivoImperfecto+1P+Pl:^iéramos&IY #;
-ir+V+3C+SubjuntivoImperfecto+2P+Pl:^ierais&IY #;
-ir+V+3C+SubjuntivoImperfecto+3P+Pl:^ieran&IY #;
++V+3C+SubjuntivoPresente+1P+Sg:^a #;
++V+3C+SubjuntivoPresente+2P+Sg:^as #;
++V+3C+SubjuntivoPresente+3P+Sg:^a #;
++V+3C+SubjuntivoPresente+1P+Pl:^amos #;
++V+3C+SubjuntivoPresente+2P+Pl:^áis #;
++V+3C+SubjuntivoPresente+3P+Pl:^an #;
 
-ir+V+3C+SubjuntivoPosesivo+1P+Sg:^iese #;
-ir+V+3C+SubjuntivoPosesivo+2P+Sg:^ieses #;
-ir+V+3C+SubjuntivoPosesivo+3P+Sg:^iese #;
-ir+V+3C+SubjuntivoPosesivo+1P+Pl:^iésemos #;
-ir+V+3C+SubjuntivoPosesivo+2P+Pl:^ieseis #;
-ir+V+3C+SubjuntivoPosesivo+3P+Pl:^iesen #;
++V+3C+SubjuntivoImperfecto+1P+Sg:^iera #;
++V+3C+SubjuntivoImperfecto+2P+Sg:^ieras #;
++V+3C+SubjuntivoImperfecto+3P+Sg:^iera #;
++V+3C+SubjuntivoImperfecto+1P+Pl:^iéramos #;
++V+3C+SubjuntivoImperfecto+2P+Pl:^ierais #;
++V+3C+SubjuntivoImperfecto+3P+Pl:^ieran #;
 
-ir+V+3C+SubjuntivoFuturo+1P+Sg:^iere #;
-ir+V+3C+SubjuntivoFuturo+2P+Sg:^ieres #;
-ir+V+3C+SubjuntivoFuturo+3P+Sg:^iere #;
-ir+V+3C+SubjuntivoFuturo+1P+Pl:^iéremos #;
-ir+V+3C+SubjuntivoFuturo+2P+Pl:^iereis #;
-ir+V+3C+SubjuntivoFuturo+3P+Pl:^ieren #;
++V+3C+SubjuntivoPosesivo+1P+Sg:^iese #;
++V+3C+SubjuntivoPosesivo+2P+Sg:^ieses #;
++V+3C+SubjuntivoPosesivo+3P+Sg:^iese #;
++V+3C+SubjuntivoPosesivo+1P+Pl:^iésemos #;
++V+3C+SubjuntivoPosesivo+2P+Pl:^ieseis #;
++V+3C+SubjuntivoPosesivo+3P+Pl:^iesen #;
 
-ir+V+3C+Affirmativo+2P+Sg:^e&OUE&IY #;
-ir+V+3C+Affirmativo+3P+Sg:^a&OUE&IY #;
-ir+V+3C+Affirmativo+1P+Pl:^amos&IY #;
-ir+V+3C+Affirmativo+2P+Pl:^id #;
-ir+V+3C+Affirmativo+3P+Pl:^an&OUE&IY #;
++V+3C+SubjuntivoFuturo+1P+Sg:^iere #;
++V+3C+SubjuntivoFuturo+2P+Sg:^ieres #;
++V+3C+SubjuntivoFuturo+3P+Sg:^iere #;
++V+3C+SubjuntivoFuturo+1P+Pl:^iéremos #;
++V+3C+SubjuntivoFuturo+2P+Pl:^iereis #;
++V+3C+SubjuntivoFuturo+3P+Pl:^ieren #;
+
++V+3C+Affirmativo+2P+Sg:^e #;
++V+3C+Affirmativo+3P+Sg:^a #;
++V+3C+Affirmativo+1P+Pl:^amos #;
++V+3C+Affirmativo+2P+Pl:^id #;
++V+3C+Affirmativo+3P+Pl:^an #;
+
