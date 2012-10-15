@@ -1,49 +1,18 @@
-define OtoUEReplacement o -> u e || _ [ b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" ?* "&OUE" ?* ;
-
-define AntiOtoUEReplacement1P2PPl u e -> o || _ [ b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" [ a | "\u00E1" | e | "\u00E9" | i | "\u00ED" ] [ m o s | i s | "\u00ED" s ] ;
-
-define AntiOtoUEReplacementInfin u e -> o || _ ?* "^" a r | ?* "^" e r | ?* "^" i r ;
-
-define AntiOtoUEReplacementGerund u e -> o || _ ?* "^" [ a n d o | i e n d o | y e n d o ] ;
-
-define AntiOtoUEReplacementPartic u e -> o || _ ?* "^" [ a d o | a d a | i d o | i d a ] s* ;
-
-define AntiOtoUEReplacementZC u e -> o || _ z c ;
-
-define ItoYReplacement i -> y || u _ "^" ?* "&IY" ?* ;
-
-define YItoYReplacement i -> 0 || u y "^" _ ?* "&IY" ?* ; 
-
-define ItoYReplacementGerund i -> y || u "^" _ [ e n d o ] ;
-
-define YInsertion [..] -> y || u _ "^" ?* "&IY" ?* ;
-
-define CtoZCReplacement c -> z c || _ "^" a | "^" "\u00E1" | "^" o | "^" "\u00F3" ;
-
 define XZReplacement x -> c || _ e "^" s ,,
-					 z -> c || _ e "^" s ; 
-define EInsertion [..] -> e || y | b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z | "\u00E1" | "\u00ED" | "\u00F3" | "\u00FA" | "\u00F1" _ "^" s ;
+		     z -> c || _ e "^" s ;
 
-define Cleanup "^" -> 0 ,,
-			   "&OUE" -> 0 ,,
-			   "&IY" -> 0 ;
+define EInsertion [..] -> e || y | b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z | á | é | í | ó | ú _ "^" s ;
 
+define Word [a|á|b|c|d|e|é|f|g|h|i|í|j|k|l|m|n|ñ|o|ó|p|q|r|s|t|u|ú|v|w|x|y|z]+;
+
+define VSuffix [ a r | e r | i r ] -> 0 || _ "^";
+define Cleanup "^" -> 0;
 
 read lexc spanish.lexc
 define Lexicon;
 
-
-define Grammar 
-               Lexicon .o.
-			   OtoUEReplacement .o.
-			   ItoYReplacement .o.
-			   YInsertion .o.
-			   YItoYReplacement .o.
-			   ItoYReplacementGerund .o.
-			   CtoZCReplacement .o.
-			   AntiOtoUEReplacementZC .o.
-			   EInsertion .o.
-			   XZReplacement .o.
-               Cleanup;
-			   
-regex Grammar;
+regex [ Word Lexicon ] .o. 
+      VSuffix .o.
+      EInsertion .o.
+      XZReplacement .o.
+      Cleanup;
