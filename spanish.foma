@@ -1,3 +1,23 @@
+define OtoUEReplacement o -> u e || _ [ b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" [ o | e | a ] ?* ;
+
+define AntiOtoUEReplacementPlurals u e -> o || _ [ b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" [ a m o s | á i s | e m o s | é i s ] ;
+
+define AntiOtoUEReplacementInfinitive u e -> o || _ [ b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" [ a r | e r | i r ] ;
+
+define AntiOtoUEReplacementGerundPartic u e -> o || _ [ b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" [ a d o | a d a | a d o s | a d a s | a n d o ] ;
+
+define YInsertion [..] -> y || u _ "^" [ a | á | e | é | o | ó ] ?* ;
+
+define ItoYReplacement i -> y || u "^" _ e ;
+
+define CtoJReplacementForPreterito u c "^" i ó -> u j "^" ó ;
+
+define CtoJReplacementForPreteritoOther u c "^" í -> u j "^" e ;
+
+define CtoJReplacement c -> j || u _ "^" [ i | í ] ?+ ;
+
+define CtoZCReplacement c -> z c || _ "^" [ a | á | o | ó ] ?* ;
+
 define XZReplacement x -> c || _ e "^" s ,,
 		     z -> c || _ e "^" s ;
 
@@ -12,7 +32,16 @@ read lexc spanish.lexc
 define Lexicon;
 
 regex [ Word Lexicon ] .o. 
-      VSuffix .o.
+      ItoYReplacement .o.
+      CtoZCReplacement .o.
+      CtoJReplacementForPreterito .o.
+      CtoJReplacementForPreteritoOther .o.
+      CtoJReplacement .o.
+      OtoUEReplacement .o.
+      AntiOtoUEReplacementPlurals .o.
+      AntiOtoUEReplacementInfinitive .o.
+      AntiOtoUEReplacementGerundPartic .o.
+      YInsertion .o.
       EInsertion .o.
       XZReplacement .o.
       Cleanup;
