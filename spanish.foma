@@ -1,3 +1,5 @@
+define GInsertion [..] -> g || n "^" _ o ;
+
 define OtoUEReplacement o -> u e || _ [ b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" [ o | e | a ] ?* ;
 
 define AntiOtoUEReplacementPlurals u e -> o || _ [ b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" [ a m o s | á i s | e m o s | é i s ] ;
@@ -5,6 +7,8 @@ define AntiOtoUEReplacementPlurals u e -> o || _ [ b | c | d | c h | f | g | h |
 define AntiOtoUEReplacementInfinitive u e -> o || _ [ b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" [ a r | e r | i r ] ;
 
 define AntiOtoUEReplacementGerundPartic u e -> o || _ [ b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" [ a d o | a d a | a d o s | a d a s | a n d o ] ;
+
+define AntiOtoUEReplacementAfterP u e -> o || p _ n ?* ;
 
 define YInsertion [..] -> y || u _ "^" [ a | á | e | é | o | ó ] ?* ;
 
@@ -41,7 +45,9 @@ regex [ Word Lexicon ] .o.
       AntiOtoUEReplacementPlurals .o.
       AntiOtoUEReplacementInfinitive .o.
       AntiOtoUEReplacementGerundPartic .o.
+      AntiOtoUEReplacementAfterP .o.
       YInsertion .o.
+      GInsertion .o.
       EInsertion .o.
       XZReplacement .o.
       Cleanup;
