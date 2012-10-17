@@ -1,3 +1,14 @@
+define EtoIEReplacement e -> i e || _ [ n t | n d | n s | r d | r r ] ;
+
+define EtoIEReplacementOther e -> i e || [ t | v ] _ [ n e ] ;
+
+define EtoIEReplacementTripple e -> i e || p _ n ,, 
+                               e -> i e || p _ r ,,
+                               e -> i e || p _ z ,,
+                               e -> i e || r _ t ,,
+                               e -> i e || v _ s ,,
+                               e -> i e || n _ g ;
+
 define GInsertion [..] -> g || n "^" _ o ;
 
 define OtoUEReplacement o -> u e || _ [ b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" [ o | e | a ] ?* ;
@@ -9,6 +20,8 @@ define AntiOtoUEReplacementInfinitive u e -> o || _ [ b | c | d | c h | f | g | 
 define AntiOtoUEReplacementGerundPartic u e -> o || _ [ b | c | d | c h | f | g | h | j | k | l | l l | m | n | ñ | p | q | r | s | t | v | w | z ]+ "^" [ a d o | a d a | a d o s | a d a s | a n d o ] ;
 
 define AntiOtoUEReplacementAfterP u e -> o || p _ n ?* ;
+
+define AntiOtoUEReplacementForZC u e -> o || _ [ c | z c ] ;
 
 define YInsertion [..] -> y || u _ "^" [ a | á | e | é | o | ó ] ?* ;
 
@@ -46,6 +59,10 @@ regex [ Word Lexicon ] .o.
       AntiOtoUEReplacementInfinitive .o.
       AntiOtoUEReplacementGerundPartic .o.
       AntiOtoUEReplacementAfterP .o.
+      AntiOtoUEReplacementForZC .o.
+      EtoIEReplacement .o.
+      EtoIEReplacementOther .o.
+      EtoIEReplacementTripple .o.
       YInsertion .o.
       GInsertion .o.
       EInsertion .o.
