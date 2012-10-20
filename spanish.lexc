@@ -26,19 +26,19 @@ LEXICON N
 LEXICON V1
 ar+X+V+1C+Infinitivo:^ar #;
 
-ar+X+V+1C+Participio+Sg+Masculino:^ado #;
-ar+X+V+1C+Participio+Pl+Masculino:^ados #;
-ar+X+V+1C+Participio+Sg+Feminino:^ada #;
-ar+X+V+1C+Participio+Pl+Feminino:^adas #;
+ar+V+1C+Participio+Sg+Masculino:^ado #;
+ar+V+1C+Participio+Pl+Masculino:^ados #;
+ar+V+1C+Participio+Sg+Feminino:^ada #;
+ar+V+1C+Participio+Pl+Feminino:^adas #;
 
 ar+X+V+1C+Gerundio:^ando #;
 
-ar+X+V+1C+PresenteIndicativo+1P+Sg:^o #;
-ar+X+V+1C+PresenteIndicativo+2P+Sg:^as #;
-ar+X+V+1C+PresenteIndicativo+3P+Sg:^a #;
+ar+V+1C+PresenteIndicativo+1P+Sg:^o #;
+ar+V+1C+PresenteIndicativo+2P+Sg:^as #;
+ar+V+1C+PresenteIndicativo+3P+Sg:^a #;
 ar+X+V+1C+PresenteIndicativo+1P+Pl:^amos #;
 ar+X+V+1C+PresenteIndicativo+2P+Pl:^áis #;
-ar+X+V+1C+PresenteIndicativo+3P+Pl:^an #;
+ar+V+1C+PresenteIndicativo+3P+Pl:^an #;
 
 ar+X+V+1C+PreteritoImperfecto+1P+Sg:^aba #;
 ar+X+V+1C+PreteritoImperfecto+2P+Sg:^abas #;
@@ -82,12 +82,12 @@ ar+X+V+1C+SubjuntivoImperfecto+1P+Pl:^áramos #;
 ar+X+V+1C+SubjuntivoImperfecto+2P+Pl:^arais #;
 ar+X+V+1C+SubjuntivoImperfecto+3P+Pl:^aran #;
 
-ar+X+V+1C+SubjuntivoPosesivo+1P+Sg:^ase #;
-ar+X+V+1C+SubjuntivoPosesivo+2P+Sg:^ases #;
-ar+X+V+1C+SubjuntivoPosesivo+3P+Sg:^ase #;
+ar+V+1C+SubjuntivoPosesivo+1P+Sg:^ase #;
+ar+V+1C+SubjuntivoPosesivo+2P+Sg:^ases #;
+ar+V+1C+SubjuntivoPosesivo+3P+Sg:^ase #;
 ar+X+V+1C+SubjuntivoPosesivo+1P+Pl:^ásemos #;
 ar+X+V+1C+SubjuntivoPosesivo+2P+Pl:^aseis #;
-ar+X+V+1C+SubjuntivoPosesivo+3P+Pl:^asen #;
+ar+V+1C+SubjuntivoPosesivo+3P+Pl:^asen #;
 
 ar+X+V+1C+SubjuntivoFuturo+1P+Sg:^are #;
 ar+X+V+1C+SubjuntivoFuturo+2P+Sg:^ares #;
@@ -107,19 +107,19 @@ ar+V+1C+Affirmativo+3P+Pl:^en #;
 LEXICON V2
 er+X+V+2C+Infinitivo:^er #;
 
-er+X+V+2C+Participio+Sg+Masculino:^ido #;
-er+X+V+2C+Participio+Pl+Masculino:^idos #;
-er+X+V+2C+Participio+Sg+Feminino:^ida #;
-er+X+V+2C+Participio+Pl+Feminino:^idas #;
+er+V+2C+Participio+Sg+Masculino:^ido #;
+er+V+2C+Participio+Pl+Masculino:^idos #;
+er+V+2C+Participio+Sg+Feminino:^ida #;
+er+V+2C+Participio+Pl+Feminino:^idas #;
 
 er+X+V+2C+Gerundio:^iendo #;
 
-er+X+V+2C+PresenteIndicativo+1P+Sg:^o #;
-er+X+V+2C+PresenteIndicativo+2P+Sg:^es #;
-er+X+V+2C+PresenteIndicativo+3P+Sg:^e #;
+er+V+2C+PresenteIndicativo+1P+Sg:^o #;
+er+V+2C+PresenteIndicativo+2P+Sg:^es #;
+er+V+2C+PresenteIndicativo+3P+Sg:^e #;
 er+X+V+2C+PresenteIndicativo+1P+Pl:^emos #;
 er+X+V+2C+PresenteIndicativo+2P+Pl:^éis #;
-er+X+V+2C+PresenteIndicativo+3P+Pl:^en #;
+er+V+2C+PresenteIndicativo+3P+Pl:^en #;
 
 er+X+V+2C+PreteritoImperfecto+1P+Sg:^ía #;
 er+X+V+2C+PreteritoImperfecto+2P+Sg:^ías #;
@@ -188,19 +188,19 @@ er+V+2C+Affirmativo+3P+Pl:^an #;
 LEXICON V3
 ir+X+V+3C+Infinitivo:^ir #;
 
-ir+X+V+3C+Participio+Sg+Masculino:^ido #;
-ir+X+V+3C+Participio+Pl+Masculino:^idos #;
-ir+X+V+3C+Participio+Sg+Feminino:^ida #;
-ir+X+V+3C+Participio+Pl+Feminino:^idas #;
+ir+V+3C+Participio+Sg+Masculino:^ido #;
+ir+V+3C+Participio+Pl+Masculino:^idos #;
+ir+V+3C+Participio+Sg+Feminino:^ida #;
+ir+V+3C+Participio+Pl+Feminino:^idas #;
 
 ir+X+V+3C+Gerundio:^iendo #;
 
-ir+X+V+3C+PresenteIndicativo+1P+Sg:^o #;
-ir+X+V+3C+PresenteIndicativo+2P+Sg:^es #;
-ir+X+V+3C+PresenteIndicativo+3P+Sg:^e #;
+ir+V+3C+PresenteIndicativo+1P+Sg:^o #;
+ir+V+3C+PresenteIndicativo+2P+Sg:^es #;
+ir+V+3C+PresenteIndicativo+3P+Sg:^e #;
 ir+X+V+3C+PresenteIndicativo+1P+Pl:^imos #;
 ir+X+V+3C+PresenteIndicativo+2P+Pl:^ís #;
-ir+X+V+3C+PresenteIndicativo+3P+Pl:^en #;
+ir+V+3C+PresenteIndicativo+3P+Pl:^en #;
 
 ir+X+V+3C+PreteritoImperfecto+1P+Sg:^ía #;
 ir+X+V+3C+PreteritoImperfecto+2P+Sg:^ías #;
