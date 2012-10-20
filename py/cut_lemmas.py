@@ -11,18 +11,17 @@ def from_stdin():
 
 def runLemmasHeuristics(lemmas):
 	newLemmas = []
-	modeIsFirst = False
+	hasVerbOfFirst = False
 	for lemma in lemmas:
 		if lemma[-1] == 'V' and lemma[-4] == 'a':
-			modeIsFirst = True
+			hasVerbOfFirst = True
+			return [lemma]
 
 	for lemma in lemmas:
-		if lemma[-1] == 'N':
-			newLemmas.append(lemma)		
-		elif modeIsFirst and lemma[-1] == 'V' and lemma[-4] == 'a':
-			newLemmas.append(lemma)
-		elif not modeIsFirst and lemma[-1] == 'V':
-			newLemmas.append(lemma)
+		if lemma[-1] == 'A':
+			continue
+
+		newLemmas.append(lemma)		
 
 	return newLemmas
 
