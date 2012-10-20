@@ -1,6 +1,6 @@
 !!! spanish.lexc !!!
 
-Multichar_Symbols +V +1C +2C +3C +1P +2P +3P +Sg +Pl +PresenteIndicativo +PreteritoImperfecto +PreteritoIndefinido +Futuro +Condicional +SubjuntivoPresente +SubjuntivoImperfecto +SubjuntivoPosesivo +SubjuntivoFuturo +Affirmativo +Masculino +Feminino
+Multichar_Symbols +V +N +A +1C +2C +3C +1P +2P +3P +Sg +Pl +PresenteIndicativo +PreteritoImperfecto +PreteritoIndefinido +Futuro +Condicional +SubjuntivoPresente +SubjuntivoImperfecto +SubjuntivoPosesivo +SubjuntivoFuturo +Affirmativo +Masculino +Feminino
 
 LEXICON Root
 A;
