@@ -1,42 +1,57 @@
 #!/usr/bin/python
 
-# usage example: cat temporary.prediction.raw.result | head -n100 | python py/cut_lemmas.py
-
 import codecs
-import json
-
-import itertools
-import operator
-
 import re
 import sys
 
-def from_stdin(encoding = 'utf-8'):
-    iterable = codecs.getreader(encoding)(sys.stdin)
+def from_stdin():
+    iterable = codecs.getreader('utf-8')(sys.stdin)
     for item in iterable:
-        yield item.rstrip('\r\n')
+        yield item.rstrip('\r\n').encode('utf-8')
+
+def runLemmasHeuristics(lemmas):
+	newLemmas = []
+	modeIsFirst = False
+	for lemma in lemmas:
+		if lemma[-1] == 'V' and lemma[-4] == 'a':
+			modeIsFirst = True
+
+	for lemma in lemmas:
+		if lemma[-1] == 'N':
+			newLemmas.append(lemma)		
+		elif modeIsFirst and lemma[-1] == 'V' and lemma[-4] == 'a':
+			newLemmas.append(lemma)
+		elif not modeIsFirst and lemma[-1] == 'V':
+			newLemmas.append(lemma)
+
+	return newLemmas
+
+def printWordLemmas(word, lemmas):
+	print str(word) + '\t' + '\t'.join(lemmas)
 
 def analizeWordLemmas(word, lemmas):
-	lemmasDict = {}
-	for lemma in lemmas:
-		parts = lemma.split('+')
-		lemmasDict[parts[0]] = set(map(str, parts[1:]))
-	print lemmasDict
-	print '=================================================='
-	#print "got word %s with %d lemmas" % (word, len(lemmas))
+	newLemmas = runLemmasHeuristics(lemmas)
+	printWordLemmas(word, newLemmas)
 
+firstWordMode = True
 tempWord = ''
 tempLemmas = []
 for line in from_stdin():
-	if len(line) == 0:
-		analizeWordLemmas(tempWord, tempLemmas)
-		tempWord = ''
-		tempLemmas = []
-		continue
+	words   = line.split('\t')
+	newWord = words[0]
+	lemma   = words[1]
 
-	words = line.split('\t')
-	tempWord = words[0]
-	tempLemmas.append(words[1])
+	if firstWordMode:
+		tempWord = newWord
+		firstWordMode = False
+
+	if newWord == tempWord:
+		tempLemmas.append(lemma)
+	else:
+		analizeWordLemmas(tempWord, tempLemmas)
+		tempWord   = newWord
+		tempLemmas = [lemma]
+
 
 if tempWord != '':
 	analizeWordLemmas(tempWord, tempLemmas)

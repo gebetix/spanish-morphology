@@ -37,5 +37,15 @@ control() {
 	echo 'Created file temporary.final.result.latin1, send this file!!'
 }
 
-#learn
-control
+cut_lemmas() {
+	echo "\n====== Removing lemmas ======\n"
+	cat temporary.prediction.result | python py/cut_lemmas.py > temporary.final.result
+	echo 'Created file temporary.final.result'
+
+	echo "\n====== Results ======\n"
+	python py/evaluate.py data/spanish.txt.learn temporary.final.result	
+}
+
+# control
+# learn
+cut_lemmas
