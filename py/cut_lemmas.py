@@ -67,16 +67,13 @@ def runXCut(lemmas):
 	else:
 		return lemmas
 
+
 def analizeWordLemmas(word, lemmas):
-	# # lemmas = runXClear(lemmas)
-	lemmas = runXCut(lemmas)
-	# # lemmas = runAdjectiveKill(lemmas)
+	# lemmas = runXCut(lemmas)
+	# lemmas = runAdjectiveKill(lemmas)
 	# lemmas = run1CWins(lemmas)
-	# # lemmas = runShortestNoun(lemmas)
-	# printWordLemmas(word, lemmas)
-	newLemmas = run1CWins(lemmas)
-	if len(lemmas) > 1 and len(newLemmas) == 1:
-		printWordLemmas(word, newLemmas)
+	# lemmas = runShortestNoun(lemmas)
+	printWordLemmas(word, lemmas)
 
 def printWordLemmas(word, lemmas):
 	print str(word) + '\t' + '\t'.join(lemmas)
