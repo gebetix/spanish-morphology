@@ -46,7 +46,7 @@ cut_lemmas() {
 	python py/evaluate.py data/spanish.txt.learn temporary.final.cutted.result
 }
 
-# control
+#control
 
-learn
+#learn
 cut_lemmas

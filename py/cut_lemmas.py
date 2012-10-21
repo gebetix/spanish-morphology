@@ -9,48 +9,77 @@ def from_stdin():
     for item in iterable:
         yield item.rstrip('\r\n').encode('utf-8')
 
-def runLemmasHeuristics(lemmas):
+def runShortestNoun(lemmas):
 	newLemmas = []
-	hasVerbOfFirst = False
 	shortestNoun = ''
 	for lemma in lemmas:
-		if lemma[-1] == 'V' and lemma[-4] == 'a':
-			hasVerbOfFirst = True
-			return [lemma]
-
-		elif lemma[-1] == 'N':
-			if shortestNoun == '' or len(lemma) < len(shortestNoun):
+		if lemma[-1] == 'N':
+			if shortestNoun == '' or len(shortestNoun) > len(lemma):
 				shortestNoun = lemma
-
-	for lemma in lemmas:
-		if lemma[-1] == 'A' or lemma[-1] == 'N':
 			continue
+		newLemmas.append(lemma)
 
-		newLemmas.append(lemma)		
-
-	if len(shortestNoun) > 0:
+	if shortestNoun != '':
 		newLemmas.append(shortestNoun)
 
-	return newLemmasdef runXCut(lemmas):newLemmas = []
+	return newLemmas
+
+def runAdjectiveKill(lemmas):
+	newLemmas = []
+	for lemma in lemmas:
+		if lemma[-1] == 'A':
+			continue
+		newLemmas.append(lemma)
+	return newLemmas
+
+def run1CWins(lemmas):
+	for lemma in lemmas:
+		if lemma[-1] == 'V' and lemma[-4] == 'a':
+			return [lemma]
+		
+	return lemmas
+
+def runXClear(lemmas):
+	newLemmas = []
 	hasX = False
 	for lemma in lemmas:
 		parts = lemma.split('+')
 		word = parts[0]
 		if len(parts) > 2:
-	newLemmas.append(word + '+' + parts[2])
-	return newLemmas
+			newLemmas.append(word + '+' + parts[2])
+		else:
+			newLemmas.append(lemma)
 
+	return newLemmas	
+
+def runXCut(lemmas):
+	newLemmas = []
+	hasX = False
+	for lemma in lemmas:
+		parts = lemma.split('+')
+		word = parts[0]
+		if len(parts) > 2:
+			newLemmas.append(word + '+' + parts[2])
+			hasX = True
+
+	if hasX:
+		return newLemmas
+	else:
+		return lemmas
+
+def analizeWordLemmas(word, lemmas):
+	# # lemmas = runXClear(lemmas)
+	lemmas = runXCut(lemmas)
+	# # lemmas = runAdjectiveKill(lemmas)
+	# lemmas = run1CWins(lemmas)
+	# # lemmas = runShortestNoun(lemmas)
+	# printWordLemmas(word, lemmas)
+	newLemmas = run1CWins(lemmas)
+	if len(lemmas) > 1 and len(newLemmas) == 1:
+		printWordLemmas(word, newLemmas)
 
 def printWordLemmas(word, lemmas):
 	print str(word) + '\t' + '\t'.join(lemmas)
-
-def analizeWordLemmas(word, lemmas):
-	newLemmas = runXCut(lemmas)
-	if len(newLemmas) == 0:
-		newLemmas = runLemmasHeuristics(lemmas)
-	else:
-		newLemmas = runLemmasHeuristics(newLemmas)
-	printWordLemmas(word, newLemmas)
 
 firstWordMode = True
 tempWord = ''
