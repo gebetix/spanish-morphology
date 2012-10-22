@@ -13,6 +13,13 @@ learn() {
 	# cat temporary.prediction.raw.result | grep -o "^[^+]*\(+X\|\)+[VNA]" | uniq > temporary.prediction.result
 	cat temporary.prediction.raw.result | grep -o "\(^[^+]*\(+X\|\)+[VNA]\)\|\(^[^?]*?$\)" | uniq > temporary.prediction.result
 	echo 'Created file temporary.prediction.result'
+
+	echo "\n====== Removing lemmas ======\n"
+	cat temporary.prediction.result | python py/cut_lemmas.py > temporary.final.cutted.result
+	echo 'Created file temporary.final.cutted.result'
+
+	echo "\n====== Results ======\n"
+	python py/evaluate.py data/spanish.txt.learn temporary.final.cutted.result
 }
 
 control() {
@@ -37,16 +44,5 @@ control() {
 	echo 'Created file temporary.final.result.latin1, send this file!!'
 }
 
-cut_lemmas() {
-	echo "\n====== Removing lemmas ======\n"
-	cat temporary.prediction.result | python py/cut_lemmas.py > temporary.final.cutted.result
-	echo 'Created file temporary.final.cutted.result'
-
-	echo "\n====== Results ======\n"
-	python py/evaluate.py data/spanish.txt.learn temporary.final.cutted.result
-}
-
 #control
-
-#learn
-cut_lemmas
+learn
